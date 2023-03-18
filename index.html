@@ -38,7 +38,7 @@
                 <a href="#service">Service</a>
             </li><!--service-->
             <li>
-                <a href="#">Gallery</a>
+                <a href="#gallery">Gallery</a>
             </li><!--gallery-->
             <li>
                 <a href="#certificate">Certificate</a>
@@ -431,7 +431,7 @@
     </section><!--service-->
 
     <section>
-        <h1><span>G</span>allery</h1>
+        <h1><dfn id="gallery"><span>G</span>allery</dfn></h1>
         <section></section><!--images-->
         <div>
             <a href=""><input type="button" value="See all"></a>
@@ -500,18 +500,24 @@
     <section>
         <h1><dfn id="contact"><span>C</span>ontact</dfn></h1>
         <section>
-            <div>
-                <input type="text" placeholder="Name">
-            </div><!--name text filed-->
-            <div>
-                <input type="email" placeholder="Email">
-            </div><!--email text filed-->
-            <div>
-                <input type="text" placeholder="Message">
-            </div><!--message text filed-->
-            <div>
-                <input type="submit" value="Send">
-            </div><!--send button-->
+            <form action="" method="post">
+                <fieldset>
+                    <div>
+                        <input type="text" name="name" placeholder="Name">
+                    </div><!--name text filed-->
+                    <div>
+                        <input type="email" name="email" placeholder="Email">
+                    </div><!--email text filed-->
+                    <div>
+                        <!--<input type="text" placeholder="Message">-->
+                        <textarea placeholder="Message" name="message"></textarea>
+                    </div><!--message text filed-->
+                    <div>
+                        <input type="submit" value="Send">
+                    </div><!--send button-->
+                </fieldset>
+            </form>
+
         </section><!--send massage-->
         <section>
             <section>
