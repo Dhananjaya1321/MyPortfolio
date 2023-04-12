@@ -14,6 +14,18 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/css.css">
+
+
+    <style>
+        body > main > section:first-child {
+            border: red solid 2px;
+            position: relative;
+            height: 90vh;
+            width: 100vw;
+        }
+    </style>
+
 </head>
 <body>
 <header>
@@ -62,9 +74,8 @@
         <section>
             <h3>Hello , I’m</h3>
             <h1><span>I</span>suru <span>D</span>hananjaya</h1>
-            <h2>A Full Stack Developer from Sri Lanka</h2>
-
-            <nav>
+            <h2>A <span>Full Stack Developer</span> from Sri Lanka</h2>
+            <nav id="social_links_nav">
                 <div>
                     <a href="https://www.facebook.com/profile.php?id=100086049325888&mibextid=ZbWKwL" target="_blank">
                         <img src="assets/image/logo/faceBook.png" width="50" height="50">
@@ -90,12 +101,13 @@
                         <img src="assets/image/logo/twitter.png" width="50" height="50">
                     </a>
                 </div><!--twitter-->
+                <div id="download_cv">
+                    <a href="assets/cv.pdf" download="cv.pdf">
+                        <input type="button" value="Download CV">
+                    </a>
+                </div><!--download cv-->
             </nav><!--navigate social media-->
-            <div>
-                <a href="assets/cv.pdf" download="cv.pdf">
-                    <input type="button" value="Download CV">
-                </a>
-            </div><!--download cv-->
+
         </section>
         <aside>
             <img src="assets/image/myPhoto/photo_1.png">

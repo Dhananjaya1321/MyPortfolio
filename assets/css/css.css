@@ -1,0 +1,28 @@
+span {
+    color: deepskyblue;
+}
+
+body > main > section:first-child > section > nav > div {
+    display: inline;
+}
+
+#social_links_nav{
+    height: 50px;
+    width: 400px;
+    display: inline-block;
+    position: relative;
+    border: deepskyblue solid 2px;
+}
+#download_cv{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+body > main > section:first-child > aside {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
