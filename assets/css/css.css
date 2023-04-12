@@ -1,7 +1,7 @@
 span {
     color: deepskyblue;
 }
-
+/*home section*/
 body > main > section:first-child > section > nav > div {
     display: inline;
 }
@@ -25,4 +25,117 @@ body > main > section:first-child > aside {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+/*about section*/
+body > main > section:nth-child(2)>section:first-child>img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#project_count{
+    border: deepskyblue 2px solid;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 199px;
+    top: 115px;
+    border-radius: 20px;
+
+}
+
+#project_count > h1 {
+    display: inline;
+    position: absolute;
+    left: 65px;
+    top: 5px;
+    /*right: 0;*/
+    margin: auto;
+}
+
+#project_count > h3:nth-child(2) {
+    display: inline;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    /*right: 0;*/
+    margin: auto;
+}
+#project_count > h3:nth-child(3) {
+    display: inline;
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    /*right: 0;*/
+    margin: auto;
+}
+
+#experience_years{
+    border: deepskyblue 2px solid;
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 250px;
+    bottom: 0px;
+    border-radius: 20px;
+
+}
+
+#experience_years > h1 {
+    display: inline;
+    position: absolute;
+    left: 65px;
+    top: 5px;
+    /*right: 0;*/
+    margin: auto;
+}
+
+#experience_years > h3:nth-child(2) {
+    display: inline;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+    /*right: 0;*/
+    margin: auto;
+}
+#experience_years > h3:nth-child(3) {
+    display: inline;
+    position: absolute;
+    left: 45px;
+    top: 60px;
+    /*right: 0;*/
+    margin: auto;
+}
+
+body > main > section:nth-child(2)>article:nth-child(2) {
+    position: absolute;
+    border: deepskyblue 2px solid;
+    right: 0;
+    top: 0;
+    height: 80%;
+    width: 50%;
+}
+body > main > section:nth-child(2)>article:nth-child(2)>h1 {
+    position: absolute;
+    display: inline;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+}
+body > main > section:nth-child(2)>article:nth-child(2)>p {
+    position: absolute;
+    display: inline;
+    right: 0px;
+    left: 0px;
+    top: 65px;
+    margin: auto;
+}
+body > main > section:nth-child(2)>article:nth-child(2)>div {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+    bottom: 0px;
 }

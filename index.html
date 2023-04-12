@@ -18,12 +18,21 @@
 
 
     <style>
-        body > main > section:first-child {
+        body > main > section:nth-child(1) {
             border: red solid 2px;
             position: relative;
-            height: 90vh;
+            height: 100vh;
             width: 100vw;
         }
+
+        body > main > section:nth-child(2) {
+            border: red solid 2px;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+
     </style>
 
 </head>
@@ -117,17 +126,19 @@
     <section>
         <section>
             <img src="assets/image/myPhoto/photo_2.png">
-            <div>
+            <div id="project_count">
                 <h1><strong>5+</strong></h1>
+                <h3>Complete</h3>
                 <h3>Projects</h3>
             </div><!--projects-->
-            <div>
+            <div id="experience_years">
                 <h1><strong>1+</strong></h1>
-                <h3>Years<br> Experience</h3>
+                <h3>Years</h3>
+                <h3>Experience</h3>
             </div><!--experience-->
         </section><!--image-->
         <article>
-            <h1><dfn id="about">About <span>ME</span></dfn></h1>
+            <h1><dfn>About <span>ME</span></dfn></h1>
             <p>
                 Hi, I’m <strong>Isuru Dhananjaya</strong>.I’m <strong>20 years old</strong>.<br>
                 I’m currently learning more about<br>
