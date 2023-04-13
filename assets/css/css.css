@@ -139,3 +139,108 @@ body > main > section:nth-child(2)>article:nth-child(2)>div {
     right: 0px;
     bottom: 0px;
 }
+
+
+/*skills section*/
+
+.skills_div {
+    border: red solid 2px;
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    bottom: 0;
+}
+/*left button*/
+body > main > section:nth-child(2) > section:nth-child(3) > div:first-child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    /*left: 50px;*/
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:first-child > button {
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:first-child > button>img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+}
+/*right button*/
+body > main > section:nth-child(2) > section:nth-child(3) > div:last-child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    /*left: 50px;*/
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:last-child > button {
+    position: absolute;
+    width: 30px;
+    height: 80%;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:last-child > button>img {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) {
+    left: 70px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(3) {
+    left: 240px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(4) {
+    left: 410px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(5) {
+    left: 580px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(6) {
+    left: 750px;
+}
+.skills_img{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5px;
+}
+.skills_div>h2{
+    position: absolute;
+    display: inline;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 55px;
+}
