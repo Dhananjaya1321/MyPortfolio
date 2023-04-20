@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case two</title>
+    <link rel="stylesheet" href="../../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../../assets/fontawesome/css/all.min.css">
+    <style>
+        header {
+            position: relative;
+            height: 50px;
+            box-shadow: 0px 1px 2px 1px gray;
+        }
+
+        body > header > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        body > header > nav > menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+        }
+
+        body > header > nav > menu > li {
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        body > main > section:nth-child(1) > nav > menu > li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        body > main {
+            position: relative;
+        }
+
+        body > main > section:nth-child(1) {
+            width: 300px;
+            /*height: 100%;*/
+            background-color: deepskyblue;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body > main > section > menu {
+            position: relative;
+            left: 5px;
+        }
+
+        body > main > section > menu > li {
+            position: relative;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        body > main > section:nth-child(2) {
+            margin-left: 310px;
+        }
+
+        body > main > section:nth-child(2) > p {
+            margin-bottom: 0;
+        }
+
+        body > main > section:nth-child(2) > section {
+            border: black solid 1px;
+            position: relative;
+            height: 300px;
+            margin: 10px;
+        }
+
+        body > main > section:nth-child(2) > section > div {
+            /*border: black solid 1px;*/
+            height: 100%;
+            width: calc(100% / 3);
+            position: absolute;
+        }
+
+        body > main > section:nth-child(2) > section > div:nth-child(1){
+            position: absolute;
+            left: 0;
+        }
+
+        body > main > section:nth-child(2) > section > div:nth-child(2) {
+            position: absolute;
+            left: calc(100% / 3);
+        }
+
+        body > main > section:nth-child(2) > section > div:nth-child(3) {
+            position: absolute;
+            right: 0;
+
+        }
+
+        body > main > section:nth-child(2) > section > div > img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        footer {
+            height: 60px;
+            position: relative;
+            background-color: gray;
+        }
+
+        footer > p {
+            margin-top: 0px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding-top: 20px
+        }
+
+
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="../../../favicon.png" height="50px">
+    <nav>
+        <menu>
+            <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href=""><i class="fa-solid fa-globe"></i>Service</a></li>
+            <li><a href=""><i class="fa-solid fa-address-book"></i>Contact</a></li>
+            <li><a href=""><i class="fa-solid fa-address-card"></i>About Us</a></li>
+        </menu>
+    </nav>
+</header>
+<main>
+    <section>
+        <nav>
+            <menu>
+                <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href=""><i class="fa-solid fa-globe"></i>Service</a></li>
+                <li><a href=""><i class="fa-solid fa-address-book"></i>Contact</a></li>
+                <li><a href=""><i class="fa-solid fa-address-card"></i>About Us</a></li>
+            </menu>
+        </nav>
+    </section>
+    <section>
+        <section>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolor
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <section>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+            <div>
+                <img src="../../../favicon.png">
+            </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolor
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam amet assumenda autem dolorem,
+            earum eos facere ipsa, itaque, magnam nisi quod sapiente ullam vitae! Dolorem ducimus enim numquam?</p>
+    </section>
+</main>
+<footer>
+    <p>Develop by IJSE</p>
+</footer>
+</body>
+</html>
