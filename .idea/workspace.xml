@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/case_one.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/case_three.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/case_two.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseThree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyPortfolio.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseThree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,11 +56,11 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\pages" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\logo" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,7 +114,7 @@
       <workItem from="1681361063808" duration="30000" />
       <workItem from="1681361149368" duration="13134000" />
       <workItem from="1681963730755" duration="17203000" />
-      <workItem from="1682046568932" duration="9654000" />
+      <workItem from="1682046568932" duration="12518000" />
     </task>
     <servers />
   </component>
