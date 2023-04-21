@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/case_one.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/case_three.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/case_two.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseThree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyPortfolio.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2L9CV7uk2zHHfpyXGzJ751D8MfR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\css" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\icon" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\pages" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\logo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="" />
+      <created>1675273932710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675273932710</updated>
+      <workItem from="1675273935458" duration="4125000" />
+      <workItem from="1677777735173" duration="16001000" />
+      <workItem from="1677822677975" duration="4117000" />
+      <workItem from="1677888828458" duration="8612000" />
+      <workItem from="1678046674324" duration="10851000" />
+      <workItem from="1678174643735" duration="723000" />
+      <workItem from="1678262160528" duration="46000" />
+      <workItem from="1678328667498" duration="4310000" />
+      <workItem from="1678384450944" duration="1222000" />
+      <workItem from="1678386996371" duration="15716000" />
+      <workItem from="1678431589017" duration="2643000" />
+      <workItem from="1678472994660" duration="7592000" />
+      <workItem from="1678751839920" duration="3997000" />
+      <workItem from="1678777821723" duration="386000" />
+      <workItem from="1678985844365" duration="15685000" />
+      <workItem from="1679180277266" duration="532000" />
+      <workItem from="1679209743985" duration="3095000" />
+      <workItem from="1679348763410" duration="12000" />
+      <workItem from="1679348813491" duration="24000" />
+      <workItem from="1679590784022" duration="799000" />
+      <workItem from="1679592500473" duration="8513000" />
+      <workItem from="1680584444052" duration="884000" />
+      <workItem from="1680763543710" duration="140000" />
+      <workItem from="1681270351660" duration="191000" />
+      <workItem from="1681270582302" duration="18139000" />
+      <workItem from="1681361063808" duration="30000" />
+      <workItem from="1681361149368" duration="13134000" />
+      <workItem from="1681963730755" duration="17203000" />
+      <workItem from="1682046568932" duration="9654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
