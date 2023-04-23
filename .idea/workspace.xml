@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseThree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/case_one/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -41,7 +38,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -62,21 +59,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,7 +96,10 @@
       <workItem from="1681361063808" duration="30000" />
       <workItem from="1681361149368" duration="13134000" />
       <workItem from="1681963730755" duration="17203000" />
-      <workItem from="1682046568932" duration="12518000" />
+      <workItem from="1682046568932" duration="12924000" />
+      <workItem from="1682253447015" duration="86000" />
+      <workItem from="1682253603644" duration="3000" />
+      <workItem from="1682253631617" duration="5927000" />
     </task>
     <servers />
   </component>
