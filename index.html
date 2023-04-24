@@ -18,7 +18,80 @@
 
 
     <style>
+        main > section:nth-child(7) {
+            position: relative;
+            height: 100vh;
+        }
 
+        main > section:nth-child(7) > section {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 6px 0px black;
+        }
+
+        main > section:nth-child(7) > section:nth-child(2) {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        main > section:nth-child(7) > section:nth-child(3) {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main > section:nth-child(7) > section:nth-child(4) {
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        main > section:nth-child(7) > section > img {
+            position: absolute;
+            left: 0;
+            top: 10px;
+            right: 0;
+            margin: auto;
+        }
+        main > section:nth-child(7) > section > h2 {
+            position: absolute;
+            text-align: center;
+            margin-top: -10px;
+            height: 400px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 1.7em;
+
+        }
+        main > section:nth-child(7) > section > article>p {
+            position: absolute;
+            text-align: left;
+            margin: auto;
+            margin-top: 80px;
+            height: 434px;
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5em;
+        }
 
     </style>
 
@@ -494,7 +567,9 @@
     </section><!--assignments-->
 
     <section>
-        <h1><dfn id="service"><span>S</span></dfn>ervice</h1>
+        <div class="topic">
+            <h1><dfn id="service"><span>S</span></dfn>ervice</h1>
+        </div>
         <section>
             <img src="assets/image/web.png" width="150" height="150">
             <h2>web site</h2>
