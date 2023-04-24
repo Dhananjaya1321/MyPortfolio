@@ -629,54 +629,6 @@ main > section:nth-child(6) > section > section {
 
 }
 
-.button_left {
-    position: absolute;
-    /*display: inline-block;*/
-    width: 50px;
-    height: 300px;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-}
-
-.button_left > button {
-    position: absolute;
-    /*display: inline-block;*/
-    width: 50px;
-    /*height: 300px;*/
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-}
-
-.button_right {
-    position: absolute;
-    /*display: inline-block;*/
-    width: 50px;
-    height: 300px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-}
-
-.button_right > button {
-    position: absolute;
-    /*display: inline-block;*/
-    width: 50px;
-    /*height: 300px;*/
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-
-}
-
 main > section:nth-child(6) > section > section > div {
     display: inline-block;
     position: relative;
@@ -693,12 +645,6 @@ main > section:nth-child(6) > section > section > div > img {
     height: 300px;
     width: 400px;
 
-}
-
-.see_more_button{
-    position: absolute;
-    bottom: 50px;
-    right: 10px;
 }
 
 /*Service section*/
@@ -835,14 +781,14 @@ main > section:nth-child(8) > section > div:nth-child(1) > img:nth-child(2) {
 
 main > section:nth-child(8) > section > div:nth-child(2) > img:nth-child(1) {
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 66%;
     top: 0;
 }
 
 main > section:nth-child(8) > section > div:nth-child(2) > img:nth-child(2) {
     position: absolute;
-    width: 100%;
+    width: 99%;
     height: 30%;
     bottom: 3px;
 }
@@ -861,4 +807,50 @@ main > section:nth-child(8) > section > div:nth-child(3) > img:nth-child(2) {
     height: 66%;
     right: 10px;
     bottom: 3px;
+}
+
+/*certification section*/
+main > section:nth-child(9) {
+    position: relative;
+    height: 100vh;
+}
+
+main > section:nth-child(9) > section {
+    position: relative;
+    top: 150px;
+    height: 50%;
+}
+
+main > section:nth-child(9) > section > section {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 1230px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(9) > section > section > div {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main > section:nth-child(9) > section > section > div >a> img {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 400px;
+}
+
+.see_more_button{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
 }
