@@ -19,12 +19,14 @@ header > nav {
     top: 0;
 }
 
-header > nav > menu {
+menu {
     display: inline;
     list-style-type: none;
+    padding: 0;
+
 }
 
-header > nav > menu > li {
+ menu > li {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
@@ -211,12 +213,7 @@ body > main > section:nth-child(2)>article:nth-child(2)>p {
     top: 65px;
     margin: auto;
 }
-body > main > section:nth-child(2)>article:nth-child(2)>div {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    bottom: 0;
-}
+
 
 
 /*skills section*/
@@ -326,20 +323,28 @@ body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(6) {
 /*skills down button*/
 body > main > section:nth-child(3) {
     position: relative;
-    width: 100vw;
-    height: 5px;
+    /*width: 100vw;*/
+    height: 50px;
     bottom: 0;
     /*border: 2px solid;*/
 }
 
-body > main > section:nth-child(3) > hr {
+body > main > section:nth-child(3) > div:nth-child(1) {
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 4px;
     bottom: 0;
-    border: 2px solid;
+    top: 0;
+    background-color: black;
+    /*margin: auto;*/
+    /*border: 2px solid;*/
 }
 
-body > main > section:nth-child(3) > div {
+/*body > main > section:nth-child(3) > div {
     position: absolute;
     bottom: -10px;
     margin: auto;
@@ -347,18 +352,25 @@ body > main > section:nth-child(3) > div {
     right: 0;
     width: 50px;
     height: 50px;
-    /*border: deepskyblue solid 10px;*/
-    display: inline-table; /*damat danna*/
-}
+    !*border: deepskyblue solid 10px;*!
+    display: inline-table; !*damat danna*!
+}*/
 
-body > main > section:nth-child(3) > div > a > button {
+body > main > section:nth-child(3) > div:nth-child(2) > a > button {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 100%;
+    /*position: absolute;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    /*width: 50px;*/
 }
 
-body > main > section:nth-child(3) > div > a > button > img {
+body > main > section:nth-child(3) > div:nth-child(2) > a > button > img {
     position: absolute;
     margin: auto;
     left: 0;
@@ -367,16 +379,17 @@ body > main > section:nth-child(3) > div > a > button > img {
     bottom: 0;
     border-radius: 100%;
 }
-
+/*
 body > main > section:nth-child(4) > hr {
     border: solid 2px;
     position: absolute;
-    /*height: 100vh;*/
+    !*height: 100vh;*!
     width: 100vw;
     top: 25px;
 }
+*/
 
-body > main > section:nth-child(4) > div {
+.topic {
     border: deepskyblue solid 1px;
     border-radius: 15px;
     background-color: white;
@@ -388,8 +401,7 @@ body > main > section:nth-child(4) > div {
     left: 10px;
 
 }/*topic education*/
-
-body > main > section:nth-child(4) > div > h1 {
+.topic > h1 {
     position: absolute;
     display: inline-block;
     margin: auto;
@@ -400,15 +412,18 @@ body > main > section:nth-child(4) > div > h1 {
 }
 
 
-body > main > section:nth-child(4) > section:nth-child(3) {
+body > main > section:nth-child(4) > section:nth-child(3)>section:nth-child(1) {
     position: absolute;
-    /*display: inline-block;*/
-    /*margin: auto;*/
     left: 20px;
-    /*right: 0;*/
     top: 100px;
     border: deepskyblue solid 2px;
-    /*bottom: 0;*/
+}
+
+body > main > section:nth-child(4) > section:nth-child(3)>section:nth-child(2) {
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
+    border: deepskyblue solid 2px;
 }
 
 body > main > section:nth-child(4) > section:nth-child(3) > section > div {
@@ -436,18 +451,16 @@ body > main > section:nth-child(4) > section:nth-child(3) > section > div>a>butt
 body > main > section:nth-child(4) > section:nth-child(3) > section:nth-child(2) {
     margin-top: 50px;
 }
-/*education right side*/
+/*education after school*/
+/*body > main > section:nth-child(4) {
+    border: 2px solid;
+}*/
 body > main > section:nth-child(4) > section:nth-child(4) {
     position: absolute;
-    /*display: inline-block;*/
-    /*margin: auto;*/
-    /*left: 20px;*/
     right: 20px;
-    top: 100px;
+    bottom: 100px;
     border: deepskyblue solid 2px;
-    /*bottom: 0;*/
 }
-
 body > main > section:nth-child(4) > section:nth-child(4) > div {
     display: inline-block;
     margin-left: 20px;
@@ -467,5 +480,223 @@ body > main > section:nth-child(4) > section:nth-child(4) >div>a>button>img {
     top: 0;
     bottom: 0;
     left: 5px;
+}
 
+
+/*projects*/
+main > section:nth-child(5) {
+    position: relative;
+    height: 100vh;
+}
+
+main > section:nth-child(5) > nav {
+    display: inline-block;
+    position: absolute;
+    width: 281px;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(5) > section {
+    position: relative;
+    top: 150px;
+    height: 50%;
+}
+
+main > section:nth-child(5) > section > section {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 1230px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.button_left {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_left > button {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    /*height: 300px;*/
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_right {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_right > button {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    /*height: 300px;*/
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(5) > section > section > div {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+}
+
+main > section:nth-child(5) > section > section > div > img {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 400px;
+
+}
+
+.see_more_button{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+}
+
+
+/*Assignments*/
+
+main > section:nth-child(6) {
+    position: relative;
+    height: 100vh;
+}
+
+main > section:nth-child(6) > nav {
+    display: inline-block;
+    position: absolute;
+    width: 281px;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(6) > section {
+    position: relative;
+    top: 150px;
+    height: 50%;
+}
+
+main > section:nth-child(6) > section > section {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 1230px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.button_left {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_left > button {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    /*height: 300px;*/
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_right {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    height: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.button_right > button {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 50px;
+    /*height: 300px;*/
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(6) > section > section > div {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+}
+
+main > section:nth-child(6) > section > section > div > img {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 400px;
+
+}
+
+.see_more_button{
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
 }
