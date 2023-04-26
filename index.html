@@ -18,107 +18,90 @@
 
 
     <style>
-        footer {
-            position: relative;
-            height: 100vh;
-        }
-
-        footer > section:nth-child(2) {
+        footer > section:nth-child(2) > section:nth-child(1) > form {
             position: absolute;
-            height: 90%;
-            top: 70px;
-            width: 100%;
-        }
-
-        footer > section:nth-child(2) > section {
-            position: absolute;
+            width: 90%;
+            left: 0;
             height: 100%;
-            /*top: 70px;*/
-            width: 50%;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(1) {
-            left: 0;
-            /*background-color: deepskyblue;*/
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) {
             right: 0;
-            /*background-color: darkgray;*/
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > nav > div {
-            display: inline-block;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > nav {
-            display: inline-block;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > section {
-            position: absolute;
-            width: 100%;
-            height: 70%;
-            left: 0;
-            right: 0;
-            top: 0;
-            /*bottom: 0;*/
+            top: 10px;
+            /* bottom: 0; */
             margin: auto;
         }
 
-        footer > section:nth-child(2) > section:nth-child(2) > section > address {
-            /*display: inline-block;*/
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset {
             position: absolute;
+            width: 90%;
+            left: 0;
+            height: 90%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div {
+            position: relative;
             width: 100%;
             height: 25%;
-            margin: auto;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > section > address:nth-child(1) {
-            top: 0;
-        }
-
-
-        footer > section:nth-child(2) > section:nth-child(2) > section > address:nth-child(2) {
-            top: 0;
-            bottom: 0;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > section > address:nth-child(3) {
-            bottom: 0;
-        }
-
-        footer > section:nth-child(2) > section:nth-child(2) > section > address > h1 {
             display: inline-block;
         }
 
-        footer > section:nth-child(2) > section:nth-child(2) > section > address > h3 {
-            display: inline-block;
-
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > label {
+            position: relative;
+            display: block;
+            margin-left: 20px;
+            font-size: 1.1em;
         }
 
-        footer > section:nth-child(2) > section:nth-child(2) > nav {
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="text"] {
             position: absolute;
+            width: 80%;
+            height: 30px;
             left: 0;
             right: 0;
-            /*top: 0;*/
-            /*display: inline-block;*/
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="email"] {
+            position: absolute;
+            width: 80%;
+            height: 30px;
+            left: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > textarea {
+            position: absolute;
+            width: 80%;
+            height: 100px;
+            left: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
+            position: absolute;
+            width: 20%;
+            height: 50px;
+            /* left: 0; */
+            right: 45px;
             bottom: 0;
+            top: 0;
             margin: auto;
-            height: 30%;
-            width: 100%;
         }
 
-        footer > section:nth-child(3) {
-            position: absolute;
-            margin: auto;
-            text-align: center;
-            left: 0;
-            right: 0;
-            bottom: 2px;
-        }
+#submit{
+    position: absolute;
+    height: 20%;
+    left: 0;
+    bottom: 0;
+}
     </style>
 </head>
 <body>
@@ -727,7 +710,6 @@
     </section><!--certificate-->
 
 </main><!--main-->
-
 <footer>
     <div class="topic">
         <h1><dfn id="contact"><span>C</span>ontact</dfn></h1>
@@ -737,22 +719,26 @@
             <form action="" method="post">
                 <fieldset>
                     <div>
+                        <label>Name</label>
                         <input type="text" name="name" placeholder="Name">
                     </div><!--name text filed-->
                     <div>
+                        <label>Email</label>
                         <input type="email" name="email" placeholder="Email">
                     </div><!--email text filed-->
                     <div>
+                        <label>Message</label>
                         <!--<input type="text" placeholder="Message">-->
                         <textarea placeholder="Message" name="message"></textarea>
                     </div><!--message text filed-->
-                    <div>
+                    <div id="submit">
                         <input type="submit" value="Send">
                     </div><!--send button-->
                 </fieldset>
             </form>
 
         </section><!--send massage-->
+        <div></div><!--vertical line-->
         <section>
             <section>
                 <address>
@@ -773,6 +759,7 @@
                     <h3>blackisurudananjaya@gmail.com</h3>
                 </address><!--email-->
             </section><!--contact details-->
+            <div></div>
             <nav>
                 <div>
                     <a href="https://www.facebook.com/profile.php?id=100086049325888&mibextid=ZbWKwL" target="_blank">
@@ -800,11 +787,14 @@
                     </a>
                 </div><!--twitter-->
             </nav><!--navigate social media-->
-        </section>
+        </section><!--right side-->
     </section><!--contact-->
     <section>
-        <small><strong>Designed</strong> and <strong>developed</strong> by <strong>Isuru Dhananjaya</strong></small>
-        <small>Copyright © 2023 - <strong>Isuru Dhananjaya</strong> All Rights Reserved</small>
+        <small><strong>
+            Designed</strong> and <strong>developed</strong> by <strong>Isuru Dhananjaya</strong>
+            <br>
+            Copyright © 2023 - <strong>Isuru Dhananjaya</strong> All Rights Reserved
+        </small>
     </section><!--copyright-->
 </footer><!--footer-->
 </body>
