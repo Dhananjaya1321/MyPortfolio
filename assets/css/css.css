@@ -81,33 +81,97 @@ body > main > section:nth-child(4) {
 span {
     color: deepskyblue;
 }
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
 /*home section*/
-body > main > section:first-child > section > nav > div {
-    display: inline;
+
+body > main > section:first-child > section {
+    position: absolute;
+    margin-top: 50px;
+    width: 70%;
+    height: 90%;
+    /*background-color: darkgray;*/
 }
 
-#social_links_nav{
-    height: 50px;
-    width: 400px;
-    display: inline-block;
-    position: relative;
-    border: deepskyblue solid 2px;
+body > main > section:first-child > section > h1 {
+    font-size: 6em;
+    margin-left: 70px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
-#download_cv{
+
+body > main > section:first-child > section > h2 {
+    font-size: 2.5em;
+    margin-left: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body > main > section:first-child > section > h3 {
+    font-size: 2.5em;
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+#social_links_nav {
+    /*height: 50px;*/
+    width: 100%;
+    display: inline-block;
     position: absolute;
-    margin: auto;
-    right: 0;
+    left: 70px;
+    margin-top: 30px;
+}
+
+body > main > section:first-child > section > nav > div:first-child {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social_media {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#download_cv {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 400px;
     top: 0;
     bottom: 0;
 }
 
-body > main > section:first-child > aside {
+#download_cv > a > input {
     position: absolute;
-    right: 0;
     top: 0;
+    bottom: 0;
+    height: 40px;
+    width: 250px;
+    margin: auto;
 }
 
+a {
+    display: inline-block;
+}
+
+body > main > section:first-child > aside {
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
 /*about section*/
+
+
 body > main > section:nth-child(2)>section:first-child>img {
     position: relative;
     left: 0;
@@ -213,7 +277,7 @@ body > main > section:nth-child(2)>article:nth-child(2)>p {
     top: 65px;
     margin: auto;
 }
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*skills section*/
@@ -388,7 +452,7 @@ body > main > section:nth-child(4) > hr {
     top: 25px;
 }
 */
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 .topic {
     border: deepskyblue solid 1px;
     border-radius: 15px;
@@ -481,7 +545,7 @@ body > main > section:nth-child(4) > section:nth-child(4) >div>a>button>img {
     bottom: 0;
     left: 5px;
 }
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 /*projects*/
 main > section:nth-child(5) {
@@ -590,7 +654,7 @@ main > section:nth-child(5) > section > section > div > img {
     bottom: 50px;
     right: 10px;
 }
-
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 /*Assignments*/
 
@@ -646,6 +710,8 @@ main > section:nth-child(6) > section > section > div > img {
     width: 400px;
 
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 
 /*Service section*/
 
@@ -725,6 +791,9 @@ main > section:nth-child(7) > section > article>p {
     align-items: center;
     font-size: 1.5em;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
 
 /*Gallery section*/
 main > section:nth-child(8) {
@@ -808,6 +877,11 @@ main > section:nth-child(8) > section > div:nth-child(3) > img:nth-child(2) {
     right: 10px;
     bottom: 3px;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
 
 /*certification section*/
 main > section:nth-child(9) {
@@ -854,6 +928,8 @@ main > section:nth-child(9) > section > section > div >a> img {
     bottom: 50px;
     right: 10px;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 
 
 /*footer section*/
@@ -953,4 +1029,91 @@ footer > section:nth-child(3) {
     bottom: 0;
     height: 10%;
     background-color: deepskyblue;
+}
+
+
+/*footer contact section*/
+footer > section:nth-child(2) > section:nth-child(1) > form {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    height: 100%;
+    right: 0;
+    top: 10px;
+    /* bottom: 0; */
+    margin: auto;
+}
+
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    height: 90%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: inline-block;
+}
+
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > label {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="text"] {
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="email"] {
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > textarea {
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
+    position: absolute;
+    width: 20%;
+    height: 50px;
+    /* left: 0; */
+    right: 45px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+#submit{
+    position: absolute;
+    height: 20%;
+    left: 0;
+    bottom: 0;
 }

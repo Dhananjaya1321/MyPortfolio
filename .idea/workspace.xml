@@ -59,19 +59,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,7 +101,8 @@
       <workItem from="1682253631617" duration="11128000" />
       <workItem from="1682306696528" duration="24625000" />
       <workItem from="1682418965945" duration="7733000" />
-      <workItem from="1682484057505" duration="6344000" />
+      <workItem from="1682484057505" duration="7133000" />
+      <workItem from="1682508006793" duration="8506000" />
     </task>
     <servers />
   </component>
