@@ -20,6 +20,128 @@
 
     <style>
 
+        body > main > section:nth-child(2) > section:first-child {
+            position: relative;
+            width: 50%;
+        }
+
+        body > main > section:nth-child(2) > section:first-child > img {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        #project_count {
+            box-shadow: 2px -2px 7px -3px black;
+            /*border: deepskyblue 2px solid;*/
+            display: inline-block;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 199px;
+            top: 115px;
+            border-radius: 20px;
+
+        }
+
+        #project_count > h1 {
+            position: absolute;
+            color: deepskyblue;
+            font-size: 5em;
+            top: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            text-align: center;
+        }
+
+        #project_count > h3{
+            position: absolute;
+            font-size: 2em;
+             top: 35px;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #experience_years {
+            box-shadow: 2px 2px 7px -3px black;
+            /*border: deepskyblue 2px solid;*/
+            display: inline-block;
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            left: 250px;
+            bottom: 0;
+            border-radius: 20px;
+
+        }
+
+        #experience_years > h1 {
+            position: absolute;
+            color: deepskyblue;
+            font-size: 5em;
+            top: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            text-align: center;
+        }
+
+        #experience_years > h3 {
+            position: absolute;
+            font-size: 2em;
+            top: 35px;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(2) {
+            position: absolute;
+            /* border: deepskyblue 2px solid; */
+            right: 0;
+            top: 0;
+            height: 50%;
+            width: 55%;
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(2) > h1 {
+            position: absolute;
+            display: inline;
+            right: 0;
+            left: -100px;
+            top: 35px;
+            /* height: 50px; */
+            margin: auto;
+            width: 138px;
+        }
+
+        body > main > section:nth-child(2) > article:nth-child(2) > p {
+            position: absolute;
+            display: inline;
+            font-size: 1.5em;
+            right: 40px;
+            left: -50px;
+            top: 100px;
+            margin: auto;
+            text-indent: 1em;
+            padding: 0 5px 0 5px;
+        }
 
     </style>
 </head>
@@ -78,31 +200,31 @@
             <nav id="social_links_nav">
                 <div>
                     <a href="https://www.facebook.com/profile.php?id=100086049325888&mibextid=ZbWKwL" target="_blank">
-<!--                        <img src="assets/image/logo/faceBook.png" width="50" height="50">-->
+                        <!--                        <img src="assets/image/logo/faceBook.png" width="50" height="50">-->
                         <i class="fa-brands fa-facebook-f fa-2xl" style="color: #000000;"></i>
                     </a>
                 </div><!--facebook-->
                 <div class="social_media">
                     <a href="https://github.com/Dhananjaya1321" target="_blank">
-<!--                        <img src="assets/image/logo/github.png" width="40" height="40">-->
+                        <!--                        <img src="assets/image/logo/github.png" width="40" height="40">-->
                         <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
                     </a>
                 </div><!--github-->
                 <div class="social_media">
                     <a href="https://www.linkedin.com/in/isuru-dhananjaya-9b5138247/" target="_blank">
-<!--                        <img src="assets/image/logo/linkedin.png" width="50" height="50">-->
+                        <!--                        <img src="assets/image/logo/linkedin.png" width="50" height="50">-->
                         <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #000000;"></i>
                     </a>
                 </div><!--linkedin-->
                 <div class="social_media">
                     <a href="https://www.stackoverflow.com" target="_blank">
-<!--                        <img src="assets/image/logo/stackoverflow.png" width="40" height="40">-->
+                        <!--                        <img src="assets/image/logo/stackoverflow.png" width="40" height="40">-->
                         <i class="fa-brands fa-stack-overflow fa-2xl" style="color: #000000;"></i>
                     </a>
                 </div><!--stackoverflow-->
                 <div class="social_media">
                     <a href="https://www.twitter.com" target="_blank">
-<!--                        <img src="assets/image/logo/twitter.png" width="50" height="50">-->
+                        <!--                        <img src="assets/image/logo/twitter.png" width="50" height="50">-->
                         <i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i>
                     </a>
                 </div><!--twitter-->
@@ -123,27 +245,24 @@
             <img src="assets/image/myPhoto/photo_2.png">
             <div id="project_count">
                 <h1><strong>5+</strong></h1>
-                <h3>Complete</h3>
-                <h3>Projects</h3>
+                <h3>Complete<br>Projects</h3>
             </div><!--projects-->
             <div id="experience_years">
                 <h1><strong>1+</strong></h1>
-                <h3>Years</h3>
-                <h3>Experience</h3>
+                <h3>Years<br>Experience</h3>
             </div><!--experience-->
         </section><!--image-->
         <article>
             <h1><dfn>About <span>ME</span></dfn></h1>
             <p>
-                Hi, I’m <strong>Isuru Dhananjaya</strong>.I’m <strong>20 years old</strong>.<br>
-                I’m currently learning more about<br>
-                software engineering. I have been doing<br>
+                Hi, I’m <strong>Isuru Dhananjaya</strong>.I’m <strong>20 years old</strong>.
+                I’m currently learning more about
+                software engineering. I have been doing
                 two years of training with <abbr title="Institute of Software Engineering"><b>IJSE</b></abbr> for that.
-                I<br>
-                also have knowledge of web<br>
-                development,<abbr title="User Interface/User Experience">UI/UX</abbr> designing, database<br>
-                management and frameworks,...etc.<br>
-                Connect me to get the service you need<br>
+                I also have knowledge of web
+                development,<abbr title="User Interface/User Experience">UI/UX</abbr> designing, database
+                management and frameworks,...etc.
+                Connect me to get the service you need
                 in these areas creatively.
             </p>
             <div class="see_more_button">
@@ -152,38 +271,38 @@
                 </a>
             </div><!--see more button-->
         </article><!--article-->
-        <section>
+      <!--  <section>
             <div>
                 <button>
-                    <!--                    <img src="assets/icon/arrow_back.png" width="30" height="30">-->
+                    <i class="fa-solid fa-chevron-left fa-2xl"></i>
                 </button>
-            </div><!--right button-->
+            </div>&lt;!&ndash;right button&ndash;&gt;
             <div class="skills_div">
                 <img class="skills_img" src="assets/image/logo/java.png" width="50">
                 <h2>Java</h2>
-            </div><!--java-->
+            </div>&lt;!&ndash;java&ndash;&gt;
             <div class="skills_div">
                 <img class="skills_img" src="assets/image/logo/figma.png" width="50">
                 <h2>Figma</h2>
-            </div><!--figma-->
+            </div>&lt;!&ndash;figma&ndash;&gt;
             <div class="skills_div">
                 <img class="skills_img" src="assets/image/logo/html.png" width="42">
                 <h2>HTML</h2>
-            </div><!--html-->
+            </div>&lt;!&ndash;html&ndash;&gt;
             <div class="skills_div">
                 <img class="skills_img" src="assets/image/logo/css.png" width="50">
                 <h2>CSS</h2>
-            </div><!--css-->
+            </div>&lt;!&ndash;css&ndash;&gt;
             <div class="skills_div">
                 <img class="skills_img" src="assets/image/logo/js.png" width="50">
                 <h2>JavaScript</h2>
-            </div><!--js-->
+            </div>&lt;!&ndash;js&ndash;&gt;
             <div>
                 <button>
-                    <!--                    <img src="assets/icon/navigate_next.png" width="30" height="30">-->
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
                 </button>
-            </div><!--left button-->
-        </section><!--skills-->
+            </div>&lt;!&ndash;left button&ndash;&gt;
+        </section>skills-->
     </section><!--about-->
 
     <section>
