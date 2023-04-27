@@ -26,7 +26,7 @@ menu {
 
 }
 
- menu > li {
+menu > li {
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
@@ -56,7 +56,6 @@ header > nav > div {
 /*--------------------------------------------------------------------------------------------------*/
 
 
-
 body > main > section:nth-child(1) {
     /*border: red solid 2px;*/
     position: relative;
@@ -81,8 +80,8 @@ body > main > section:nth-child(4) {
 span {
     color: deepskyblue;
 }
-/*--------------------------------------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------------------------------------------*/
 
 
 /*home section*/
@@ -167,177 +166,270 @@ body > main > section:first-child > aside {
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
-
-
 /*about section*/
 
+body > main > section:nth-child(2) > section:first-child {
+    position: relative;
+    width: 50%;
+}
+
+body > main > section:nth-child(2) > section:first-child > img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#project_count {
+    box-shadow: 2px -2px 7px -3px black;
+    /*border: deepskyblue 2px solid;*/
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 199px;
+    top: 115px;
+    border-radius: 20px;
+
+}
+
+#project_count > h1 {
+    position: absolute;
+    color: deepskyblue;
+    font-size: 5em;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+#project_count > h3 {
+    position: absolute;
+    font-size: 2em;
+    top: 35px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#experience_years {
+    box-shadow: 2px 2px 7px -3px black;
+    /*border: deepskyblue 2px solid;*/
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    left: 250px;
+    bottom: 0;
+    border-radius: 20px;
+
+}
+
+#experience_years > h1 {
+    position: absolute;
+    color: deepskyblue;
+    font-size: 5em;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+#experience_years > h3 {
+    position: absolute;
+    font-size: 2em;
+    top: 35px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+body > main > section:nth-child(2) > article:nth-child(2) {
+    position: absolute;
+    /* border: deepskyblue 2px solid; */
+    right: 0;
+    top: 0;
+    height: 50%;
+    width: 55%;
+}
+
+body > main > section:nth-child(2) > article:nth-child(2) > h1 {
+    position: absolute;
+    display: inline;
+    right: 0;
+    left: -100px;
+    top: 35px;
+    /* height: 50px; */
+    margin: auto;
+    width: 138px;
+}
+
+body > main > section:nth-child(2) > article:nth-child(2) > p {
+    position: absolute;
+    display: inline;
+    font-size: 1.5em;
+    right: 40px;
+    left: -50px;
+    top: 100px;
+    margin: auto;
+    text-indent: 1em;
+    padding: 0 5px 0 5px;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*skills section*/
 
+
+body > main > section:nth-child(2) > section:nth-child(3) {
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    right: 0;
+    bottom: 0;
+    /*left: 50px;*/
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:first-child {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    /*right: 0;*/
+    top: 0;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div {
+    position: absolute;
+    width: 38%;
+    height: 120%;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    /*background-color: deepskyblue;*/
+    border-radius: 20px;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div > button:nth-child(1) {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div > button:nth-child(2) {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div > button > p {
+    margin: 0;
+}
+
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:last-child {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    right: 0;
+    bottom: 0;
+    /*left: 50px;*/
+}
+
+/*left button*/
+body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:first-child {
+    position: absolute;
+    width: 30px;
+    height: 170px;
+    top: 0;
+    left: 0;
+    bottom: 10px;
+    /* left: 50px; */
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:first-child > button {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+/*right button*/
+body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child {
+    position: absolute;
+    width: 30px;
+    height: 170px;
+    top: 0;
+    right: 0;
+    bottom: 10px;
+    /* left: 50px; */
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child > button {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .skills_div {
     border: red solid 2px;
-    position: absolute;
+    position: relative;
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 20px;
-    bottom: 10px;
-}
-/*left button*/
-body > main > section:nth-child(2) > section:nth-child(3) > div:first-child {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 0;
-    bottom: 10px;
-    /*left: 50px;*/
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
-body > main > section:nth-child(2) > section:nth-child(3) > div:first-child > button {
-    position: absolute;
-    width: 30px;
-    height: 80%;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:first-child > button>img {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-}
-/*right button*/
-body > main > section:nth-child(2) > section:nth-child(3) > div:last-child {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    bottom: 10px;
-    /*left: 50px;*/
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:last-child > button {
-    position: absolute;
-    width: 30px;
-    height: 80%;
-    margin: auto;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:last-child > button>img {
-    position: absolute;
-    margin: auto;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(2) {
-    left: 70px;
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(3) {
-    left: 240px;
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(4) {
-    left: 410px;
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(5) {
-    left: 580px;
-}
-
-body > main > section:nth-child(2) > section:nth-child(3) > div:nth-child(6) {
-    left: 750px;
-}
-.skills_img{
+.skills_img {
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
     top: 5px;
 }
-.skills_div>h2{
-    position: absolute;
-    display: inline;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 55px;
-}
 
-/*skills down button*/
-body > main > section:nth-child(3) {
-    position: relative;
-    /*width: 100vw;*/
-    height: 50px;
-    bottom: 0;
-    /*border: 2px solid;*/
-}
-
-body > main > section:nth-child(3) > div:nth-child(1) {
-    position: absolute;
+.skills_div > h2 {
+    height: 100%;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 4px;
-    bottom: 0;
-    top: 0;
-    background-color: black;
-    /*margin: auto;*/
-    /*border: 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 1em;
 }
 
-/*body > main > section:nth-child(3) > div {
-    position: absolute;
-    bottom: -10px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    !*border: deepskyblue solid 10px;*!
-    display: inline-table; !*damat danna*!
-}*/
-
-body > main > section:nth-child(3) > div:nth-child(2) > a > button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    /*position: absolute;*/
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    /*width: 50px;*/
-}
-
-body > main > section:nth-child(3) > div:nth-child(2) > a > button > img {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: 100%;
-}
 /*
 body > main > section:nth-child(4) > hr {
     border: solid 2px;
@@ -359,7 +451,9 @@ body > main > section:nth-child(4) > hr {
     top: 10px;
     left: 10px;
 
-}/*topic education*/
+}
+
+/*topic education*/
 .topic > h1 {
     position: absolute;
     display: inline-block;
@@ -371,26 +465,31 @@ body > main > section:nth-child(4) > hr {
 }
 
 
-body > main > section:nth-child(4) > section:nth-child(3)>section:nth-child(1) {
+body > main > section:nth-child(3) {
+    position: relative;
+    height: 100vh;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1) {
     position: absolute;
     left: 20px;
     top: 100px;
     border: deepskyblue solid 2px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(3)>section:nth-child(2) {
+body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
     position: absolute;
     left: 20px;
     bottom: 100px;
     border: deepskyblue solid 2px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(3) > section > div {
+body > main > section:nth-child(3) > section:nth-child(3) > section > div {
     display: inline-block;
     margin-left: 20px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(3) > section > div>a>button {
+body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
     display: inline-block;
     position: relative;
     width: 200px;
@@ -398,7 +497,7 @@ body > main > section:nth-child(4) > section:nth-child(3) > section > div>a>butt
     border-radius: 20px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(3) > section > div>a>button>img {
+body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
     position: absolute;
     margin: auto;
     top: 0;
@@ -407,25 +506,27 @@ body > main > section:nth-child(4) > section:nth-child(3) > section > div>a>butt
 
 }
 
-body > main > section:nth-child(4) > section:nth-child(3) > section:nth-child(2) {
+body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
     margin-top: 50px;
 }
+
 /*education after school*/
 /*body > main > section:nth-child(4) {
     border: 2px solid;
 }*/
-body > main > section:nth-child(4) > section:nth-child(4) {
+body > main > section:nth-child(3) > section:nth-child(4) {
     position: absolute;
     right: 20px;
     bottom: 100px;
     border: deepskyblue solid 2px;
 }
-body > main > section:nth-child(4) > section:nth-child(4) > div {
+
+body > main > section:nth-child(3) > section:nth-child(4) > div {
     display: inline-block;
     margin-left: 20px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(4) > div>a>button {
+body > main > section:nth-child(3) > section:nth-child(4) > div > a > button {
     display: inline-block;
     position: relative;
     width: 200px;
@@ -433,22 +534,23 @@ body > main > section:nth-child(4) > section:nth-child(4) > div>a>button {
     border-radius: 20px;
 }
 
-body > main > section:nth-child(4) > section:nth-child(4) >div>a>button>img {
+body > main > section:nth-child(3) > section:nth-child(4) > div > a > button > img {
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
     left: 5px;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /*projects*/
-main > section:nth-child(5) {
+main > section:nth-child(4) {
     position: relative;
     height: 100vh;
 }
 
-main > section:nth-child(5) > nav {
+main > section:nth-child(4) > nav {
     display: inline-block;
     position: absolute;
     width: 281px;
@@ -459,13 +561,13 @@ main > section:nth-child(5) > nav {
 
 }
 
-main > section:nth-child(5) > section {
+main > section:nth-child(4) > section {
     position: relative;
     top: 150px;
     height: 50%;
 }
 
-main > section:nth-child(5) > section > section {
+main > section:nth-child(4) > section > section {
     position: absolute;
     /*display: inline-block;*/
     width: 1230px;
@@ -526,6 +628,69 @@ main > section:nth-child(5) > section > section {
 
 }
 
+main > section:nth-child(4) > section > section > div {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+}
+
+main > section:nth-child(4) > section > section > div > img {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 400px;
+
+}
+
+.see_more_button {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*Assignments*/
+
+main > section:nth-child(5) {
+    position: relative;
+    height: 100vh;
+}
+
+main > section:nth-child(5) > nav {
+    display: inline-block;
+    position: absolute;
+    width: 281px;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+main > section:nth-child(5) > section {
+    position: relative;
+    top: 150px;
+    height: 50%;
+}
+
+main > section:nth-child(5) > section > section {
+    position: absolute;
+    /*display: inline-block;*/
+    width: 1230px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
 main > section:nth-child(5) > section > section > div {
     display: inline-block;
     position: relative;
@@ -544,78 +709,17 @@ main > section:nth-child(5) > section > section > div > img {
 
 }
 
-.see_more_button{
-    position: absolute;
-    bottom: 50px;
-    right: 10px;
-}
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-/*Assignments*/
+
+/*Service section*/
 
 main > section:nth-child(6) {
     position: relative;
     height: 100vh;
 }
 
-main > section:nth-child(6) > nav {
-    display: inline-block;
-    position: absolute;
-    width: 281px;
-    top: 75px;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-}
-
 main > section:nth-child(6) > section {
-    position: relative;
-    top: 150px;
-    height: 50%;
-}
-
-main > section:nth-child(6) > section > section {
-    position: absolute;
-    /*display: inline-block;*/
-    width: 1230px;
-    height: 300px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-}
-
-main > section:nth-child(6) > section > section > div {
-    display: inline-block;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-
-}
-
-main > section:nth-child(6) > section > section > div > img {
-    display: inline-block;
-    position: relative;
-    height: 300px;
-    width: 400px;
-
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-
-/*Service section*/
-
-main > section:nth-child(7) {
-    position: relative;
-    height: 100vh;
-}
-
-main > section:nth-child(7) > section {
     position: absolute;
     width: 300px;
     height: 400px;
@@ -624,7 +728,7 @@ main > section:nth-child(7) > section {
     box-shadow: 0px 4px 6px 0px black;
 }
 
-main > section:nth-child(7) > section:nth-child(2) {
+main > section:nth-child(6) > section:nth-child(2) {
     left: 0;
     top: 0;
     bottom: 0;
@@ -634,7 +738,7 @@ main > section:nth-child(7) > section:nth-child(2) {
     margin-right: 100px;
 }
 
-main > section:nth-child(7) > section:nth-child(3) {
+main > section:nth-child(6) > section:nth-child(3) {
     left: 0;
     top: 0;
     bottom: 0;
@@ -642,7 +746,7 @@ main > section:nth-child(7) > section:nth-child(3) {
     margin: auto;
 }
 
-main > section:nth-child(7) > section:nth-child(4) {
+main > section:nth-child(6) > section:nth-child(4) {
     right: 0;
     top: 0;
     bottom: 0;
@@ -652,7 +756,7 @@ main > section:nth-child(7) > section:nth-child(4) {
     margin-right: 100px;
 }
 
-main > section:nth-child(7) > section > img {
+main > section:nth-child(6) > section > img {
     position: absolute;
     left: 0;
     top: 10px;
@@ -660,7 +764,7 @@ main > section:nth-child(7) > section > img {
     margin: auto;
 }
 
-main > section:nth-child(7) > section > h2 {
+main > section:nth-child(6) > section > h2 {
     position: absolute;
     text-align: center;
     margin-top: -10px;
@@ -673,7 +777,7 @@ main > section:nth-child(7) > section > h2 {
 
 }
 
-main > section:nth-child(7) > section > article>p {
+main > section:nth-child(6) > section > article > p {
     position: absolute;
     text-align: left;
     margin: auto;
@@ -686,11 +790,97 @@ main > section:nth-child(7) > section > article>p {
     align-items: center;
     font-size: 1.5em;
 }
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
-
 /*Gallery section*/
+main > section:nth-child(7) {
+    position: relative;
+    height: 100vh;
+}
+
+main > section:nth-child(7) > section {
+    position: relative;
+    top: 75px;
+    height: 75vh;
+    width: 100%;
+}
+
+main > section:nth-child(7) > section > div {
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+}
+
+main > section:nth-child(7) > section > div:nth-child(1) {
+    left: 0;
+}
+
+main > section:nth-child(7) > section > div:nth-child(2) {
+    left: calc(100% / 3);
+}
+
+main > section:nth-child(7) > section > div:nth-child(3) {
+    right: 0;
+}
+
+main > section:nth-child(7) > section > div > img {
+    border-radius: 10px;
+    border: deepskyblue solid 2px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.61);
+}
+
+main > section:nth-child(7) > section > div:nth-child(1) > img:nth-child(1) {
+    position: absolute;
+    width: 95%;
+    height: 30%;
+    left: 10px;
+    top: 0;
+}
+
+main > section:nth-child(7) > section > div:nth-child(1) > img:nth-child(2) {
+    position: absolute;
+    width: 95%;
+    height: 66%;
+    left: 10px;
+    bottom: 3px;
+}
+
+main > section:nth-child(7) > section > div:nth-child(2) > img:nth-child(1) {
+    position: absolute;
+    width: 99%;
+    height: 66%;
+    top: 0;
+}
+
+main > section:nth-child(7) > section > div:nth-child(2) > img:nth-child(2) {
+    position: absolute;
+    width: 99%;
+    height: 30%;
+    bottom: 3px;
+}
+
+main > section:nth-child(7) > section > div:nth-child(3) > img:nth-child(1) {
+    position: absolute;
+    width: 95%;
+    height: 30%;
+    right: 10px;
+    top: 0;
+}
+
+main > section:nth-child(7) > section > div:nth-child(3) > img:nth-child(2) {
+    position: absolute;
+    width: 95%;
+    height: 66%;
+    right: 10px;
+    bottom: 3px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*certification section*/
 main > section:nth-child(8) {
     position: relative;
     height: 100vh;
@@ -698,99 +888,11 @@ main > section:nth-child(8) {
 
 main > section:nth-child(8) > section {
     position: relative;
-    top: 75px;
-    height: 75vh;
-    width: 100%;
-}
-
-main > section:nth-child(8) > section > div {
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-main > section:nth-child(8) > section > div:nth-child(1) {
-    left: 0;
-}
-
-main > section:nth-child(8) > section > div:nth-child(2) {
-    left: calc(100% / 3);
-}
-
-main > section:nth-child(8) > section > div:nth-child(3) {
-    right: 0;
-}
-
-main > section:nth-child(8) > section > div > img {
-    border-radius: 10px;
-    border: deepskyblue solid 2px;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.61);
-}
-
-main > section:nth-child(8) > section > div:nth-child(1) > img:nth-child(1) {
-    position: absolute;
-    width: 95%;
-    height: 30%;
-    left: 10px;
-    top: 0;
-}
-
-main > section:nth-child(8) > section > div:nth-child(1) > img:nth-child(2) {
-    position: absolute;
-    width: 95%;
-    height: 66%;
-    left: 10px;
-    bottom: 3px;
-}
-
-main > section:nth-child(8) > section > div:nth-child(2) > img:nth-child(1) {
-    position: absolute;
-    width: 99%;
-    height: 66%;
-    top: 0;
-}
-
-main > section:nth-child(8) > section > div:nth-child(2) > img:nth-child(2) {
-    position: absolute;
-    width: 99%;
-    height: 30%;
-    bottom: 3px;
-}
-
-main > section:nth-child(8) > section > div:nth-child(3) > img:nth-child(1) {
-    position: absolute;
-    width: 95%;
-    height: 30%;
-    right: 10px;
-    top: 0;
-}
-
-main > section:nth-child(8) > section > div:nth-child(3) > img:nth-child(2) {
-    position: absolute;
-    width: 95%;
-    height: 66%;
-    right: 10px;
-    bottom: 3px;
-}
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-/*certification section*/
-main > section:nth-child(9) {
-    position: relative;
-    height: 100vh;
-}
-
-main > section:nth-child(9) > section {
-    position: relative;
     top: 150px;
     height: 50%;
 }
 
-main > section:nth-child(9) > section > section {
+main > section:nth-child(8) > section > section {
     position: absolute;
     /*display: inline-block;*/
     width: 1230px;
@@ -803,7 +905,7 @@ main > section:nth-child(9) > section > section {
 
 }
 
-main > section:nth-child(9) > section > section > div {
+main > section:nth-child(8) > section > section > div {
     display: inline-block;
     position: relative;
     left: 0;
@@ -811,20 +913,20 @@ main > section:nth-child(9) > section > section > div {
     margin: auto;
 }
 
-main > section:nth-child(9) > section > section > div >a> img {
+main > section:nth-child(8) > section > section > div > a > img {
     display: inline-block;
     position: relative;
     height: 300px;
     width: 400px;
 }
 
-.see_more_button{
+.see_more_button {
     position: absolute;
     bottom: 50px;
     right: 10px;
 }
-/*--------------------------------------------------------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------------------------------------------------------------*/
 
 
 /*footer section*/
@@ -974,6 +1076,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     margin-left: auto;
     margin-right: auto;
 }
+
 footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="email"] {
     position: absolute;
     width: 80%;
@@ -995,6 +1098,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > t
     margin-left: auto;
     margin-right: auto;
 }
+
 footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
     position: absolute;
     width: 20%;
@@ -1006,7 +1110,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     margin: auto;
 }
 
-#submit{
+#submit {
     position: absolute;
     height: 20%;
     left: 0;

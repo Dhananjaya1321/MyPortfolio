@@ -20,128 +20,6 @@
 
     <style>
 
-        body > main > section:nth-child(2) > section:first-child {
-            position: relative;
-            width: 50%;
-        }
-
-        body > main > section:nth-child(2) > section:first-child > img {
-            position: relative;
-            left: 0;
-            top: 0;
-        }
-
-        #project_count {
-            box-shadow: 2px -2px 7px -3px black;
-            /*border: deepskyblue 2px solid;*/
-            display: inline-block;
-            width: 170px;
-            height: 170px;
-            position: absolute;
-            left: 199px;
-            top: 115px;
-            border-radius: 20px;
-
-        }
-
-        #project_count > h1 {
-            position: absolute;
-            color: deepskyblue;
-            font-size: 5em;
-            top: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            text-align: center;
-        }
-
-        #project_count > h3{
-            position: absolute;
-            font-size: 2em;
-             top: 35px;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-
-        #experience_years {
-            box-shadow: 2px 2px 7px -3px black;
-            /*border: deepskyblue 2px solid;*/
-            display: inline-block;
-            width: 170px;
-            height: 170px;
-            position: absolute;
-            left: 250px;
-            bottom: 0;
-            border-radius: 20px;
-
-        }
-
-        #experience_years > h1 {
-            position: absolute;
-            color: deepskyblue;
-            font-size: 5em;
-            top: 0;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            text-align: center;
-        }
-
-        #experience_years > h3 {
-            position: absolute;
-            font-size: 2em;
-            top: 35px;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-
-        body > main > section:nth-child(2) > article:nth-child(2) {
-            position: absolute;
-            /* border: deepskyblue 2px solid; */
-            right: 0;
-            top: 0;
-            height: 50%;
-            width: 55%;
-        }
-
-        body > main > section:nth-child(2) > article:nth-child(2) > h1 {
-            position: absolute;
-            display: inline;
-            right: 0;
-            left: -100px;
-            top: 35px;
-            /* height: 50px; */
-            margin: auto;
-            width: 138px;
-        }
-
-        body > main > section:nth-child(2) > article:nth-child(2) > p {
-            position: absolute;
-            display: inline;
-            font-size: 1.5em;
-            right: 40px;
-            left: -50px;
-            top: 100px;
-            margin: auto;
-            text-indent: 1em;
-            padding: 0 5px 0 5px;
-        }
 
     </style>
 </head>
@@ -271,51 +149,74 @@
                 </a>
             </div><!--see more button-->
         </article><!--article-->
-      <!--  <section>
-            <div>
-                <button>
-                    <i class="fa-solid fa-chevron-left fa-2xl"></i>
-                </button>
-            </div>&lt;!&ndash;right button&ndash;&gt;
-            <div class="skills_div">
-                <img class="skills_img" src="assets/image/logo/java.png" width="50">
-                <h2>Java</h2>
-            </div>&lt;!&ndash;java&ndash;&gt;
-            <div class="skills_div">
-                <img class="skills_img" src="assets/image/logo/figma.png" width="50">
-                <h2>Figma</h2>
-            </div>&lt;!&ndash;figma&ndash;&gt;
-            <div class="skills_div">
-                <img class="skills_img" src="assets/image/logo/html.png" width="42">
-                <h2>HTML</h2>
-            </div>&lt;!&ndash;html&ndash;&gt;
-            <div class="skills_div">
-                <img class="skills_img" src="assets/image/logo/css.png" width="50">
-                <h2>CSS</h2>
-            </div>&lt;!&ndash;css&ndash;&gt;
-            <div class="skills_div">
-                <img class="skills_img" src="assets/image/logo/js.png" width="50">
-                <h2>JavaScript</h2>
-            </div>&lt;!&ndash;js&ndash;&gt;
-            <div>
-                <button>
-                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
-                </button>
-            </div>&lt;!&ndash;left button&ndash;&gt;
-        </section>skills-->
-    </section><!--about-->
+        <section>
+            <section>
+                <div>
+                    <button>
+                        <p>Skills</p>
+                    </button>
+                    <button>
+                        <p>Tools</p>
+                    </button>
+                </div><!--right button-->
+                </div>
+            </section>
+            <section>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                    </button>
+                </div><!--right button-->
 
-    <section>
-        <!--        <hr>-->
-        <div></div>
-        <div>
-            <a href="pages/skills.html">
-                <button>
-                    <img src="assets/icon/arrow_down.png" width="30" height="30">
-                </button>
-            </a>
-        </div><!--button-->
-    </section><!--view all skills button-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/java.png" width="50">
+                    <h2>Java</h2>
+                </div><!--java-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/figma.png" width="50">
+                    <h2>Figma</h2>
+                </div><!--figma-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/html.png" width="42">
+                    <h2>HTML</h2>
+                </div><!--html-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/css.png" width="50">
+                    <h2>CSS</h2>
+                </div><!--css-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/js.png" width="50">
+                    <h2>JavaScript</h2>
+                </div><!--js-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/java.png" width="50">
+                    <h2>Java</h2>
+                </div><!--java-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/figma.png" width="50">
+                    <h2>Figma</h2>
+                </div><!--figma-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/html.png" width="42">
+                    <h2>HTML</h2>
+                </div><!--html-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/css.png" width="50">
+                    <h2>CSS</h2>
+                </div><!--css-->
+                <div class="skills_div">
+                    <img class="skills_img" src="assets/image/logo/js.png" width="50">
+                    <h2>JavaScript</h2>
+                </div><!--js-->
+
+                <div>
+                    <button>
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </button>
+                </div><!--left button-->
+            </section>
+        </section><!--skills-->
+    </section><!--about-->
 
     <section>
         <hr>
