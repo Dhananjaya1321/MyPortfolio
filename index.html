@@ -20,6 +20,94 @@
 
     <style>
 
+        body > main > section:nth-child(3) {
+            position: relative;
+            height: 100vh;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) {
+            width: 50%;
+            /* top: 50px; */
+            height: 90%;
+            bottom: 0;
+            position: absolute;
+        }
+        body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1) {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            border: deepskyblue solid 2px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
+            position: absolute;
+            left: 20px;
+            bottom: 50px;
+            border: deepskyblue solid 2px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) > section > div {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            height: 60px;
+            border-radius: 20px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+
+        }
+
+
+        /*education after school*/
+        /*body > main > section:nth-child(4) {
+            border: 2px solid;
+        }*/
+        body > main > section:nth-child(3) > section:nth-child(4) {
+            width: 50%;
+            /* top: 50px; */
+            height: 90%;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+        }
+        body > main > section:nth-child(3) > section:nth-child(4)>section:nth-child(1) {
+            position: absolute;
+            right: 20px;
+            bottom: 50px;
+            border: deepskyblue solid 2px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(4) > div {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(4) > div > a > button {
+            display: inline-block;
+            position: relative;
+            width: 200px;
+            height: 60px;
+            border-radius: 20px;
+        }
+
+        body > main > section:nth-child(3) > section:nth-child(4) > div > a > button > img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 5px;
+        }
 
     </style>
 </head>
@@ -282,22 +370,24 @@
             </section><!--O/L's-->
         </section><!--at school-->
         <section>
-            <article>
-                <h2>Graduate Diploma in Software Engineering (GDSE)</h2>
-                <p>
-                    2021-2023<br>
-                    Currently pursuing graduate diploma in<br>
-                    software engineering at ijse
-                </p>
-            </article> <!--GDSE-->
-            <div>
-                <a href="https://www.ijse.lk/" target="_blank">
-                    <button value="Visit institute">
-                        <img src="assets/image/ijse.png" width="50" height="50">
-                        <!--                            <h1>Visit school</h1>-->
-                    </button>
-                </a>
-            </div><!--visit institute-->
+            <section>
+                <article>
+                    <h2>Graduate Diploma in Software Engineering (GDSE)</h2>
+                    <p>
+                        2021-2023<br>
+                        Currently pursuing graduate diploma in<br>
+                        software engineering at ijse
+                    </p>
+                </article> <!--GDSE-->
+                <div>
+                    <a href="https://www.ijse.lk/" target="_blank">
+                        <button value="Visit institute">
+                            <img src="assets/image/ijse.png" width="50" height="50">
+                            <!--                            <h1>Visit school</h1>-->
+                        </button>
+                    </a>
+                </div><!--visit institute-->
+            </section><!--GDSE-->
         </section><!--after school-->
     </section><!--education-->
 

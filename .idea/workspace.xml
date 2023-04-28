@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/CaseFive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/CaseSix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseFive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseSix.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/earth-galaxy-elements-this-image-furnished-by-nasa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/girl-posing-against-backdrop-waterfall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,19 +53,22 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseFiveAndSix\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\css" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\icon" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css" />
@@ -58,6 +77,19 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +135,8 @@
       <workItem from="1682418965945" duration="7733000" />
       <workItem from="1682484057505" duration="7133000" />
       <workItem from="1682508006793" duration="10008000" />
-      <workItem from="1682574305323" duration="12743000" />
+      <workItem from="1682574305323" duration="15923000" />
+      <workItem from="1682652010992" duration="19252000" />
     </task>
     <servers />
   </component>

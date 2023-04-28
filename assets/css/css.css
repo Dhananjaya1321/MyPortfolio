@@ -452,8 +452,6 @@ body > main > section:nth-child(4) > hr {
     left: 10px;
 
 }
-
-/*topic education*/
 .topic > h1 {
     position: absolute;
     display: inline-block;
@@ -463,84 +461,9 @@ body > main > section:nth-child(4) > hr {
     top: 0;
     bottom: 0;
 }
+/*topic education*/
 
 
-body > main > section:nth-child(3) {
-    position: relative;
-    height: 100vh;
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1) {
-    position: absolute;
-    left: 20px;
-    top: 100px;
-    border: deepskyblue solid 2px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
-    position: absolute;
-    left: 20px;
-    bottom: 100px;
-    border: deepskyblue solid 2px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section > div {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 5px;
-
-}
-
-body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
-    margin-top: 50px;
-}
-
-/*education after school*/
-/*body > main > section:nth-child(4) {
-    border: 2px solid;
-}*/
-body > main > section:nth-child(3) > section:nth-child(4) {
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
-    border: deepskyblue solid 2px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(4) > div {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(4) > div > a > button {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-}
-
-body > main > section:nth-child(3) > section:nth-child(4) > div > a > button > img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 5px;
-}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 

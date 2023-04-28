@@ -1,0 +1,80 @@
+section {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 90vh;
+    width: 90vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+section > div {
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: -2px 2px 6px 1px black;;
+}
+
+section > div:nth-child(1) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(2) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(3) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(4) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(5) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(6) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/girl-posing-against-backdrop-waterfall.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(7) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(8) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(9) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(10) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/earth-galaxy-elements-this-image-furnished-by-nasa.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(11) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand.jpg");
+    background-size: cover;
+}
+
+section > div:nth-child(12  ) {
+    background: url("../../assignment/css/CaseFiveAndSix/assets/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park.jpg");
+    background-size: cover;
+}
