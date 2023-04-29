@@ -1,3 +1,18 @@
+.topic {
+    border: deepskyblue solid 1px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*header css*/
 header {
     background-color: #C3C3C3;
@@ -181,87 +196,66 @@ body > main > section:nth-child(2) > section:first-child > img {
 
 #project_count {
     box-shadow: 2px -2px 7px -3px black;
-    /*border: deepskyblue 2px solid;*/
-    display: inline-block;
     width: 170px;
     height: 170px;
     position: absolute;
     left: 199px;
     top: 115px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 #project_count > h1 {
-    position: absolute;
     color: deepskyblue;
     font-size: 5em;
-    top: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    text-align: center;
+    flex-grow: 1;
+
 }
 
 #project_count > h3 {
-    position: absolute;
     font-size: 2em;
-    top: 35px;
     margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
     text-align: center;
 }
 
 #experience_years {
     box-shadow: 2px 2px 7px -3px black;
-    /*border: deepskyblue 2px solid;*/
-    display: inline-block;
     width: 170px;
     height: 170px;
     position: absolute;
     left: 250px;
     bottom: 0;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 #experience_years > h1 {
-    position: absolute;
     color: deepskyblue;
     font-size: 5em;
-    top: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     text-align: center;
+    flex-grow: 1;
 }
 
 #experience_years > h3 {
-    position: absolute;
     font-size: 2em;
-    top: 35px;
     margin: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
     text-align: center;
 }
 
 body > main > section:nth-child(2) > article:nth-child(2) {
     position: absolute;
-    /* border: deepskyblue 2px solid; */
     right: 0;
     top: 0;
     height: 50%;
@@ -440,30 +434,129 @@ body > main > section:nth-child(4) > hr {
 }
 */
 /*--------------------------------------------------------------------------------------------------------------------*/
-.topic {
-    border: deepskyblue solid 1px;
-    border-radius: 15px;
-    background-color: white;
-    position: absolute;
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    top: 10px;
-    left: 10px;
 
+/*education*/
+
+body > main > section:nth-child(3) {
+    position: relative;
+    height: 100vh;
 }
-.topic > h1 {
+
+body > main > section:nth-child(3) > section:nth-child(3) {
+    width: 50%;
+    /* top: 50px; */
+    height: 90%;
+    bottom: 0;
     position: absolute;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1) {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    border: deepskyblue solid 2px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
+    position: absolute;
+    left: 20px;
+    bottom: 50px;
+    border: deepskyblue solid 2px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > article > h2 {
+    margin-bottom: 0;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > article > p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > article > h2 {
+    margin-bottom: 0;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > article > p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > div {
     display: inline-block;
+    margin-left: 20px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
+    position: absolute;
     margin: auto;
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
+    left: 5px;
+
 }
-/*topic education*/
 
 
+/*education after school*/
+/*body > main > section:nth-child(4) {
+    border: 2px solid;
+}*/
+body > main > section:nth-child(3) > section:nth-child(4) {
+    width: 50%;
+    /* top: 50px; */
+    height: 90%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(1) {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    border: deepskyblue solid 2px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > div {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button {
+    /*display: inline-block;*/
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+}
+
+body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
+    font-size: 1.2em;
+    margin-left: 40px;
+    display: inline;
+}
+
+body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > p {
+    font-size: 1.2em;
+    margin-left: 40px;
+    display: inline;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
@@ -718,87 +811,6 @@ main > section:nth-child(6) > section > article > p {
 
 
 /*Gallery section*/
-main > section:nth-child(7) {
-    position: relative;
-    height: 100vh;
-}
-
-main > section:nth-child(7) > section {
-    position: relative;
-    top: 75px;
-    height: 75vh;
-    width: 100%;
-}
-
-main > section:nth-child(7) > section > div {
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-}
-
-main > section:nth-child(7) > section > div:nth-child(1) {
-    left: 0;
-}
-
-main > section:nth-child(7) > section > div:nth-child(2) {
-    left: calc(100% / 3);
-}
-
-main > section:nth-child(7) > section > div:nth-child(3) {
-    right: 0;
-}
-
-main > section:nth-child(7) > section > div > img {
-    border-radius: 10px;
-    border: deepskyblue solid 2px;
-    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.61);
-}
-
-main > section:nth-child(7) > section > div:nth-child(1) > img:nth-child(1) {
-    position: absolute;
-    width: 95%;
-    height: 30%;
-    left: 10px;
-    top: 0;
-}
-
-main > section:nth-child(7) > section > div:nth-child(1) > img:nth-child(2) {
-    position: absolute;
-    width: 95%;
-    height: 66%;
-    left: 10px;
-    bottom: 3px;
-}
-
-main > section:nth-child(7) > section > div:nth-child(2) > img:nth-child(1) {
-    position: absolute;
-    width: 99%;
-    height: 66%;
-    top: 0;
-}
-
-main > section:nth-child(7) > section > div:nth-child(2) > img:nth-child(2) {
-    position: absolute;
-    width: 99%;
-    height: 30%;
-    bottom: 3px;
-}
-
-main > section:nth-child(7) > section > div:nth-child(3) > img:nth-child(1) {
-    position: absolute;
-    width: 95%;
-    height: 30%;
-    right: 10px;
-    top: 0;
-}
-
-main > section:nth-child(7) > section > div:nth-child(3) > img:nth-child(2) {
-    position: absolute;
-    width: 95%;
-    height: 66%;
-    right: 10px;
-    bottom: 3px;
-}
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 

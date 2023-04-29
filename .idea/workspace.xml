@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/CaseFive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/CaseSix.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseFive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseSix.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/earth-galaxy-elements-this-image-furnished-by-nasa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/girl-posing-against-backdrop-waterfall.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/CaseFiveAndSix.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/CaseFive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/CaseSix.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseFive.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseSix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFour.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseFour/CaseFour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseOne/CaseOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseThree/CaseThree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo/CaseTwo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +30,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2L9CV7uk2zHHfpyXGzJ751D8MfR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,13 +80,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,7 +139,8 @@
       <workItem from="1682484057505" duration="7133000" />
       <workItem from="1682508006793" duration="10008000" />
       <workItem from="1682574305323" duration="15923000" />
-      <workItem from="1682652010992" duration="19252000" />
+      <workItem from="1682652010992" duration="19835000" />
+      <workItem from="1682746941818" duration="12670000" />
     </task>
     <servers />
   </component>
