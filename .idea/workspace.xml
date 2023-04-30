@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/CaseFiveAndSix.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/WhatsApp Image 2023-04-29 at 17.11.55.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/hashi1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/hashi2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/hashi3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/me1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/me3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/me4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/me5.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/CaseFive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/CaseSix.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseFive.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/CaseSix.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFour.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseFour/CaseFour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseOne/CaseOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseThree/CaseThree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo/CaseTwo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image/myPhoto" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -65,34 +64,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseFiveAndSix\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\css" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\pages" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseTwo" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseThree" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseFour" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,7 +124,8 @@
       <workItem from="1682508006793" duration="10008000" />
       <workItem from="1682574305323" duration="15923000" />
       <workItem from="1682652010992" duration="19835000" />
-      <workItem from="1682746941818" duration="12670000" />
+      <workItem from="1682746941818" duration="16442000" />
+      <workItem from="1682845784999" duration="5636000" />
     </task>
     <servers />
   </component>
