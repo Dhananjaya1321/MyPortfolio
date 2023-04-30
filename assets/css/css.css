@@ -1,7 +1,7 @@
 .topic {
-    border: deepskyblue solid 1px;
+    /*border: deepskyblue solid 1px;*/
     border-radius: 15px;
-    background-color: white;
+    background-color: #EFEFEF;
     position: absolute;
     width: 150px;
     height: 50px;
@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: -2px 2px 6px -3px black;
 }
 
 #home_section {
@@ -24,12 +25,19 @@
     background-color: #EDEDED;
 }
 
+.see_more_button>a>input{
+    width: 100px;
+    height: 25px;
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
+    border-radius: 5px;
+}
 /*header css*/
 header {
     background-color: #C3C3C3;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     height: 50px;
     width: 100vw;
     box-shadow: 0 1px 2px 1px gray;
@@ -168,15 +176,22 @@ body > main > section:first-child > section > nav > div:first-child {
     margin-left: 400px;
     top: 0;
     bottom: 0;
+
 }
 
 #download_cv > a > input {
     position: absolute;
     top: 0;
     bottom: 0;
-    height: 40px;
+    height: 50px;
+    color: deepskyblue;
+    font-weight: bold;
+    font-size: 20px;
     width: 250px;
     margin: auto;
+    box-shadow: 2px 2px 6px -3px black;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
 }
 
 a {
@@ -340,6 +355,9 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:first-child 
     width: 50%;
     height: 100%;
     left: 0;
+    box-shadow: 2px 2px 6px -3px black;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div > button:nth-child(2) {
@@ -347,6 +365,9 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:first-child 
     width: 50%;
     height: 100%;
     right: 0;
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div > button > p {
@@ -405,7 +426,9 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     left: 0;
     top: 0;
     bottom: 0;
-
+    box-shadow: 2px 2px 6px -3px black;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
 }
 
 /*right button*/
@@ -428,6 +451,9 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     right: 0;
     top: 0;
     bottom: 0;
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .skills_div {
@@ -497,14 +523,14 @@ body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1)
     position: absolute;
     left: 20px;
     top: 50px;
-    border: deepskyblue solid 2px;
+    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
     position: absolute;
     left: 20px;
     bottom: 50px;
-    border: deepskyblue solid 2px;
+    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section > article > h2 {
@@ -536,6 +562,8 @@ body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > 
     width: 200px;
     height: 60px;
     border-radius: 20px;
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
@@ -565,7 +593,7 @@ body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(1)
     position: absolute;
     right: 20px;
     bottom: 50px;
-    border: deepskyblue solid 2px;
+    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(4) > section > div {
@@ -579,6 +607,8 @@ body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > 
     width: 200px;
     height: 60px;
     border-radius: 20px;
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
 }
 
 body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > img {
@@ -660,7 +690,9 @@ main > section:nth-child(4) > section > section {
     top: 0;
     bottom: 0;
     margin: auto;
-
+    box-shadow: 2px 2px 6px -3px black;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .button_right {
@@ -684,7 +716,9 @@ main > section:nth-child(4) > section > section {
     top: 0;
     bottom: 0;
     margin: auto;
-
+    box-shadow: -2px 2px 6px -3px black;
+    border: none;
+    border-radius: 20px 0px 0px 20px;
 }
 
 main > section:nth-child(4) > section > section > div {
