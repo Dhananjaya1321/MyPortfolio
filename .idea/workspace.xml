@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/Transitions/CaseTwo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseThree/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/CaseFiveAndSix.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CaseFiveAndSix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/earth-galaxy-elements-this-image-furnished-by-nasa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/earth-galaxy-elements-this-image-furnished-by-nasa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/girl-posing-against-backdrop-waterfall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/girl-posing-against-backdrop-waterfall.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/assets/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/assets/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFiveAndSix/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFour/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFour/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseOne/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseOne/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseThree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseThree/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseTwo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +88,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -133,7 +139,8 @@
       <workItem from="1682916758957" duration="18115000" />
       <workItem from="1683085009113" duration="12093000" />
       <workItem from="1683126698199" duration="5882000" />
-      <workItem from="1683177644083" duration="6870000" />
+      <workItem from="1683177644083" duration="11904000" />
+      <workItem from="1683219535179" duration="2067000" />
     </task>
     <servers />
   </component>

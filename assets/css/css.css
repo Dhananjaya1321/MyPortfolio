@@ -1169,12 +1169,12 @@ main > section:nth-child(7) > section > div:nth-child(5) {
 }
 
 main > section:nth-child(7) > section > div:nth-child(6) {
-    background: url("../../assignment/css/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg");
+    background: url("../../assignment/CSS/CaseFiveAndSix/assets/blue-villa-beautiful-sea-hotel.jpg");
     background-size: cover;
 }
 
 main > section:nth-child(7) > section > div:nth-child(7) {
-    background: url("../../assignment/css/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg");
+    background: url("../../assignment/CSS/CaseFiveAndSix/assets/indian-leopard-nature-habitat-leopard-resting-rock-wildlife-scene.jpg");
     background-size: cover;
 }
 
@@ -1186,19 +1186,19 @@ main > section:nth-child(7) > section > div:nth-child(8) {
 }
 
 main > section:nth-child(7) > section > div:nth-child(9) {
-    background: url("../../assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg");
+    background: url("../../assignment/CSS/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg");
     grid-column: 2/4;
     grid-row: 3/4;
     background-size: cover;
 }
 
 main > section:nth-child(7) > section > div:nth-child(10) {
-    background: url("../../assignment/css/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg");
+    background: url("../../assignment/CSS/CaseFiveAndSix/assets/sunrise-mesa-arch-canyonlands-national-park-near-moab-utah-usa.jpg");
     background-size: cover;
 }
 
 main > section:nth-child(7) > section > div:nth-child(11) {
-    background: url("../../assignment/css/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg");
+    background: url("../../assignment/CSS/CaseFiveAndSix/assets/angkor-wat-temple-siem-reap-cambodia.jpg");
     background-size: cover;
 }
 
