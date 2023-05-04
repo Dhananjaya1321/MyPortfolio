@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/Transitions/CaseOne/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/case_two.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/case_two.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseFour/CaseFour.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseFour/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseOne/CaseOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseOne/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseThree/CaseThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseThree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/css/CaseTwo/CaseTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/css/CaseTwo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Transitions/CaseOne/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Transitions/CaseOne/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,19 +71,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -137,7 +120,9 @@
       <workItem from="1682746941818" duration="16442000" />
       <workItem from="1682845784999" duration="19084000" />
       <workItem from="1682916758957" duration="18115000" />
-      <workItem from="1683085009113" duration="10055000" />
+      <workItem from="1683085009113" duration="12093000" />
+      <workItem from="1683126698199" duration="5882000" />
+      <workItem from="1683177644083" duration="2514000" />
     </task>
     <servers />
   </component>

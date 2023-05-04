@@ -1,3 +1,10 @@
+.topic_main_div{
+    top: 10px;
+    height: 70px;
+    width: 98vw;
+    position: relative;
+    margin: 0;
+}
 .topic {
     /*border: deepskyblue solid 1px;*/
     border-radius: 15px;
@@ -11,8 +18,20 @@
     align-items: center;
     justify-content: center;
     box-shadow: -2px 2px 6px -3px black;
+    z-index: 1;
 }
-
+.topic_line{
+    width: 90vw;
+    height: 2px;
+    background-color: #efefef;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 10px;
+    margin: auto;
+    box-shadow: 0 0 3px 0px #9c9b9b;
+}
 #home_section {
     background-image: radial-gradient(circle, #e8e8e8, #e4e4e4, #e0e0e0, #dddddd, #d9d9d9);
 }
@@ -663,7 +682,7 @@ main > section:nth-child(4) > nav {
 
 main > section:nth-child(4) > section {
     position: relative;
-    top: 120px;
+    top: 15px;
     height: 75%;
 }
 
@@ -883,7 +902,7 @@ main > section:nth-child(5) > nav {
 
 main > section:nth-child(5) > section {
     position: relative;
-    top: 120px;
+    top: 15px;
     height: 75%;
 }
 
@@ -1035,7 +1054,7 @@ main > section:nth-child(5) > section > section > div:nth-child(3)>a>img {
 
 main > section:nth-child(6) {
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 
 main > section:nth-child(6) > section {
@@ -1053,7 +1072,7 @@ main > section:nth-child(6) > section {
 
 main > section:nth-child(6) > section:nth-child(2) {
     left: 0;
-    top: 0;
+    top: 60px;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
@@ -1063,7 +1082,7 @@ main > section:nth-child(6) > section:nth-child(2) {
 
 main > section:nth-child(6) > section:nth-child(3) {
     left: 0;
-    top: 0;
+    top: 60px;
     bottom: 0;
     right: 0;
     margin: auto;
@@ -1071,7 +1090,7 @@ main > section:nth-child(6) > section:nth-child(3) {
 
 main > section:nth-child(6) > section:nth-child(4) {
     right: 0;
-    top: 0;
+    top: 60px;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
@@ -1103,7 +1122,7 @@ main > section:nth-child(7) {
 
 main > section:nth-child(7) > section {
     position: relative;
-    top: 75px;
+    top: 26px;
     left: 3%;
     height: 80vh;
     width: 94%;
@@ -1189,12 +1208,12 @@ main > section:nth-child(7) > section > div:nth-child(11) {
 /*certification section*/
 main > section:nth-child(8) {
     position: relative;
-    height: 100vh;
+    height: 95vh;
 }
 
 main > section:nth-child(8) > section {
     position: relative;
-    top: 150px;
+    top: 50px;
     height: 50%;
 }
 
@@ -1240,7 +1259,7 @@ footer {
 footer > section:nth-child(2) {
     position: absolute;
     height: 80%;
-    top: 0;
+    top: 11px;
     bottom: 0;
     margin: auto;
     width: 100%;
@@ -1362,7 +1381,7 @@ footer > section:nth-child(3) {
     left: 0;
     right: 0;
     bottom: 0;
-    height: 10%;
+    height: 8%;
     background-color: #C3C3C3;
     box-shadow: 1px -1px 6px -2px black;
     display: flex;

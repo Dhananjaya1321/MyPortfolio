@@ -4,46 +4,64 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../../assets/fontawesome/css/all.min.css">
     <style>
         div {
             position: relative;
             height: 50px;
             width: 300px;
-            background-color: #ff253a;
-            margin-left: 0px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            background-color: #9445ef;
+            margin-left: 0;
+            margin-top: 7px;
+            margin-bottom: 7px;
             transition: 2s;
             left: -250px;
+            box-shadow: black 2px 2px 7px -1px;
         }
 
         div > p {
-            position: relative;
+            position: absolute;
             left: 50px;
-            top: 15px;
+            top: 12px;
             font-size: 20px;
-
+            margin: auto;
         }
 
         div:hover {
-            left: 0;
+            left: -6px;
             transition: 2s;
         }
 
-        p:hover {
-            transition: 2s;
-            /*left: 250px;*/
+        i {
+            position: absolute;
+            right: 10px;
+            top: 25px;
+            font-size: 20px;
         }
-
     </style>
 </head>
 <body>
 <nav>
-    <div><p>aaaaaaaaaaaaaa</p></div>
-    <div><p>aaaaaaaaaaaaaa</p></div>
-    <div><p>aaaaaaaaaaaaaa</p></div>
-    <div><p>aaaaaaaaaaaaaa</p></div>
-    <div><p>aaaaaaaaaaaaaa</p></div>
+    <div>
+        <i class="fa-solid fa-book fa-xl"></i>
+        <p>Menu one</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-van-shuttle fa-xl"></i>
+        <p>Menu two</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-globe fa-xl"></i>
+        <p>Menu three</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-layer-group fa-xl"></i>
+        <p>Menu four</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-cart-arrow-down fa-xl"></i>
+        <p>Menu five</p>
+    </div>
 </nav>
 </body>
 </html>
