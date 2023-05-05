@@ -1,10 +1,11 @@
-.topic_main_div{
+.topic_main_div {
     top: 10px;
     height: 70px;
     width: 98vw;
     position: relative;
     margin: 0;
 }
+
 .topic {
     /*border: deepskyblue solid 1px;*/
     border-radius: 15px;
@@ -20,7 +21,8 @@
     box-shadow: -2px 2px 6px -3px black;
     z-index: 1;
 }
-.topic_line{
+
+.topic_line {
     width: 90vw;
     height: 2px;
     background-color: #efefef;
@@ -32,6 +34,7 @@
     margin: auto;
     box-shadow: 0 0 3px 0px #9c9b9b;
 }
+
 #home_section {
     background-image: radial-gradient(circle, #e8e8e8, #e4e4e4, #e0e0e0, #dddddd, #d9d9d9);
 }
@@ -75,6 +78,34 @@ span {
     color: deepskyblue;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-brands:hover {
+    font-size: 40px;
+    box-shadow: 0px 0px 20px 5px #0089ff;
+    color: #0089ff;
+    border: solid #0089ff 2px;
+    transition: 0.2s;
+}
+.fa-brands {
+    color: black;
+    border: solid #000000 2px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    box-shadow: -2px 2px 8px -2px black;
+}
+
+.social_media > a > i {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*header css*/
 header {
@@ -93,30 +124,90 @@ header > aside {
 
 header > nav {
     position: absolute;
-    right: 10px;
+    right: 25px;
     top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
+header > nav > menu > li:hover {
+    /*position: relative;*/
+    color: white;
+    background-color: #9445ef;
+    /*font-size: 20px;*/
+}
+
+header > nav > menu > li {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header > nav > menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    right: 70px;
+}
+
+header > nav > div {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+header > nav > div:nth-child(2) {
+    width: 70px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    top: 0px;
+    height: 50px;
+    position: absolute;
+    right: 107px;
+
+}
+
+header > nav > div:nth-child(2) > a > img {
+    border-style: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 header > nav > div:nth-child(2) > a > p {
-    display: inline;
-    position: absolute;
-    right: 100px;
+    width: 61px;
+    position: relative;
     font-size: 0.8em;
-    margin-top: 31px;
+    margin: 0;
 }
 
 /*header > nav > div:nth-child(3) {
-    background-color: #C3C3C3;
-    color: #87CEFA;
-    border: 2px solid #87CEFA;
+background-color: #C3C3C3;
+color: #87CEFA;
+border: 2px solid #87CEFA;
 
 }*/
+header > nav > div > a > input {
+    width: 100px;
+    height: 35px;
+    box-shadow: -2px 2px 6px -3px black;
+    border: 2px deepskyblue solid;
+    border-radius: 20px;
+    background-color: #C3C3C3;
+    color: deepskyblue;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-header > nav > div {
-    display: inline;
-    margin-left: 15px;
-    margin-right: 15px;
+header > nav > div > a > input:hover {
+    color: white;
+    background-color: deepskyblue;
+    border: 2px white solid;
+
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -179,16 +270,19 @@ body > main > section:first-child > section > h3 {
 }
 
 #social_links_nav {
-    /*height: 50px;*/
     width: 100%;
-    display: inline-block;
+    display: flex;
     position: absolute;
     left: 70px;
     margin-top: 30px;
+    flex-direction: row;
+
 }
 
 body > main > section:first-child > section > nav > div:first-child {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 15px;
 }
 
@@ -202,7 +296,7 @@ body > main > section:first-child > section > nav > div:first-child {
     position: absolute;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 400px;
+    margin-left: 430px;
     top: 0;
     bottom: 0;
 
@@ -219,9 +313,17 @@ body > main > section:first-child > section > nav > div:first-child {
     width: 250px;
     margin: auto;
     box-shadow: 2px 2px 6px -3px black;
-    border: 2px solid deepskyblue;
-    border-radius: 10px;
+    background-color: #e4e4e4;
+    border: 3px solid deepskyblue;
+    border-radius: 25px;
 }
+
+#download_cv > a > input:hover {
+    background-color: deepskyblue;
+    border: 3px solid white;
+    color: white;
+}
+
 
 a {
     display: inline-block;
@@ -236,7 +338,9 @@ body > main > section:first-child > aside {
 section:nth-child(1) > svg {
     position: absolute;
     bottom: 0;
-}  /*vaw*/
+}
+
+/*vaw*/
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -770,7 +874,7 @@ main > section:nth-child(4) > section > section > div:nth-child(1) {
     margin: auto;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(1)>img {
+main > section:nth-child(4) > section > section > div:nth-child(1) > img {
     display: inline-block;
     position: relative;
     height: 280px;
@@ -818,7 +922,7 @@ main > section:nth-child(4) > section > section > div:nth-child(3) {
     margin: auto;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(3)>img {
+main > section:nth-child(4) > section > section > div:nth-child(3) > img {
     display: inline-block;
     position: relative;
     height: 280px;
@@ -990,7 +1094,7 @@ main > section:nth-child(5) > section > section > div:nth-child(1) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(1)>a>img {
+main > section:nth-child(5) > section > section > div:nth-child(1) > a > img {
     display: inline-block;
     position: relative;
     height: 280px;
@@ -1014,7 +1118,7 @@ main > section:nth-child(5) > section > section > div:nth-child(2) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(2) >a> img {
+main > section:nth-child(5) > section > section > div:nth-child(2) > a > img {
     display: inline-block;
     position: relative;
     height: 325px;
@@ -1038,7 +1142,7 @@ main > section:nth-child(5) > section > section > div:nth-child(3) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(3)>a>img {
+main > section:nth-child(5) > section > section > div:nth-child(3) > a > img {
     display: inline-block;
     position: relative;
     height: 280px;
@@ -1246,7 +1350,6 @@ main > section:nth-child(8) > section > section > div > a > img {
 }
 
 
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -1265,7 +1368,7 @@ footer > section:nth-child(2) {
     width: 100%;
 }
 
-footer > section:nth-child(2) > div{
+footer > section:nth-child(2) > div {
     position: absolute;
     background-color: #ffffff;
     width: 1px;
@@ -1335,10 +1438,10 @@ footer > section:nth-child(2) > section:nth-child(3) > section > address > div {
 }
 
 footer > section:nth-child(2) > section:nth-child(3) > section > address {
-     /*position: absolute;*/
-     width: 100%;
-     height: 25%;
-     /*margin: auto;*/
+    /*position: absolute;*/
+    width: 100%;
+    height: 25%;
+    /*margin: auto;*/
     display: flex;
     justify-content: start;
     align-items: center;
