@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/TransitionCaseTwo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/TransitionsCaseOne.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFour/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/case_four.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CssCaseFour.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/case_one.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CssCaseOne.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/case_three.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CssCaseThree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/case_two.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CssCaseTwo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Animations/CaseThree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseThree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFiveAndSix/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS/CaseFour/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseFour/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS/CaseOne/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseOne/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS/CaseThree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseThree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS/CaseTwo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS/CaseTwo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transitions/CaseOne/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Transitions/CaseOne/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Transitions/CaseTwo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Transitions/CaseTwo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/Animations/CaseFour/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFour/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/certificates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/skills.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/works.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,19 +71,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -157,7 +124,11 @@
       <workItem from="1683126698199" duration="5882000" />
       <workItem from="1683177644083" duration="11904000" />
       <workItem from="1683219535179" duration="2732000" />
-      <workItem from="1683264982004" duration="14376000" />
+      <workItem from="1683264982004" duration="14715000" />
+      <workItem from="1683356589250" duration="12000" />
+      <workItem from="1683356634908" duration="1952000" />
+      <workItem from="1683358804155" duration="6043000" />
+      <workItem from="1683524916204" duration="7248000" />
     </task>
     <servers />
   </component>
