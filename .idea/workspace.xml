@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/AnimationCaseFive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/assets/angkor-wat-temple-siem-reap-cambodia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/assets/beautiful-water-villas-tropical-maldives-island-sunset-time.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/assets/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/assets/blue-villa-beautiful-sea-hotel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/Animations/CaseFive/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/Animations/CaseFour/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/Animations/CaseFour/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/gallery1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/gallery2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/gallery3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/gallery4.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +53,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/Animations/CaseFive/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -55,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\Animations\CaseFive\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseFiveAndSix\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
@@ -68,6 +77,19 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseThree" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,7 +150,7 @@
       <workItem from="1683358804155" duration="6043000" />
       <workItem from="1683524916204" duration="7248000" />
       <workItem from="1683606331027" duration="18952000" />
-      <workItem from="1683697830003" duration="7362000" />
+      <workItem from="1683697830003" duration="13624000" />
     </task>
     <servers />
   </component>
