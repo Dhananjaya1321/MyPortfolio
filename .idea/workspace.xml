@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/AssignmentForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/CertificateForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/ProjectForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/projectORM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/assingments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/certificate/sololearn-php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mySVG.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/AssignmentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/AssignmentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/CertificateForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/CertificateForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/ProjectForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ProjectForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/assingments.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/assingments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/certificates.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/certificates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/skills.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/works.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +52,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -74,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\certificate" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\Animations\CaseSix\asstes" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\Animations\CaseFive\assets" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseFiveAndSix\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
@@ -164,7 +153,7 @@
       <workItem from="1683782718113" duration="346000" />
       <workItem from="1683787201085" duration="217000" />
       <workItem from="1683816455505" duration="4188000" />
-      <workItem from="1683861474019" duration="18041000" />
+      <workItem from="1683861474019" duration="23313000" />
     </task>
     <servers />
   </component>
