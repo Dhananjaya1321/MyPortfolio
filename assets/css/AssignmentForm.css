@@ -1,0 +1,120 @@
+
+
+header>div{
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>div>h1{
+
+}
+#assignment_section {
+    position: relative;
+    width: 95%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#assignment_section > a {
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+}
+
+#assignment_section > div {
+    position: relative;
+    border-radius: 20px;
+    border: #ffffff solid 5px;
+    box-shadow: 0px 0px 5px -1px black;
+
+}
+
+#assignment_section > div > a > div {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#assignment_section > div:nth-child(1) > a > div {
+    background: url("../../assets/image/Assignment1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(2) > a > div {
+    background: url("../../assets/image/Assignment2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(3) > a > div {
+    background: url("../../assets/image/Assignment3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(4) > a > div {
+    background: url("../../assets/image/Assignment4.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(5) > a > div {
+    background: url("../../assets/image/Assignment5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(6) > a > div {
+    background: url("../../assets/image/Assignment6.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(7) > a > div {
+    background: url("../../assets/image/Assignment7.png");
+    background-size: cover;
+    background-position: left;
+}
+
+#assignment_section > div:nth-child(8) > a > div {
+    background: url("../../assets/image/Assignment9.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(9) > a > div {
+    background: url("../../assets/image/Assignment8.png");
+    background-size: cover;
+    background-position: left;
+}
+
+#assignment_section > div:nth-child(10) > a > div {
+    background: url("../../assets/image/Assignment10.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(11) > a > div {
+    background: url("../../assets/image/Assignment11.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#assignment_section > div:nth-child(12) > a > div {
+    background: url("../../assets/image/Assignment12.png");
+    background-size: cover;
+    background-position: center;
+}
