@@ -61,6 +61,7 @@
     border: none;
     border-radius: 5px;
 }
+
 .see_more_button > a > input:hover {
     color: white;
     background-color: #0089ff;
@@ -139,21 +140,21 @@ header > nav {
     margin: auto;
 }
 
-header > nav > menu > li>a:after {
-    display:block;
+header > nav > menu > li > a:after {
+    display: block;
     content: '';
     border-bottom: solid 3px #0089ff;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
 }
 
-header > nav > menu > li>a:hover {
+header > nav > menu > li > a:hover {
     color: #0089ff;
 }
 
-header > nav > menu > li>a:hover:after {
+header > nav > menu > li > a:hover:after {
     transform: scaleX(1);
-    transform-origin:  0 50%;
+    transform-origin: 0 50%;
 
 }
 
@@ -810,7 +811,8 @@ body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > 
     top: 0;
     bottom: 0;
     left: 5px;
-
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -835,6 +837,7 @@ body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(1) {
     height: 85%;
     background-color: #009EF8;
 }
+
 body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2) {
     position: absolute;
     width: 25px;
@@ -846,7 +849,8 @@ body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2) {
     background-color: white;
     z-index: 1;
 }
-body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2)>div {
+
+body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2) > div {
     position: absolute;
     width: 7px;
     height: 7px;
@@ -859,6 +863,7 @@ body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2)>div
     background-color: #009EF8;
     z-index: 2;
 }
+
 body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3) {
     position: absolute;
     width: 25px;
@@ -870,7 +875,8 @@ body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3) {
     background-color: white;
     z-index: 1;
 }
-body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3)>div {
+
+body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3) > div {
     position: absolute;
     width: 7px;
     height: 7px;
@@ -883,6 +889,7 @@ body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3)>div
     background-color: #009EF8;
     z-index: 2;
 }
+
 body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(4) {
     position: absolute;
     right: 65px;
@@ -902,7 +909,8 @@ body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > 
     height: 60px;
     border-radius: 20px;
     box-shadow: -2px 2px 6px -3px black;
-    border: none;font-size: 16px;
+    border: none;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -918,6 +926,8 @@ body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > 
     top: 0;
     bottom: 0;
     left: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
@@ -1041,12 +1051,28 @@ main > section:nth-child(4) > section > section > div:nth-child(1) {
     margin: auto;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(1) > img {
-    display: inline-block;
-    position: relative;
-    height: 280px;
-    width: 400px;
-    border-radius: 7px;
+main > section:nth-child(4) > section > section > div > a {
+    height: 100%;
+    width: 100%;
+}
+
+main > section:nth-child(4) > section > section > div > a > div {
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+main > section:nth-child(4) > section > section > div:nth-child(1) > a > div {
+
+    background: url("../image/salon.png");
+    background-position: center;
+    background-size: cover;
 }
 
 main > section:nth-child(4) > section > section > div:nth-child(2) {
@@ -1065,12 +1091,10 @@ main > section:nth-child(4) > section > section > div:nth-child(2) {
     margin: auto;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(2) > img {
-    display: inline-block;
-    position: relative;
-    height: 325px;
-    width: 425px;
-    border-radius: 7px;
+main > section:nth-child(4) > section > section > div:nth-child(2) > a > div {
+    background: url("../image/projectORM.png");
+    background-position: center;
+    background-size: cover;
 }
 
 main > section:nth-child(4) > section > section > div:nth-child(3) {
@@ -1089,72 +1113,16 @@ main > section:nth-child(4) > section > section > div:nth-child(3) {
     margin: auto;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(3) > img {
-    display: inline-block;
-    position: relative;
-    height: 280px;
-    width: 400px;
-    border-radius: 7px;
+main > section:nth-child(4) > section > section > div:nth-child(3) > a > div {
+    background: url("../image/hotel.png");
+    background-position: center;
+    background-size: cover;
 }
 
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 /*Assignments*/
-/*
-
-main > section:nth-child(5) {
-    position: relative;
-    height: 100vh;
-}
-
-main > section:nth-child(5) > nav {
-    display: inline-block;
-    position: absolute;
-    width: 281px;
-    top: 75px;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-}
-
-main > section:nth-child(5) > section {
-    position: relative;
-    top: 150px;
-    height: 50%;
-}
-
-main > section:nth-child(5) > section > section {
-    position: absolute;
-    !*display: inline-block;*!
-    width: 1230px;
-    height: 300px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-}
-
-main > section:nth-child(5) > section > section > div {
-    display: inline-block;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-
-}
-
-main > section:nth-child(5) > section > section > div > img {
-    display: inline-block;
-    position: relative;
-    height: 300px;
-    width: 400px;
-}
-*/
 main > section:nth-child(5) {
     position: relative;
     height: 100vh;
@@ -1261,12 +1229,27 @@ main > section:nth-child(5) > section > section > div:nth-child(1) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(1) > a > img {
-    display: inline-block;
-    position: relative;
-    height: 280px;
-    width: 400px;
-    border-radius: 7px;
+main > section:nth-child(5) > section > section > div > a {
+    height: 100%;
+    width: 100%;
+}
+
+main > section:nth-child(5) > section > section > div > a > div {
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+main > section:nth-child(5) > section > section > div:nth-child(1) > a > div {
+    background: url("../image/Assignment1.png");
+    background-position: center;
+    background-size: cover;
 }
 
 main > section:nth-child(5) > section > section > div:nth-child(2) {
@@ -1285,12 +1268,10 @@ main > section:nth-child(5) > section > section > div:nth-child(2) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(2) > a > img {
-    display: inline-block;
-    position: relative;
-    height: 325px;
-    width: 425px;
-    border-radius: 7px;
+main > section:nth-child(5) > section > section > div:nth-child(2) > a > div {
+    background: url("../image/Assignment2.png");
+    background-position: center;
+    background-size: cover;
 }
 
 main > section:nth-child(5) > section > section > div:nth-child(3) {
@@ -1309,12 +1290,10 @@ main > section:nth-child(5) > section > section > div:nth-child(3) {
     margin: auto;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(3) > a > img {
-    display: inline-block;
-    position: relative;
-    height: 280px;
-    width: 400px;
-    border-radius: 7px;
+main > section:nth-child(5) > section > section > div:nth-child(3) > a > div {
+    background: url("../image/Assignment3.png");
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -1339,6 +1318,11 @@ main > section:nth-child(6) > section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main > section:nth-child(6) > section > img {
+    width: 150px;
+    height: 150px;
 }
 
 main > section:nth-child(6) > section:nth-child(2) {
@@ -1973,43 +1957,13 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
 
-    body > main > section:nth-child(2) > article:nth-child(2) > h1 {
-        left: 0;
-        /*position: absolute;
-        display: inline;
-        right: 0;
-        top: 50px;
-        !* height: 50px; *!
-        margin: auto;
-        width: 138px;*/
-    }
-
-    body > main > section:nth-child(2) > article:nth-child(2) > p {
-        right: 4px;
-        left: 4px;
-        font-size: 20px;
-        /*position: relative;
-        display: inline;
-        top: 100px;
-        margin: auto;
-        text-indent: 1em;
-        padding: 0 5px 0 5px;*/
-    }
-
     body > main > section:nth-child(2) > section:nth-child(3) {
         position: relative;
         width: 100%;
-        height: 50%;
-        right: 0;
-        bottom: 30px;
-        /* left: 50px; */
     }
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:first-child {
-        position: absolute;
-        width: 100%;
         height: 40px;
-        /* right: 0; */
         top: 33px;
         z-index: 1;
     }
@@ -2018,7 +1972,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:nth-child(2) > section:nth-child(3) > section:first-child > div {
         width: 60%;
         height: 44px;
-        background-color: deepskyblue;
         border-radius: 13px;
     }
 
@@ -2131,32 +2084,60 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         height: 145vh;
     }
 
+    body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(1) {
+        top: 30px;
+        height: 100%;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(3) {
+        top: 40px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(2) {
+        display: none;
+    }
 
     body > main > section:nth-child(3) > section:nth-child(3) {
         width: 100%;
-        position: relative;
+        /*position: relative;*/
+        bottom: 20px;
         height: 370px;
 
     }
 
-    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(1) {
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
         position: absolute;
-        top: 0;
+        top: -45px;
     }
 
-    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(2) {
+    body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(1) {
+        top: 23px;
+        height: 100%;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(2) {
+        top: -32px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(3) {
+        bottom: 160px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(4) {
         width: 100%;
         height: 300px;
+        top: 50px;
     }
 
-    body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(1) {
-        position: relative;
-        left: 20px;
+    body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(4) {
+        position: absolute;
+        left: 65px;
+        right: 0;
         top: 25px;
         bottom: 0;
     }
@@ -2174,18 +2155,19 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
-        width: 130px;
+        width: 115px;
         height: 50px;
         border-radius: 15px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > img {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: bold;
     }
 
     body > main > section:nth-child(3) > section:nth-child(4) > section > article > h2 {
@@ -2207,12 +2189,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > img {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     /*----------------------------------------------------------------------------------------------------*/
@@ -2327,6 +2309,60 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         height: 95%;
         width: 95%;
         border-radius: 15px;
+    }
+
+    /*-----------------------------------------Service -----------------------------------------*/
+    main > section:nth-child(6) {
+        height: 225vh;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) {
+        position: absolute;
+        right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main > section:nth-child(6) > section:nth-child(3) {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(4) {
+        top: auto;
+        bottom: 50px;
+        left: 0;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    main > section:nth-child(6) > section > img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 17px;
+    }
+
+    main > section:nth-child(6) > section {
+        width: 250px;
+        height: 320px;
+    }
+
+    main > section:nth-child(6) > section > h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    main > section:nth-child(6) > section > article > p {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
     }
 
 }
