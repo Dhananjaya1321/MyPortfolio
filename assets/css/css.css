@@ -1763,8 +1763,8 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     align-items: center;
 }
 
-/*Mobile S - 320px*/
 
+/*Mobile S - 320px*/
 @media all and (max-width: 375px) {
     .topic {
         border: none;
@@ -1794,18 +1794,17 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         position: relative;
         box-shadow: none;
     }
+
     header > nav {
         right: 0;
     }
+
     header > nav > div:nth-child(2) {
         right: 0;
     }
+
     header > nav > menu {
         display: none;
-        /* list-style-type: none;
-         padding: 0;
-         position: relative;
-         right: 70px;*/
     }
 
     body > main > section:nth-child(1) {
@@ -1868,6 +1867,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         width: 300px;
         margin: 0;
         left: 0;
+        bottom: 0;
     }
 
     .social_media {
@@ -2112,7 +2112,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
-        position: absolute;
         top: -45px;
     }
 
@@ -2442,12 +2441,15 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     footer > section:nth-child(2) {
         margin-top: 0;
     }
+
     small {
         font-size: 12px;
     }
+
     footer > section:nth-child(3) {
-        box-shadow:none;
+        box-shadow: none;
     }
+
     footer > section:nth-child(2) > section:nth-child(1) {
         width: 100%;
         height: 60%;
@@ -2476,12 +2478,14 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         top: -70px;
         width: 95%;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > div {
         right: 0;
         position: absolute;
         left: 40px;
     }
-    footer > section:nth-child(2) > section:nth-child(3) > section > address >img{
+
+    footer > section:nth-child(2) > section:nth-child(3) > section > address > img {
         width: 35px;
         height: 35px;
         border: solid 3px white;
@@ -2489,39 +2493,47 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         background: white;
         box-shadow: 0 0 11px -4px black;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h1 {
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 20px;
         font-size: 25px;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h3 {
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 15px;
         margin-left: 20px;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > nav > div {
         display: inline-block;
         margin-left: 5px;
         margin-right: 5px;
     }
+
     #social_links_nav_footer {
         width: 92%;
         top: 130px;
     }
+
     footer > section:nth-child(2) > section:nth-child(1) > form {
         top: 0;
     }
-   footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div {
-          height: 80px;
-           top: 3px;
-      }
+
+    footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div {
+        height: 80px;
+        top: 3px;
+    }
+
     #submit {
         height: 50px;
         right: 0;
         top: 327px;
     }
+
     footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
         left: 0;
         width: 100px;
@@ -2529,5 +2541,66 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 }
 
+/*Mobile S - 375px*/
+@media all and (max-width: 375px) and  (min-width: 320px) {
+    body > main > section:first-child > section > h3 {
+        font-size: 32px;
+    }
 
+    body > main > section:first-child > section > h2 {
+        font-size: 32px;
 
+    }
+
+    body > main > section:first-child > section > h1 {
+        font-size: 38px;
+    }
+
+    #social_links_nav {
+        bottom: -6px;
+    }
+
+    #download_cv {
+        top: 82px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
+        top: -48px;
+    }
+
+    .skills_div > h2 {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    .skills_img {
+        top: 10px;
+        width: 36px;
+    }
+}
+
+@media all and (max-width: 375px) and  (min-width: 335px) {
+    header > nav > div {
+        right: 180px;
+    }
+
+    #download_cv {
+        right: -165px;
+    }
+}
+
+@media all and (max-width: 375px) and  (min-width: 344px) {
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 43px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+        width: 130px;
+    }
+}
+
+@media all and (max-width: 375px) and  (min-width: 370px) {
+    header > nav > div {
+        right: 195px;
+    }
+
+}
