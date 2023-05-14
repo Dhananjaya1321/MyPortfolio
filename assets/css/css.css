@@ -1765,7 +1765,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
 
 /*Mobile S - 320px*/
-@media all and (max-width: 375px) {
+@media all and (max-width: 425px) {
     .topic {
         border: none;
         box-shadow: none;
@@ -2541,7 +2541,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 }
 
-/*Mobile S - 375px*/
+/*Mobile M - 375px*/
 @media all and (max-width: 375px) and  (min-width: 320px) {
     body > main > section:first-child > section > h3 {
         font-size: 32px;
@@ -2603,4 +2603,108 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         right: 195px;
     }
 
+}
+
+@media all and (max-width: 425px) and  (min-width: 376px) {
+    header > nav > div {
+        right: 215px;
+        top: 677px;
+    }
+
+    #download_cv {
+        right: -165px;
+        top: 90px;
+    }
+
+    #social_links_nav {
+        bottom: -10px;
+    }
+    body > main > section:first-child > section > h3 {
+        font-size: 28px;
+    }
+
+    body > main > section:first-child > section > h2 {
+        font-size: 32px;
+    }
+
+    body > main > section:first-child > section > h1 {
+        font-size: 42px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
+        top: -50px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 45px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+        width: 130px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
+        font-size: 14px;
+    }
+    section > div > a > button > p {
+        font-size: 13px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div {
+        margin-left: 15px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(1) {
+        height: 88%;
+    }
+    .skills_img {
+        top: 6px;
+    }
+    .skills_div > h2 {
+        font-size: 10px;
+        bottom: 4px;
+    }
+    main > section:nth-child(8) {
+        height: 96vh;
+    }
+    main > section:nth-child(8) > section {
+        top: -18px;
+    }
+    main > section:nth-child(8) > section {
+        height: 70%;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > section {
+        width: 75%;
+    }
+}
+
+@media all and (max-width: 425px) and  (min-width: 389px) {
+    body > main > section:first-child > section > h2 {
+        font-size: 34px;
+
+    }
+
+    body > main > section:first-child > section > h1 {
+        font-size: 44px;
+    }
+    #download_cv {
+        top: 85px;
+    }
+}
+
+@media all and (max-width: 425px) and  (min-width: 399px) {
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 32px;
+    }
+}
+@media all and (max-width: 425px) and  (min-width: 414px) {
+    body > main > section:first-child > section > h2 {
+        font-size: 36px;
+
+    }
+
+    body > main > section:first-child > section > h1 {
+        font-size: 46px;
+    }
+
+    #download_cv {
+        top: 81px;
+    }
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 64px;
+    }
 }
