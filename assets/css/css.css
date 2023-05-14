@@ -1765,11 +1765,11 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
 /*Mobile S - 320px*/
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 375px) {
     .topic {
         border: none;
         box-shadow: none;
-        background-color: #F7F7F7;
+        background-color: #f7f7f700;
         position: absolute;
         left: 0;
         right: 0;
@@ -1794,7 +1794,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         position: relative;
         box-shadow: none;
     }
-
+    header > nav {
+        right: 0;
+    }
+    header > nav > div:nth-child(2) {
+        right: 0;
+    }
     header > nav > menu {
         display: none;
         /* list-style-type: none;
@@ -1911,10 +1916,11 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
 
     header > nav > div {
-        right: 140px;
-        top: 652px;
         width: 140px;
         height: 50px;
+        right: 168px;
+        top: 666px;
+        position: absolute;
     }
 
 
@@ -2402,15 +2408,15 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     @keyframes animation_certificate {
-        0%{
-            transform: translateX(calc((-100%/3)*0));
+        0% {
+            transform: translateX(calc((-100% / 3) * 0));
         }
-        50%{
-            transform: translateX(calc((-100%/3)*1));
+        50% {
+            transform: translateX(calc((-100% / 3) * 1));
 
         }
-        100%{
-            transform: translateX(calc((-100%/3)*2));
+        100% {
+            transform: translateX(calc((-100% / 3) * 2));
 
         }
     }
@@ -2426,6 +2432,100 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     main > section:nth-child(8) > section > section > div > a > img {
         box-shadow: 0px 1px 7px -3px black;
+    }
+
+    /*-------------------------footer-----------------------------*/
+    footer {
+        height: 175vh;
+    }
+
+    footer > section:nth-child(2) {
+        margin-top: 0;
+    }
+    small {
+        font-size: 12px;
+    }
+    footer > section:nth-child(3) {
+        box-shadow:none;
+    }
+    footer > section:nth-child(2) > section:nth-child(1) {
+        width: 100%;
+        height: 60%;
+        bottom: -12px;
+        margin: auto;
+        z-index: 1;
+    }
+
+    footer > section:nth-child(2) > div {
+        display: none;
+    }
+
+    footer > section:nth-child(2) > section:nth-child(3) {
+        width: 100%;
+        top: 0;
+        height: 50%;
+    }
+
+    footer > section:nth-child(2) > section:nth-child(3) > div {
+        display: none;
+    }
+
+    footer > section:nth-child(2) > section:nth-child(3) > section {
+        height: 90%;
+        align-items: center;
+        top: -70px;
+        width: 95%;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > section > address > div {
+        right: 0;
+        position: absolute;
+        left: 40px;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > section > address >img{
+        width: 35px;
+        height: 35px;
+        border: solid 3px white;
+        border-radius: 100%;
+        background: white;
+        box-shadow: 0 0 11px -4px black;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    footer > section:nth-child(2) > section:nth-child(3) > nav > div {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #social_links_nav_footer {
+        width: 92%;
+        top: 130px;
+    }
+    footer > section:nth-child(2) > section:nth-child(1) > form {
+        top: 0;
+    }
+   footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div {
+          height: 80px;
+           top: 3px;
+      }
+    #submit {
+        height: 50px;
+        right: 0;
+        top: 327px;
+    }
+    footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
+        left: 0;
+        width: 100px;
+        right: 0;
     }
 }
 
