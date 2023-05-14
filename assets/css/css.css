@@ -2203,12 +2203,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     main > section:nth-child(4) > nav {
-        top: 60px;
-        width: fit-content;
+        display: none;
     }
 
     main > section:nth-child(4) > section {
         height: 90%;
+        top: 0;
     }
 
     .button_left {
@@ -2264,12 +2264,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     main > section:nth-child(5) > nav {
-        top: 60px;
-        width: fit-content;
+        display: none;
     }
 
     main > section:nth-child(5) > section {
         height: 90%;
+        top: 0px;
     }
 
     main > section:nth-child(5) > section > section {
@@ -2365,6 +2365,68 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         font-size: 20px;
     }
 
+    /*---------------------------Gallery---------------------------*/
+    main > section:nth-child(7) > section {
+        position: absolute;
+        right: 0;
+        left: 16px;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*--------------------------Certificate------------------------*/
+    main > section:nth-child(8) {
+        height: 80vh;
+    }
+
+    main > section:nth-child(8) > section {
+        height: 60%;
+        width: 90%;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+
+    }
+
+    main > section:nth-child(8) > section > section {
+        width: calc(100% * 3);
+        flex-wrap: nowrap;
+        animation-name: animation_certificate;
+        animation-direction: alternate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animation_certificate {
+        0%{
+            transform: translateX(calc((-100%/3)*0));
+        }
+        50%{
+            transform: translateX(calc((-100%/3)*1));
+
+        }
+        100%{
+            transform: translateX(calc((-100%/3)*2));
+
+        }
+    }
+    main > section:nth-child(8) > section > section > div {
+        width: 80%;
+        flex-grow: 1;
+    }
+
+    main > section:nth-child(8) > section > section > div:nth-child(2) {
+        flex-grow: 1;
+        width: 80%;
+    }
+
+    main > section:nth-child(8) > section > section > div > a > img {
+        box-shadow: 0px 1px 7px -3px black;
+    }
 }
 
 
