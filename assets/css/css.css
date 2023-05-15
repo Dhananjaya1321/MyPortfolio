@@ -1764,7 +1764,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 }
 
 
-/*Mobile S - 320px*/
+/*Mobile L - 425px*/
 @media all and (max-width: 425px) {
     .topic {
         border: none;
@@ -1808,7 +1808,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(1) {
-        height: 140vh;
+        height: 700px;
     }
 
     body > main > section:first-child > aside {
@@ -1818,7 +1818,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         left: 0;
         margin-left: auto;
         margin-right: auto;
-        height: 100vh;
+        height: 400px;
     }
 
     body > main > section:first-child > aside > img {
@@ -1833,9 +1833,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     body > main > section:first-child > section {
         position: relative;
-        top: -133px;
+        top: -10px;
         width: 100%;
-        height: 32vh;
+        height: 112px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1899,21 +1899,17 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         top: 100px;
     }
 
-
     #download_cv > a > input {
         width: 140px;
         height: 50px;
         border-radius: 15px;
-        /* font-style: revert; */
         border: 2px solid;
         box-shadow: -2px 2px 6px -3px black;
     }
 
-
     section:nth-child(1) > svg {
         display: none;
     }
-
 
     header > nav > div {
         width: 140px;
@@ -1922,7 +1918,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         top: 666px;
         position: absolute;
     }
-
 
     header > nav > div > a > input {
         width: 140px;
@@ -1934,7 +1929,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*----------------------------------------------------------*/
     body > main > section:nth-child(2) {
-        height: 165vh;
+        height: 900px;
     }
 
     body > main > section:nth-child(2) > section:first-child > img {
@@ -1942,13 +1937,53 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(2) > section:first-child {
-        display: none;
+        width: 100%;
+        height: 15%;
+    }
+
+    #project_count {
+        width: 130px;
+        height: 130px;
+        top: 25px;
+        left: 20px;
+        box-shadow: 0px 3px 7px -3px black;
+    }
+
+    #experience_years {
+        width: 130px;
+        height: 130px;
+        right: 20px;
+        left: auto;
+        bottom: 0;
+        top: 25px;
+        box-shadow: 0px 3px 7px -3px black;
+    }
+
+    #project_count > h1 {
+        flex-grow: 1;
+    }
+
+    #project_count > h3 {
+        font-size: 25px;
+        position: relative;
+        bottom: 12px;
+    }
+
+    #experience_years > h1 {
+        flex-grow: 1;
+    }
+
+    #experience_years > h3 {
+        font-size: 25px;
+        position: relative;
+        bottom: 12px;
     }
 
     body > main > section:nth-child(2) > article:nth-child(2) {
         position: relative;
         height: 45%;
         width: 100%;
+        top: 15px;
     }
 
     body > main > section:nth-child(2) > article:nth-child(2) > h1 {
@@ -1966,6 +2001,8 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:nth-child(2) > section:nth-child(3) {
         position: relative;
         width: 100%;
+        height: 35%;
+        bottom: 0;
     }
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:first-child {
@@ -2000,38 +2037,17 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:nth-child(2) > section:nth-child(3) > section:last-child {
         height: 70%;
         top: 93px;
-        /* position: absolute;
-         width: 100%;
-         right: 0;
-         bottom: 0;*/
     }
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:first-child {
-        position: absolute;
-        width: 30px;
-        height: 170px;
-        top: 0;
-        left: 0;
-        bottom: 10px;
-        /* left: 50px; */
-        margin: auto;
+        display: none;
     }
 
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
-        height: 100%;
         width: 80%;
-        margin-top: 0;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 5fr);
-        /*position: absolute;
-        display: grid;
-        grid-gap: 5px;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-     */
+        grid-template-rows: repeat(5, 1fr);
     }
 
     .skills_div {
@@ -2052,20 +2068,13 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     .skills_div > h2 {
-        /*z-index: 1;*/
         font-size: 14px;
         bottom: 1px;
     }
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child {
-        position: absolute;
-        width: 30px;
-        height: 170px;
-        top: 0;
-        right: 0;
-        bottom: 10px;
-        /* left: 50px; */
-        margin: auto;
+        display: none;
+
     }
 
     body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child > button {
@@ -2087,7 +2096,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     body > main > section:nth-child(3) {
-        height: 145vh;
+        height: 725px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(4) > div:nth-child(1) {
@@ -2105,7 +2114,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     body > main > section:nth-child(3) > section:nth-child(3) {
         width: 100%;
-        /*position: relative;*/
         bottom: 20px;
         height: 370px;
 
@@ -2204,7 +2212,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*----------------------------------------------------------------------------------------------------*/
     body > main > section:nth-child(4) {
-        height: 200vh;
+        height: 1000px;
     }
 
     main > section:nth-child(4) > nav {
@@ -2265,7 +2273,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*----------------------------------------------------------------------------------------------------*/
     body > main > section:nth-child(5) {
-        height: 200vh;
+        height: 1000px;
     }
 
     main > section:nth-child(5) > nav {
@@ -2318,7 +2326,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*-----------------------------------------Service -----------------------------------------*/
     main > section:nth-child(6) {
-        height: 225vh;
+        height: 1125px;
     }
 
     main > section:nth-child(6) > section:nth-child(2) {
@@ -2381,7 +2389,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*--------------------------Certificate------------------------*/
     main > section:nth-child(8) {
-        height: 80vh;
+        height: 400px;
     }
 
     main > section:nth-child(8) > section {
@@ -2435,9 +2443,8 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     /*-------------------------footer-----------------------------*/
     footer {
-        height: 175vh;
+        height: 875px;
     }
-
     footer > section:nth-child(2) {
         margin-top: 0;
     }
@@ -2541,7 +2548,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 }
 
-/*Mobile M - 375px*/
+/*Mobile S to M - 375px*/
 @media all and (max-width: 375px) and  (min-width: 320px) {
     body > main > section:first-child > section > h3 {
         font-size: 32px;
@@ -2561,7 +2568,16 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     #download_cv {
-        top: 82px;
+        top: 84px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        height: 40%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
@@ -2572,6 +2588,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         font-size: 10px;
         margin-bottom: 2px;
     }
+
     .skills_img {
         top: 10px;
         width: 36px;
@@ -2596,6 +2613,16 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
         width: 130px;
     }
+
+    #project_count {
+        width: 150px;
+        height: 150px;
+    }
+
+    #experience_years {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media all and (max-width: 375px) and  (min-width: 370px) {
@@ -2619,6 +2646,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     #social_links_nav {
         bottom: -10px;
     }
+
     body > main > section:first-child > section > h3 {
         font-size: 28px;
     }
@@ -2630,43 +2658,87 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:first-child > section > h1 {
         font-size: 42px;
     }
+
+    body > main > section:nth-child(2) {
+        height: 800px;
+    }
+
+    #project_count {
+        width: 150px;
+        height: 150px;
+    }
+
+    #experience_years {
+        width: 150px;
+        height: 150px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        top: 35px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) {
+        bottom: -40px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        height: 35%;
+    }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4) {
         top: -50px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
         bottom: 45px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
         width: 130px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
         font-size: 14px;
     }
+
     section > div > a > button > p {
         font-size: 13px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section > div {
         margin-left: 15px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(1) {
         height: 88%;
     }
+
     .skills_img {
         top: 6px;
     }
+
     .skills_div > h2 {
         font-size: 10px;
         bottom: 4px;
     }
+
     main > section:nth-child(8) {
-        height: 96vh;
+        height: 450px;
     }
+
     main > section:nth-child(8) > section {
         top: -18px;
     }
+
     main > section:nth-child(8) > section {
         height: 70%;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section {
         width: 75%;
     }
@@ -2681,8 +2753,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:first-child > section > h1 {
         font-size: 44px;
     }
+
     #download_cv {
-        top: 85px;
+        top: 88px;
     }
 }
 
@@ -2690,7 +2763,18 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
         bottom: 32px;
     }
+
+    #project_count {
+        width: 160px;
+        height: 160px;
+    }
+
+    #experience_years {
+        width: 160px;
+        height: 160px;
+    }
 }
+
 @media all and (max-width: 425px) and  (min-width: 414px) {
     body > main > section:first-child > section > h2 {
         font-size: 36px;
@@ -2702,8 +2786,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     #download_cv {
-        top: 81px;
+        top: 84px;
     }
+
     body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
         bottom: 64px;
     }
