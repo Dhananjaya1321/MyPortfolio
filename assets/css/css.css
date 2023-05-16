@@ -1765,7 +1765,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
 
 /*Mobile L - 425px*/
-@media all and (max-width: 425px) {
+@media all and (max-width: 600px) {
     .topic {
         border: none;
         box-shadow: none;
@@ -2795,7 +2795,271 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 }
 
-@media all and (max-width: 768px) and  (min-width: 426px) {
+@media all and (max-width: 500px) and  (min-width: 426px) {
+    body > main > section:first-child > section > h1 {
+        font-size: 45px;
+    }
+
+    body > main > section:first-child > section > h2 {
+        font-size: 35px;
+    }
+
+    header > nav > div {
+        right: 260px;
+        top: 674px;
+    }
+
+    #social_links_nav {
+        bottom: -7px;
+    }
+
+    header > nav > div > a > input {
+        width: 150px;
+    }
+
+    #download_cv {
+        right: -220px;
+        top: 86px;
+    }
+
+    #download_cv > a > input {
+        width: 150px;
+    }
+
+    #project_count {
+        width: 160px;
+        height: 160px;
+        left: 30px;
+    }
+
+    #experience_years {
+        width: 160px;
+        height: 160px;
+        right: 30px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) > p {
+        right: 5px;
+        left: 5px;
+        font-size: 24px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        top: 40px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) {
+        bottom: 45px;
+    }
+
+    .skills_div {
+        width: 65px;
+        height: 65px;
+    }
+
+    .skills_div > h2 {
+        font-size: 12px;
+        bottom: 3px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > article > h2 {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > article > p {
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > article > h2 {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > article > p {
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 46px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div {
+        margin-left: 25px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+        width: 150px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
+        font-size: 15px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button {
+        width: 150px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > p {
+        font-size: 15px;
+    }
+
+    main > section:nth-child(8) {
+        height: 550px;
+    }
+
+    footer > section:nth-child(2) > section:nth-child(3) > section {
+        width: 75%;
+    }
+
+}
+
+@media all and (max-width: 600px) and  (min-width: 501px) {
+    body > main > section:first-child > aside > img {
+        height: 385px;
+        width: 255px;
+    }
+
+    body > main > section:first-child > section > h1 {
+        font-size: 48px;
+    }
+
+    body > main > section:first-child > section > h2 {
+        font-size: 40px;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+
+    header > nav > div {
+        right: 300px;
+        top: 681px;
+    }
+
+    #social_links_nav {
+        bottom: -7px;
+    }
+
+    header > nav > div > a > input {
+        width: 170px;
+    }
+
+    #download_cv {
+        right: -220px;
+        top: 86px;
+    }
+
+    #download_cv > a > input {
+        width: 170px;
+    }
+
+    #project_count {
+        width: 180px;
+        height: 160px;
+        left: 55px;
+    }
+
+    #experience_years {
+        width: 180px;
+        height: 160px;
+        right: 55px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) > p {
+        right: 5px;
+        left: 5px;
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        top: 40px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) {
+        bottom: 45px;
+    }
+
+    .skills_div {
+        width: 65px;
+        height: 65px;
+    }
+
+    .skills_div > h2 {
+        font-size: 12px;
+        bottom: 3px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > article > h2 {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > article > p {
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > article > h2 {
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > article > p {
+        font-size: 18px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
+        bottom: 46px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div {
+        margin-left: 25px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button {
+        width: 150px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > button > p {
+        font-size: 15px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button {
+        width: 150px;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button > p {
+        font-size: 15px;
+    }
+
+    main > section:nth-child(6) > section > img {
+        width: 130px;
+        height: 130px;
+    }
+
+    main > section:nth-child(6) > section {
+        width: 280px;
+    }
+
+    main > section:nth-child(6) > section > article > p {
+        font-size: 20px;
+    }
+
+
+    main > section:nth-child(8) {
+        height: 600px;
+    }
+
+    footer > section:nth-child(2) > section:nth-child(3) > section {
+        width: 57%;
+    }
+
+}
+
+
+@media all and (max-width: 768px) and  (min-width: 601px) {
     /*header*/
     header > nav {
         right: 0;
@@ -3150,13 +3414,16 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     main > section:nth-child(8) {
         height: 500px;
     }
-/*footer*/
+
+    /*footer*/
     footer {
         height: 600px;
     }
+
     .topic_main_div {
         top: 25px;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > img {
         width: 40px;
         height: 40px;
@@ -3165,11 +3432,13 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         background: white;
         box-shadow: 0 0 11px -4px black;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h1 {
         margin-left: 25px;
         margin-bottom: 0;
         font-size: 28px;
     }
+
     footer > section:nth-child(2) > section:nth-child(3) > section > address > div > h3 {
         margin-left: 25px;
         margin-bottom: 0;
@@ -3179,15 +3448,16 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     #social_links_nav_footer {
         top: 325px;
     }
+
     #submit {
         height: 55px;
     }
+
     footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > input[type="submit"] {
         width: 100px;
         left: 0;
         right: 0;
     }
-
 
 
 }

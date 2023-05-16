@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
     </list>
@@ -13,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -62,25 +63,12 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\Animations\CaseFive\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\bootstrap" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseTwo" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseThree" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseOne" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -150,7 +138,8 @@
       <workItem from="1683971268454" duration="12620000" />
       <workItem from="1684038035389" duration="16552000" />
       <workItem from="1684066360658" duration="15561000" />
-      <workItem from="1684125433901" duration="29119000" />
+      <workItem from="1684125433901" duration="34689000" />
+      <workItem from="1684214280514" duration="5182000" />
     </task>
     <servers />
   </component>
