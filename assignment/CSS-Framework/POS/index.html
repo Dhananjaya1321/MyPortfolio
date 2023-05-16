@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Framework POS</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../assets/css/Normalize.css">
+    <link rel="stylesheet" href="../../../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.css">
+    <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light"
+         style="background-color: #e3f2fd; box-shadow: 0px 1px 7px -4px black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#">
+                    <img src="../../../favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    Isuru POS
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-right-from-bracket fa-xl"></i> Log Out
+                        </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+</header><!--navbar-->
+<main class="w-100 p-3 h-100 d-inline-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn  btn-outline-info" type="submit">Search</button>
+                </form>
+            </div><!--search bar-->
+            <div class="col-4">
+                <button type="button" class="btn btn-success">New</button>
+                <button type="button" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div><!--buttons-->
+        </div><!--row 1-->
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">NIC</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Tel</th>
+                    <th scope="col">Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr> <tr>
+                    <th scope="row">4</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr> <tr>
+                    <th scope="row">4</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr> <tr>
+                    <th scope="row">4</th>
+                    <td>Isuru</td>
+                    <td>076751321</td>
+                    <td>Galle</td>
+                </tr>
+                </tbody>
+            </table>
+        </div><!--table-->
+    </div>
+</main>
+<footer></footer>
 </body>
 </html>
