@@ -1,8 +1,8 @@
-span{
+span {
     color: #009EF8;
 }
 
-header>div{
+header > div {
     position: relative;
     right: 0;
     left: 0;
@@ -12,9 +12,11 @@ header>div{
     justify-content: center;
     align-items: center;
 }
-header>div>h1{
+
+header > div > h1 {
 
 }
+
 #assignment_section {
     position: relative;
     width: 95%;
@@ -120,3 +122,55 @@ header>div>h1{
     background-size: cover;
     background-position: center;
 }
+
+@media all and (max-width: 1440px) {
+    #assignment_section {
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        height: 3000px;
+        grid-gap: 20px;
+    }
+
+    #assignment_section > div {
+        box-shadow: 0px 0px 17px -7px black;
+    }
+}
+
+
+@media all and (max-width: 425px) and (min-width: 375px) {
+    #assignment_section {
+        height: 3500px;
+    }
+}
+
+@media all and (max-width: 600px) and (min-width: 426px) {
+    #assignment_section {
+        height: 1200px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 768px) and (min-width: 600px) {
+    #assignment_section {
+        height: 1500px;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 768px) {
+    #assignment_section {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        height: 1200px;
+    }
+}
+@media all and (max-width: 1440px) and (min-width: 1024px) {
+    #assignment_section {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        height: 1000px;
+    }
+}
+
