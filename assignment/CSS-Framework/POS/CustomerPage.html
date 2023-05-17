@@ -116,8 +116,8 @@
                          tabindex="-1" aria-labelledby="updateCustomerLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                                <div class="modal-header"  style="background-color: #006aff; color: white">
-                                    <h1 class="modal-title fs-5" id="updateCustomerLabel" >Update Customer</h1>
+                                <div class="modal-header" style="background-color: #006aff; color: white">
+                                    <h1 class="modal-title fs-5" id="updateCustomerLabel">Update Customer</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
@@ -125,15 +125,18 @@
                                     <form class="row g-3 text-start">
                                         <div class="col-12">
                                             <label for="inputAddress" class="form-label">NIC</label>
-                                            <input type="text" class="form-control" id="inputUpdateNIC" placeholder="NIC">
+                                            <input type="text" class="form-control" id="inputUpdateNIC"
+                                                   placeholder="NIC">
                                         </div>
                                         <div class="col-12">
                                             <label for="inputAddress" class="form-label">Name</label>
-                                            <input type="text" class="form-control" id="inputUpdateName" placeholder="Name">
+                                            <input type="text" class="form-control" id="inputUpdateName"
+                                                   placeholder="Name">
                                         </div>
                                         <div class="col-12">
                                             <label for="inputAddress" class="form-label">Tel</label>
-                                            <input type="text" class="form-control" id="inputUpdateTel" placeholder="Tel">
+                                            <input type="text" class="form-control" id="inputUpdateTel"
+                                                   placeholder="Tel">
                                         </div>
                                         <div class="col-12">
                                             <label for="inputAddress" class="form-label">Address</label>
@@ -159,14 +162,15 @@
             </div>
         </div>
     </section><!--search bar and buttons-->
-    <section class="row h-75 w-75 shadow-lg">
-        <table class="table">
+    <section class="row h-75 w-75 shadow-lg" style="border-radius: 30px">
+        <table class="table table-striped table-hover">
             <thead>
             <tr>
                 <th scope="col">NIC</th>
                 <th scope="col">Name</th>
                 <th scope="col">Tel</th>
                 <th scope="col">Address</th>
+                <th scope="col">Action</th>
             </tr>
             </thead>
             <tbody>
@@ -175,30 +179,60 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <td>
+                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                        <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                        <i class="fa-solid fa-pencil"></i></button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td>
+                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                        <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                        <i class="fa-solid fa-pencil"></i></button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td>
+                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                        <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                        <i class="fa-solid fa-pencil"></i></button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td>
+                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                        <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                        <i class="fa-solid fa-pencil"></i></button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <td>
+                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                        <i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                        <i class="fa-solid fa-pencil"></i></button>
+                </td>
             </tr>
             </tbody>
         </table>
