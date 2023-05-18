@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/d.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/CustomerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/CustomerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/OrderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/OrderPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/StorePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/StorePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,15 +71,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +154,8 @@
       <workItem from="1684125433901" duration="34689000" />
       <workItem from="1684214280514" duration="28592000" />
       <workItem from="1684297726264" duration="41568000" />
-      <workItem from="1684382314952" duration="17683000" />
+      <workItem from="1684382314952" duration="19252000" />
+      <workItem from="1684412325538" duration="7015000" />
     </task>
     <servers />
   </component>
