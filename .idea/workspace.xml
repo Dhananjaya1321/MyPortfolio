@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/businessman-hand-pants-pocket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/futuristic-hologram-smartwatch-wearable-technology.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/gray-scale-shot-black-watch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/CSS-Framework/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/CustomerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/CustomerPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/OrderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/OrderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/StorePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/StorePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +66,11 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\Animations\CaseSix\asstes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\pages" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\bootstrap" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseTwo" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\css\CaseThree" />
     </key>
   </component>
   <component name="RunManager">
@@ -161,7 +159,7 @@
       <workItem from="1684125433901" duration="34689000" />
       <workItem from="1684214280514" duration="28592000" />
       <workItem from="1684297726264" duration="41568000" />
-      <workItem from="1684382314952" duration="13316000" />
+      <workItem from="1684382314952" duration="17683000" />
     </task>
     <servers />
   </component>
