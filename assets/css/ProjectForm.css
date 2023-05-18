@@ -1,8 +1,8 @@
-span{
+span {
     color: #009EF8;
 }
 
-header>div{
+header > div {
     position: relative;
     right: 0;
     left: 0;
@@ -12,9 +12,11 @@ header>div{
     justify-content: center;
     align-items: center;
 }
-header>div>h1{
+
+header > div > h1 {
 
 }
+
 #project_section {
     position: relative;
     width: 95%;
@@ -33,12 +35,16 @@ header>div>h1{
     height: max-content;
 }
 
+#project_section > div:hover {
+    transform: scale(1.075);
+}
+
 #project_section > div {
     position: relative;
     border-radius: 20px;
     border: #ffffff solid 5px;
     box-shadow: 0px 0px 5px -1px black;
-
+    transition: transform 1s;
 }
 
 #project_section > div > a > div {
@@ -116,6 +122,7 @@ header>div>h1{
         height: 1200px;
     }
 }
+
 @media all and (max-width: 1440px) and (min-width: 1024px) {
     #project_section {
         grid-template-rows: repeat(4, 1fr);

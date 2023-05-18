@@ -1383,9 +1383,13 @@ main > section:nth-child(7) > section {
     grid-gap: 5px;
 }
 
+main > section:nth-child(7) > section > div:hover {
+    transform: scale(1.015);
+}
 main > section:nth-child(7) > section > div {
     border-radius: 10px;
     box-shadow: -2px 2px 4px -2px black;
+    transition: transform .5s;
 }
 
 main > section:nth-child(7) > section > div:nth-child(1) {
@@ -1780,6 +1784,8 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     header {
         background-color: #e4e4e4;
         height: 50px;
+        position: relative;
+        box-shadow: none;
     }
 
     header > nav {
@@ -1903,7 +1909,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         width: 140px;
         height: 50px;
         right: 168px;
-        top: 616px;
+        top: 666px;
         position: absolute;
     }
 
@@ -3393,6 +3399,10 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         height: 530px;
     }
 
+    main > section:nth-child(7) > section {
+        height: 390px;
+    }
+
     /*certificate*/
     main > section:nth-child(8) {
         height: 500px;
@@ -3441,8 +3451,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         left: 0;
         right: 0;
     }
-
-
 }
 
 @media all and (max-width: 700px) and  (min-width: 601px) {
@@ -3960,7 +3968,8 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     main > section:nth-child(7) > section {
-        height: 480px;
+        height: 520px;
+        top: 80px;
     }
 
     footer > section:nth-child(2) > section:nth-child(3) > section > address > img {
@@ -4181,3 +4190,4 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         margin-right: 20px;
     }
 }
+
