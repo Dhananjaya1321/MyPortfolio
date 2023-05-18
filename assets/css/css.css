@@ -140,22 +140,25 @@ header > nav {
     margin: auto;
 }
 
-header > nav > menu > li > a:after {
-    display: block;
-    content: '';
-    border-bottom: solid 3px #0089ff;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-}
-
 header > nav > menu > li > a:hover {
     color: #0089ff;
 }
+header > nav > menu > li > a {
+    transition: 0.3s all;
+}
+header > nav > menu > li > a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: #0089ff;
+    border-radius: 25px;
+    transition: width .3s;
+}
 
-header > nav > menu > li > a:hover:after {
-    transform: scaleX(1);
-    transform-origin: 0 50%;
-
+header > nav > menu > li > a:hover::after {
+    width: 60%;
+    transition: width .3s;
 }
 
 header > nav > menu > li {
@@ -177,6 +180,7 @@ header > nav > div {
     position: relative;
     margin: auto;
 }
+/*
 
 header > nav > div:nth-child(2) {
     width: 70px;
@@ -191,7 +195,7 @@ header > nav > div:nth-child(2) {
 
 }
 
-header > nav > div:nth-child(2) > a > img {
+header > nav > div:nth-child(2) > button > i {
     border-style: none;
     position: absolute;
     margin: auto;
@@ -199,20 +203,17 @@ header > nav > div:nth-child(2) > a > img {
     left: 0;
     right: 0;
 }
+*/
 
-header > nav > div:nth-child(2) > a > p {
+/*
+header > nav > div:nth-child(2) > b > p {
     width: 61px;
     position: relative;
     font-size: 0.8em;
     margin: 0;
 }
+*/
 
-/*header > nav > div:nth-child(3) {
-background-color: #C3C3C3;
-color: #87CEFA;
-border: 2px solid #87CEFA;
-
-}*/
 header > nav > div > a > input {
     width: 100px;
     height: 35px;
@@ -220,7 +221,6 @@ header > nav > div > a > input {
     border: 2px #009EF8 solid;
     border-radius: 20px;
     background-color: #C3C3C3;
-    /*color: deepskyblue;*/
     font-weight: bold;
     font-size: 20px;
 }
@@ -236,24 +236,18 @@ header > nav > div > a > input:hover {
 
 
 body > main > section:nth-child(1) {
-    /*border: red solid 2px;*/
     position: relative;
     height: 100vh;
-    /*width: 100vw;*/
 }
 
 body > main > section:nth-child(2) {
-    /*border: red solid 2px;*/
     position: relative;
     height: 100vh;
-    /*width: 100vw;*/
 }
 
 body > main > section:nth-child(4) {
-    /*border: red solid 2px;*/
     position: relative;
     height: 100vh;
-    /*width: 100vw;*/
 }
 
 
@@ -267,7 +261,6 @@ body > main > section:first-child > section {
     margin-top: 50px;
     width: 70%;
     height: 90%;
-    /*background-color: darkgray;*/
 }
 
 body > main > section:first-child > section > h1 {
@@ -301,15 +294,6 @@ body > main > section:first-child > section > h3 {
 
 }
 
-/*
-body > main > section:first-child > section > nav > div:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-}
-*/
-
 .social_media {
     display: inline-block;
     margin-left: 15px;
@@ -323,7 +307,6 @@ body > main > section:first-child > section > nav > div:first-child {
     margin-left: 430px;
     top: 0;
     bottom: 0;
-
 }
 
 #download_cv > a > input {
@@ -385,9 +368,7 @@ body > main > section:nth-child(2) > section:first-child {
 body > main > section:nth-child(2) > section:first-child > img {
     position: absolute;
     left: 0;
-    /*top: 0;*/
     bottom: 0;
-
 }
 
 
@@ -403,7 +384,6 @@ body > main > section:nth-child(2) > section:first-child > img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 #project_count > h1 {
@@ -411,7 +391,6 @@ body > main > section:nth-child(2) > section:first-child > img {
     font-size: 5em;
     margin: 0;
     flex-grow: 1;
-
 }
 
 #project_count > h3 {
@@ -433,7 +412,6 @@ body > main > section:nth-child(2) > section:first-child > img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 #experience_years > h1 {
@@ -465,7 +443,6 @@ body > main > section:nth-child(2) > article:nth-child(2) > h1 {
     right: 0;
     left: -100px;
     top: 50px;
-    /* height: 50px; */
     margin: auto;
     width: 138px;
 }
@@ -492,14 +469,12 @@ body > main > section:nth-child(2) > section:nth-child(3) {
     height: 50%;
     right: 0;
     bottom: 30px;
-    /*left: 50px;*/
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:first-child {
     position: absolute;
     width: 100%;
     height: 15%;
-    /*right: 0;*/
     top: -20px;
 }
 
@@ -511,7 +486,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:first-child 
     left: 0;
     top: 0;
     margin: auto;
-    /*background-color: deepskyblue;*/
     border-radius: 20px;
 }
 
@@ -545,7 +519,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child {
     height: 90%;
     right: 0;
     bottom: 0;
-    /*left: 50px;*/
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section {
@@ -561,7 +534,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     right: 0;
     bottom: 0;
     margin: auto;
-    /*left: 50px;*/
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > section > div {
@@ -579,7 +551,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     top: 0;
     left: 0;
     bottom: 10px;
-    /* left: 50px; */
     margin: auto;
 }
 
@@ -604,7 +575,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     top: 0;
     right: 0;
     bottom: 10px;
-    /* left: 50px; */
     margin: auto;
 }
 
@@ -631,8 +601,6 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
     justify-content: center;
     text-align: center;
     box-shadow: 0px 3px 6px -2px black;;
-    /*margin-left: 50px;
-    margin-top: 20px;*/
 }
 
 .skills_div > svg {
@@ -681,7 +649,6 @@ body > main > section:nth-child(3) {
 
 body > main > section:nth-child(3) > section:nth-child(3) {
     width: 50%;
-    /* top: 50px; */
     height: 90%;
     bottom: 0;
     position: absolute;
@@ -694,7 +661,6 @@ body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(1) {
     left: 30px;
     height: 85%;
     background-color: #009EF8;
-
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > div:nth-child(2) {
@@ -753,14 +719,12 @@ body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(4)
     position: absolute;
     left: 65px;
     top: 80px;
-    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section:nth-child(5) {
     position: absolute;
     left: 65px;
     bottom: 50px;
-    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(3) > section > article > h2 {
@@ -815,14 +779,8 @@ body > main > section:nth-child(3) > section:nth-child(3) > section > div > a > 
     height: 50px;
 }
 
-
-/*education after school*/
-/*body > main > section:nth-child(4) {
-    border: 2px solid;
-}*/
 body > main > section:nth-child(3) > section:nth-child(4) {
     width: 50%;
-    /* top: 50px; */
     height: 90%;
     bottom: 0;
     right: 0;
@@ -894,7 +852,6 @@ body > main > section:nth-child(3) > section:nth-child(4) > section:nth-child(4)
     position: absolute;
     right: 65px;
     bottom: 50px;
-    /*border: deepskyblue solid 2px;*/
 }
 
 body > main > section:nth-child(3) > section:nth-child(4) > section > div {
@@ -903,7 +860,6 @@ body > main > section:nth-child(3) > section:nth-child(4) > section > div {
 }
 
 body > main > section:nth-child(3) > section:nth-child(4) > section > div > a > button {
-    /*display: inline-block;*/
     position: relative;
     width: 200px;
     height: 60px;
@@ -958,7 +914,6 @@ main > section:nth-child(4) > nav {
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
 main > section:nth-child(4) > section {
@@ -970,7 +925,6 @@ main > section:nth-child(4) > section {
 main > section:nth-child(4) > section > section {
     position: relative;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     width: 90%;
     height: 100%;
@@ -979,26 +933,21 @@ main > section:nth-child(4) > section > section {
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
 .button_left {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
     height: 300px;
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-
 }
 
 .button_left > button {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
-    /*height: 300px;*/
     left: 0;
     top: 0;
     bottom: 0;
@@ -1010,21 +959,17 @@ main > section:nth-child(4) > section > section {
 
 .button_right {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
     height: 300px;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-
 }
 
 .button_right > button {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
-    /*height: 300px;*/
     right: 0;
     top: 0;
     bottom: 0;
@@ -1037,7 +982,6 @@ main > section:nth-child(4) > section > section {
 main > section:nth-child(4) > section > section > div:nth-child(1) {
     width: 420px;
     background-color: #c3c3c3;
-    /* z-index: 1; */
     display: flex;
     align-items: center;
     height: 300px;
@@ -1047,7 +991,6 @@ main > section:nth-child(4) > section > section > div:nth-child(1) {
     position: relative;
     left: 0;
     right: 0;
-    /*height: 96%;*/
     margin: auto;
 }
 
@@ -1069,7 +1012,6 @@ main > section:nth-child(4) > section > section > div > a > div {
 }
 
 main > section:nth-child(4) > section > section > div:nth-child(1) > a > div {
-
     background: url("../image/salon.png");
     background-position: center;
     background-size: cover;
@@ -1100,7 +1042,6 @@ main > section:nth-child(4) > section > section > div:nth-child(2) > a > div {
 main > section:nth-child(4) > section > section > div:nth-child(3) {
     width: 420px;
     background-color: #c3c3c3;
-    /* z-index: 1; */
     display: flex;
     align-items: center;
     height: 300px;
@@ -1136,7 +1077,6 @@ main > section:nth-child(5) > nav {
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
 main > section:nth-child(5) > section {
@@ -1148,7 +1088,6 @@ main > section:nth-child(5) > section {
 main > section:nth-child(5) > section > section {
     position: relative;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     width: 90%;
     height: 100%;
@@ -1162,7 +1101,6 @@ main > section:nth-child(5) > section > section {
 
 .button_left {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
     height: 300px;
     left: 0;
@@ -1174,9 +1112,7 @@ main > section:nth-child(5) > section > section {
 
 .button_left > button {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
-    /*height: 300px;*/
     left: 0;
     top: 0;
     bottom: 0;
@@ -1188,7 +1124,6 @@ main > section:nth-child(5) > section > section {
 
 .button_right {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
     height: 300px;
     right: 0;
@@ -1200,9 +1135,7 @@ main > section:nth-child(5) > section > section {
 
 .button_right > button {
     position: absolute;
-    /*display: inline-block;*/
     width: 50px;
-    /*height: 300px;*/
     right: 0;
     top: 0;
     bottom: 0;
@@ -1215,7 +1148,6 @@ main > section:nth-child(5) > section > section {
 main > section:nth-child(5) > section > section > div:nth-child(1) {
     width: 420px;
     background-color: #c3c3c3;
-    /* z-index: 1; */
     display: flex;
     align-items: center;
     height: 300px;
@@ -1225,7 +1157,6 @@ main > section:nth-child(5) > section > section > div:nth-child(1) {
     position: relative;
     left: 0;
     right: 0;
-    /*height: 96%;*/
     margin: auto;
 }
 
@@ -1277,7 +1208,6 @@ main > section:nth-child(5) > section > section > div:nth-child(2) > a > div {
 main > section:nth-child(5) > section > section > div:nth-child(3) {
     width: 420px;
     background-color: #c3c3c3;
-    /* z-index: 1; */
     display: flex;
     align-items: center;
     height: 300px;
@@ -1296,12 +1226,9 @@ main > section:nth-child(5) > section > section > div:nth-child(3) > a > div {
     background-size: cover;
 }
 
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-
 /*Service section*/
-
 main > section:nth-child(6) {
     position: relative;
     height: 100vh;
@@ -1369,7 +1296,6 @@ main > section:nth-child(6) > section > article > p {
 
 
 /*Gallery section*/
-
 main > section:nth-child(7) {
     position: relative;
     height: 100vh;
@@ -1500,7 +1426,6 @@ main > section:nth-child(8) > section > section > div {
 
 main > section:nth-child(8) > section > section > div > a > img {
     position: relative;
-    /* height: 100%; */
     width: 100%;
 }
 
@@ -1580,8 +1505,6 @@ footer > section:nth-child(2) > section:nth-child(3) > section {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    /*grid-template-rows: repeat(3,1fr);*/
-    /*grid-template-columns: repeat(2,1fr);*/
 }
 
 footer > section:nth-child(2) > section:nth-child(3) > section > address > div {
@@ -1593,10 +1516,8 @@ footer > section:nth-child(2) > section:nth-child(3) > section > address > div {
 }
 
 footer > section:nth-child(2) > section:nth-child(3) > section > address {
-    /*position: absolute;*/
     width: 100%;
     height: 25%;
-    /*margin: auto;*/
     display: flex;
     justify-content: start;
     align-items: center;
@@ -1657,7 +1578,6 @@ footer > section:nth-child(2) > section:nth-child(1) > form {
     height: 100%;
     right: 0;
     top: 25px;
-    /* bottom: 0; */
     margin: auto;
 }
 
