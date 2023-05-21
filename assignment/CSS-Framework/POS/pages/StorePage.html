@@ -48,11 +48,12 @@
         </div>
     </nav>
 </header><!--navbar-->
-<main class="row justify-content-center align-items-center" style="width: 98vw; height: 90vh;">
-    <section class="row h-auto w-75 shadow rounded-pill" style="background-color: white">
-        <div class="container text-center row justify-content-center align-items-center">
-            <div class="row align-items-center">
-                <div class="col flex-lg-grow-1">
+<main class="container-fluid position-absolute start-0 end-0" style="top: 100px;">
+    <section class="row">
+        <div class="col"></div>
+        <div class="col-10">
+            <div class="shadow row  text-center justify-content-center align-items-center" style="background-color: white; border-radius: 30px">
+                <div class="col-12 col-sm-12 col-lg-8">
                     <nav class="navbar justify-content-center">
                         <form class="d-flex flex-column flex-sm-row ubFt" role="search">
                             <input class="form-control me-1" style="width: 250px" type="search"
@@ -63,7 +64,7 @@
                         </form><!--form-->
                     </nav>
                 </div><!--search bar-->
-                <div class="col flex-grow-0">
+                <div class="col-4 col-sm-3 col-lg">
                     <nav class="navbar justify-content-center">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#newItem">Add
@@ -111,7 +112,7 @@
                         </div>
                     </div><!--modal-->
                 </div><!--button new-->
-                <div class="col flex-grow-0">
+                <div class="col-4 col-sm-3 col-lg">
                     <nav class="navbar justify-content-center">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                 data-bs-target="#updateItem">Update
@@ -160,89 +161,91 @@
                         </div>
                     </div><!--modal-->
                 </div><!--button update-->
-                <div class="col flex-grow-0">
+                <div class="col-4 col-sm-3 col-lg">
                     <nav class="navbar justify-content-center">
                         <button type="button" class="btn btn-danger">Delete</button>
                     </nav>
                 </div><!--button delete-->
             </div>
+            <div class="col-12" style="height: 25px"></div>
+            <div class="row text-center justify-content-center align-content-center shadow-lg" style="border-radius: 30px">
+                <table class="col-12 table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Item Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>
+                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                                <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                                <i class="fa-solid fa-pencil"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                                <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                                <i class="fa-solid fa-pencil"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                                <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                                <i class="fa-solid fa-pencil"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                                <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                                <i class="fa-solid fa-pencil"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>
+                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
+                                <i class="fa-solid fa-trash-can"></i></button>
+                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
+                                <i class="fa-solid fa-pencil"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div><!--table-->
         </div>
+        <div class="col"></div>
     </section><!--search bar and buttons-->
-    <section class="row h-75 w-75 shadow-lg" style="border-radius: 30px">
-        <table class="table table-striped table-hover">
-            <thead>
-            <tr>
-                <th scope="col">Item Code</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Item Price</th>
-                <th scope="col">Item Quantity</th>
-                <th scope="col">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>
-                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                        <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                        <i class="fa-solid fa-pencil"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>
-                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                        <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                        <i class="fa-solid fa-pencil"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>
-                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                        <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                        <i class="fa-solid fa-pencil"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>
-                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                        <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                        <i class="fa-solid fa-pencil"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>
-                    <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                        <i class="fa-solid fa-trash-can"></i></button>
-                    <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                        <i class="fa-solid fa-pencil"></i></button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </section><!--table-->
 </main><!--body-->
 </body>
 </html>

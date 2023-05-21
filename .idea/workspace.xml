@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ProjectForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ProjectForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/CustomerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/CustomerPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/OrderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/OrderPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/StorePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/StorePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -155,7 +159,10 @@
       <workItem from="1684214280514" duration="28592000" />
       <workItem from="1684297726264" duration="41568000" />
       <workItem from="1684382314952" duration="19252000" />
-      <workItem from="1684412325538" duration="9888000" />
+      <workItem from="1684412325538" duration="10923000" />
+      <workItem from="1684466120807" duration="4651000" />
+      <workItem from="1684602068654" duration="465000" />
+      <workItem from="1684645390912" duration="19828000" />
     </task>
     <servers />
   </component>
