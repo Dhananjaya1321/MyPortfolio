@@ -9,15 +9,15 @@
     <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-<header>
+<header id="nav_bar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary"
          style="z-index: 1; background-color: #e3f2fd; height: 60px; box-shadow: 0px 1px 7px -4px black;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <a class="navbar-brand" href="#">
-                    <img src="../../../../favicon.png" alt="" width="30" height="30"
+                    <img src="favicon.png" alt="" width="30" height="30"
                          class="d-inline-block align-text-top">
-                    Isuru POS
+                    SPA POS
                 </a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,6 +48,37 @@
         </div>
     </nav>
 </header><!--navbar-->
+<section id="login_section">
+    <div class="position-absolute start-0 end-0 top-0 bottom-0 m-auto row justify-content-center align-content-center text-center">
+        <section class="row w-50 h-50 shadow-lg" style="border-radius: 40px">
+            <div class="row align-items-start position-relative">
+                <div class="row justify-content-center m-auto position-absolute start-0 end-0 top-0 bottom-0">
+                    <h1>Log In</h1>
+                    <form class="d-flex row justify-content-center align-content-center">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <!--<button type="submit" class="btn btn-primary w-50">Log In</button>-->
+                        <ul class="nav nav-pills w-50 d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link nav-pills active" aria-current="page"
+                                   href="#" id="log_in">Log In</a>
+                            </li>
+                        </ul>
+
+                    </form><!--form-->
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
 <section id="home_section">
     <div class="container-fluid row position-absolute start-0 end-0 bottom-0 m-auto" style="top: 60px">
         <section class="row align-content-center justify-content-center">
@@ -716,11 +747,21 @@
     </div><!--body-->
 </section><!--store-->
 <script>
-    document.getElementById("home_section").style.display = 'block';
+    document.getElementById("login_section").style.display = 'block';
+    document.getElementById("home_section").style.display = 'none';
+    document.getElementById("nav_bar").style.display = 'none';
     document.getElementById("customer_section").style.display = 'none';
     document.getElementById("order_section").style.display = 'none';
     document.getElementById("store_section").style.display = 'none';
 
+    document.getElementById("log_in").addEventListener("click", function () {
+        document.getElementById("home_section").style.display = 'block';
+        document.getElementById("nav_bar").style.display = 'block';
+        document.getElementById("customer_section").style.display = 'none';
+        document.getElementById("order_section").style.display = 'none';
+        document.getElementById("store_section").style.display = 'none';
+        document.getElementById("login_section").style.display = 'none';
+    })
     document.getElementById("home").addEventListener("click", function () {
         document.getElementById("home_section").style.display = 'block';
         document.getElementById("customer_section").style.display = 'none';
@@ -744,6 +785,14 @@
         document.getElementById("customer_section").style.display = 'none';
         document.getElementById("order_section").style.display = 'none';
         document.getElementById("store_section").style.display = 'block';
+    })
+    document.getElementById("log_out").addEventListener("click", function () {
+        document.getElementById("home_section").style.display = 'none';
+        document.getElementById("customer_section").style.display = 'none';
+        document.getElementById("order_section").style.display = 'none';
+        document.getElementById("store_section").style.display = 'none';
+        document.getElementById("nav_bar").style.display = 'none';
+        document.getElementById("login_section").style.display = 'block';
     })
 </script>
 </body>
