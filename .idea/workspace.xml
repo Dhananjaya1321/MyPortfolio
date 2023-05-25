@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/AssignmentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/AssignmentForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/assingments.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/assingments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +46,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/SPA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -55,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\SPA" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\certificate" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\pages" />
@@ -146,7 +148,7 @@
       <workItem from="1684602068654" duration="465000" />
       <workItem from="1684645390912" duration="20666000" />
       <workItem from="1684731461695" duration="8455000" />
-      <workItem from="1685027299779" duration="650000" />
+      <workItem from="1685027299779" duration="3190000" />
     </task>
     <servers />
   </component>
