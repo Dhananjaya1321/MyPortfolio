@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/Queue/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/jquery-3.6.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/SPA/js/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/businessman-hand-pants-pocket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/assets/businessman-hand-pants-pocket.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/futuristic-hologram-smartwatch-wearable-technology.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/assets/futuristic-hologram-smartwatch-wearable-technology.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/assets/gray-scale-shot-black-watch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/assets/gray-scale-shot-black-watch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/CustomerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/pages/CustomerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/pages/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/OrderPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/pages/OrderPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/POS/pages/StorePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/pages/StorePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/CSS-Framework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/CSS-Framework/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/SPA/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/SPA/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/Queue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/QUE/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +153,9 @@
       <workItem from="1685177597433" duration="5276000" />
       <workItem from="1685590528691" duration="7522000" />
       <workItem from="1685685977341" duration="232000" />
-      <workItem from="1685712689280" duration="5532000" />
+      <workItem from="1685712689280" duration="6921000" />
+      <workItem from="1685788877914" duration="11949000" />
+      <workItem from="1685857869056" duration="8156000" />
     </task>
     <servers />
   </component>
