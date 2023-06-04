@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/Queue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/QUE/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,7 @@
       <workItem from="1685685977341" duration="232000" />
       <workItem from="1685712689280" duration="6921000" />
       <workItem from="1685788877914" duration="11949000" />
-      <workItem from="1685857869056" duration="8156000" />
+      <workItem from="1685857869056" duration="9934000" />
     </task>
     <servers />
   </component>
