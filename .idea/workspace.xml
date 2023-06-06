@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/Assignment16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/myPhoto/Assignment16.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/AssignmentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/AssignmentForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/assingments.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/assingments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/myPhoto/Assignment16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assignment/JS/KNIGHT/assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -59,11 +56,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\SPA" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\KNIGHT\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\SPA" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\assets" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\certificate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework" />
@@ -72,6 +69,19 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -160,7 +170,9 @@
       <workItem from="1685788877914" duration="11949000" />
       <workItem from="1685857869056" duration="9934000" />
       <workItem from="1685901894642" duration="343000" />
-      <workItem from="1685903013418" duration="351000" />
+      <workItem from="1685903013418" duration="878000" />
+      <workItem from="1685981806080" duration="34000" />
+      <workItem from="1686042948524" duration="7558000" />
     </task>
     <servers />
   </component>
@@ -178,16 +190,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assignment/JS/KNIGHT/index.html</url>
-          <line>91</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
