@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/CAL/js/jquery-3.7.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/CAL/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/CAL/index.html" afterDir="false" />
     </list>
@@ -69,21 +68,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -179,6 +163,7 @@
       <workItem from="1686107301943" duration="1744000" />
       <workItem from="1686116518914" duration="12980000" />
       <workItem from="1686143470927" duration="6899000" />
+      <workItem from="1686154326845" duration="2684000" />
     </task>
     <servers />
   </component>
