@@ -21,6 +21,7 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            padding: 5px;
         }
 
         main > section:nth-child(1) {
@@ -31,45 +32,58 @@
         }
 
         main > section:nth-child(1) > div {
-            height: 50%;
+            height: 100%;
             width: 100%;
             display: flex;
             flex-direction: row;
         }
 
-        main > section:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        main > section:nth-child(1) > div > div:nth-child(1) {
             flex-grow: 6;
+            display: flex;
+            flex-direction: column;
+            /*box-shadow: 0px 0px 10px -5px #000000;*/
+            border-radius: 5px;
         }
 
-        #clear {
+        main > section:nth-child(1) > div > div:nth-child(1) > div:nth-child(1) {
             height: 40px;
-            width: 40px;
-            background-color: black;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-            align-self: center;
-            justify-self: center;
         }
 
-        main > section:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+        main > section:nth-child(1) > div > div:nth-child(1) > div:nth-child(2) {
+            height: 60px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(1) > div {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            position: relative;
+        }
+
+        #old-value, #new-value {
+            text-align: end;
+            margin: 0;
+            position: absolute;
+            right: 20px;
+        }
+
+        main > section:nth-child(1) > div > div:nth-child(2) {
             flex-grow: 1;
             background-color: #0d6efd;
             position: relative;
             display: flex;
             align-self: center;
             justify-content: center;
-        }
-
-        main > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
-            flex-grow: 6;
         }
 
         #back {
-            height: 40px;
-            width: 40px;
-            background-color: black;
+            height: 80px;
+            width: 50px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px -5px #000000;
             position: absolute;
             left: 0;
             right: 0;
@@ -78,13 +92,8 @@
             justify-self: center;
         }
 
-        main > section:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
-            flex-grow: 1;
-            background-color: #0d6efd;
-            position: relative;
-            display: flex;
-            align-self: center;
-            justify-content: center;
+        #back > h1 {
+            text-align: center;
         }
 
         main > section:nth-child(2) {
@@ -109,7 +118,8 @@
             align-self: center;
             justify-content: center;
         }
-        main > section:nth-child(2) > div>h1 {
+
+        main > section:nth-child(2) > div > h1 {
             margin: auto;
         }
 
@@ -119,36 +129,39 @@
 <main>
     <section>
         <div>
-            <div></div>
             <div>
-                <div id="clear"></div><!--clear-->
+                <div><h1 id="old-value"></h1></div>
+                <div><h1 id="new-value"></h1></div>
             </div>
-        </div>
-        <div>
-            <div></div>
             <div>
-                <div id="back"></div><!--back-->
+                <div id="back">
+                    <h1>C</h1>
+                </div><!--back-->
             </div>
         </div>
     </section>
     <section>
-        <div><h1>7</h1></div>
-        <div><h1>8</h1></div>
-        <div><h1>9</h1></div>
-        <div><h1>+</h1></div>
-        <div><h1>4</h1></div>
-        <div><h1>5</h1></div>
-        <div><h1>6</h1></div>
-        <div><h1>-</h1></div>
-        <div><h1>1</h1></div>
-        <div><h1>2</h1></div>
-        <div><h1>3</h1></div>
-        <div><h1>/</h1></div>
-        <div><h1>.</h1></div>
-        <div><h1>0</h1></div>
-        <div><h1>=</h1></div>
-        <div><h1>*</h1></div>
+        <div id="seven"><h1>7</h1></div>
+        <div id="eight"><h1>8</h1></div>
+        <div id="nine"><h1>9</h1></div>
+        <div id="addition"><h1>+</h1></div>
+        <div id="four"><h1>4</h1></div>
+        <div id="five"><h1>5</h1></div>
+        <div id="six"><h1>6</h1></div>
+        <div id="subtraction"><h1>-</h1></div>
+        <div id="one"><h1>1</h1></div>
+        <div id="two"><h1>2</h1></div>
+        <div id="three"><h1>3</h1></div>
+        <div id="division"><h1>/</h1></div>
+        <div id="full-stop"><h1>.</h1></div>
+        <div id="zero"><h1>0</h1></div>
+        <div id="equal"><h1>=</h1></div>
+        <div id=""><h1>*</h1></div>
     </section>
 </main>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+
+</script>
 </body>
 </html>
