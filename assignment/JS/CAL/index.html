@@ -161,72 +161,108 @@
 </main>
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-
-
     let newValue, oldValue;
+
+    function setValue(oldValue, newValue) {
+        if (0 == Number(oldValue)) {
+            $("#new-value").text(newValue);
+        } else {
+            $("#new-value").text(oldValue + newValue);
+        }
+    }
+
     $("#one").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#one>h1").text();
+        setValue(oldValue, newValue);
     });
     $("#two").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#two>h1").text();
+        setValue(oldValue, newValue);
     });
     $("#three").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#three>h1").text();
+        setValue(oldValue, newValue);
     });
     $("#four").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#four>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#five").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#five>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#six").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#six>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#seven").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#seven>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#eight").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#eight>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#nine").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#nine>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#zero").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#zero>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#addition").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#addition>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#subtraction").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#subtraction>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#division").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#division>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#equal").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#equal>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#multiplication").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#multiplication>h1").text();
+        setValue(oldValue, newValue);
+
     });
     $("#full-stop").click(function () {
         oldValue = $("#new-value").text();
         newValue = $("#full-stop>h1").text();
+        setValue(oldValue, newValue);
+
     });
 </script>
 </body>
