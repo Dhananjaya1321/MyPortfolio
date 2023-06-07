@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>KNIGHT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../assets/css/Normalize.css">
     <style>
         body {
             display: flex;
@@ -104,17 +106,37 @@
         clearTimeout(timeInterval);
         let speedValue = document.querySelector("body>section:nth-child(4)>input").value;
         switch (speedValue) {
-            case "1":speed=1000
-                console.log(speed);break;
-            case "2":speed=900;break;
-            case "3":speed=800;break;
-            case "4":speed=700;break;
-            case "5":speed=600;break;
-            case "6":speed=500;break;
-            case "7":speed=400;break;
-            case "8":speed=300;break;
-            case "9":speed=200;break;
-            case "10":speed=100;break;
+            case "1":
+                speed = 1000
+                console.log(speed);
+                break;
+            case "2":
+                speed = 900;
+                break;
+            case "3":
+                speed = 800;
+                break;
+            case "4":
+                speed = 700;
+                break;
+            case "5":
+                speed = 600;
+                break;
+            case "6":
+                speed = 500;
+                break;
+            case "7":
+                speed = 400;
+                break;
+            case "8":
+                speed = 300;
+                break;
+            case "9":
+                speed = 200;
+                break;
+            case "10":
+                speed = 100;
+                break;
         }
         timeInterval = setInterval(function () {
             if (count == 0) {
