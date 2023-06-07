@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/CAL/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/jquery-3.6.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/jquery-3.7.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/KNIGHT/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,19 +68,6 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -201,7 +161,8 @@
       <workItem from="1686042948524" duration="7678000" />
       <workItem from="1686058618104" duration="5926000" />
       <workItem from="1686107301943" duration="1744000" />
-      <workItem from="1686116518914" duration="3962000" />
+      <workItem from="1686116518914" duration="12980000" />
+      <workItem from="1686143470927" duration="1976000" />
     </task>
     <servers />
   </component>

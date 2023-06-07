@@ -239,6 +239,11 @@
                             </div>
                         </div><!--modal-->
                     </div><!--button update-->
+                    <!--                    <div class="col-3 col-sm-3 col-lg">-->
+                    <!--                        <nav class="navbar justify-content-center">-->
+                    <!--                            <button id="get-all" type="button" class="btn btn-primary">Get all</button>-->
+                    <!--                        </nav>-->
+                    <!--                    </div>&lt;!&ndash;button get all&ndash;&gt;-->
                     <div class="col-4 col-sm-3 col-lg">
                         <nav class="navbar justify-content-center">
                             <button type="button" class="btn btn-danger">Delete</button>
@@ -684,81 +689,83 @@
 <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-    document.getElementById("login_section").style.display = 'block';
-    document.getElementById("home_section").style.display = 'none';
-    document.getElementById("nav_bar").style.display = 'none';
-    document.getElementById("customer_section").style.display = 'none';
-    document.getElementById("order_section").style.display = 'none';
-    document.getElementById("store_section").style.display = 'none';
+    $("#login_section").css("display", 'block');
+    $("#home_section").css("display", 'none');
+    $("#nav_bar").css("display", 'none');
+    $("#customer_section").css("display", 'none');
+    $("#order_section").css("display", 'none');
+    $("#store_section").css("display", 'none');
 
-    document.getElementById("log_in").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'block';
-        document.getElementById("nav_bar").style.display = 'block';
-        document.getElementById("customer_section").style.display = 'none';
-        document.getElementById("order_section").style.display = 'none';
-        document.getElementById("store_section").style.display = 'none';
-        document.getElementById("login_section").style.display = 'none';
-    })
-    document.getElementById("home").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'block';
-        document.getElementById("customer_section").style.display = 'none';
-        document.getElementById("order_section").style.display = 'none';
-        document.getElementById("store_section").style.display = 'none';
-    })
-    document.getElementById("customer").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'none';
-        document.getElementById("customer_section").style.display = 'block';
-        document.getElementById("order_section").style.display = 'none';
-        document.getElementById("store_section").style.display = 'none';
-    })
-    document.getElementById("order").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'none';
-        document.getElementById("customer_section").style.display = 'none';
-        document.getElementById("order_section").style.display = 'block';
-        document.getElementById("store_section").style.display = 'none';
-    })
-    document.getElementById("store").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'none';
-        document.getElementById("customer_section").style.display = 'none';
-        document.getElementById("order_section").style.display = 'none';
-        document.getElementById("store_section").style.display = 'block';
-    })
-    document.getElementById("log_out").addEventListener("click", function () {
-        document.getElementById("home_section").style.display = 'none';
-        document.getElementById("customer_section").style.display = 'none';
-        document.getElementById("order_section").style.display = 'none';
-        document.getElementById("store_section").style.display = 'none';
-        document.getElementById("nav_bar").style.display = 'none';
-        document.getElementById("login_section").style.display = 'block';
-    })
-
+    $("#log_in").click(function () {
+        $("#home_section").css("display", 'block');
+        $("#nav_bar").css("display", 'block');
+        $("#customer_section").css("display", 'none');
+        $("#order_section").css("display", 'none');
+        $("#store_section").css("display", 'none');
+        $("#login_section").css("display", 'none');
+    });
+    $("#home").click(function () {
+        $("#home_section").css("display", 'block');
+        $("#customer_section").css("display", 'none');
+        $("#order_section").css("display", 'none');
+        $("#store_section").css("display", 'none');
+    });
+    $("#customer").click(function () {
+        $("#home_section").css("display", 'none');
+        $("#customer_section").css("display", 'block');
+        $("#order_section").css("display", 'none');
+        $("#store_section").css("display", 'none');
+    });
+    $("#order").click(function () {
+        $("#home_section").css("display", 'none');
+        $("#customer_section").css("display", 'none');
+        $("#order_section").css("display", 'block');
+        $("#store_section").css("display", 'none');
+    });
+    $("#store").click(function () {
+        $("#home_section").css("display", 'none');
+        $("#customer_section").css("display", 'none');
+        $("#order_section").css("display", 'none');
+        $("#store_section").css("display", 'block');
+    });
+    $("#log_out").click(function () {
+        $("#home_section").css("display", 'none');
+        $("#customer_section").css("display", 'none');
+        $("#order_section").css("display", 'none');
+        $("#store_section").css("display", 'none');
+        $("#nav_bar").css("display", 'none');
+        $("#login_section").css("display", 'block');
+    });
+    let customer = [];
     $("#save-customer").click(function () {
         let nic = $("#inputNIC").val();
         let name = $("#inputName").val();
         let tel = $("#inputTel").val();
         let address = $("#inputAddress").val();
+        customer.push({
+            nic: nic,
+            name: name,
+            tel: tel,
+            address: address
+        });
+
+        $("#customer-table-body").empty();
         let tableBody = $("#customer-table-body");
-
-        /*let clo_1 = "<td>"+nic+"</td>";
-        let clo_2 = "<td>"+name+"</td>";
-        let clo_3 = "<td>"+tel+"</td>";
-        let clo_4 = "<td>"+address+"</td>";*/
-        let tr = `<tr><td>${nic}</td><td>${name}</td><td>${tel}</td><td>${address}</td>
-<td>
- <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
- <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
-</td>`;
-
-
-        /*tr.append(clo_1);
-        tr.append(clo_2);
-        tr.append(clo_3);
-        tr.append(clo_4);*/
-
-        tableBody.append(tr);
-
-
+        for (let i = 0; i < customer.length; i++) {
+            let tr = `<tr>
+                        <td>${customer[i].nic}</td>
+                        <td>${customer[i].name}</td>
+                        <td>${customer[i].tel}</td>
+                        <td>${customer[i].address}</td>
+                         <td>
+                          <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
+                          <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
+                         </td>
+                       </tr>`;
+            tableBody.append(tr);
+        }
     });
+
 </script>
 
 </body>
