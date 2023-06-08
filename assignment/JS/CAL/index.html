@@ -167,7 +167,13 @@
         if (0 == Number(oldValue)) {
             $("#new-value").text(newValue);
         } else {
-            $("#new-value").text(oldValue + newValue);
+            newValue = oldValue + newValue;
+            $("#new-value").text(newValue);
+        }
+
+        if (newValue === "=") {
+            $("#new-value").text("");
+            $("#old-value").text(oldValue);
         }
     }
 
