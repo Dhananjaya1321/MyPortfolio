@@ -161,14 +161,37 @@
 </main>
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-    let newValue, oldValue;
+    let newValue, oldValue, temp, indexOne = -2, indexTwo;
+    const array = ["=", "-", "*", "/", ".", "+"];
 
     function setValue(oldValue, newValue) {
+        let splitArray;
         if (0 == Number(oldValue)) {
             $("#new-value").text(newValue);
         } else {
-            newValue = oldValue + newValue;
-            $("#new-value").text(newValue);
+            temp = oldValue + newValue;
+            splitArray = temp.split("");
+            for (let i = 0; i < splitArray.length; i++) {
+                for (let j = 0; j < array.length; j++) {
+                    if (splitArray[i] === array[j]) {
+                        if (indexOne === -2) {
+                            indexOne = i;
+                        } else if (indexOne === (i - 1)) {
+                            splitArray.splice(i - 1, 1);
+                            i = i - 1;
+                            indexOne = i;
+                            console.log(splitArray.toString());
+                        } else {
+                            indexOne = i;
+                        }
+                    }
+                }
+            }
+            let refreshValue=splitArray[0];
+            for (let i = 1; i <splitArray.length; i++) {
+                refreshValue+=splitArray[i];
+            }
+            $("#new-value").text(refreshValue);
         }
 
         if (newValue === "=") {
