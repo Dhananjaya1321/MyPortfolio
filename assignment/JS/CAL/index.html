@@ -57,6 +57,7 @@
         main > section:nth-child(1) > div > div:nth-child(1) > div:first-child {
             align-items: end;
         }
+
         main > section:nth-child(1) > div > div:nth-child(1) > div {
             width: 100%;
             display: flex;
@@ -84,7 +85,6 @@
         #clear {
             height: 80px;
             width: 50px;
-            background-color: white;
             border-radius: 20px;
             box-shadow: 0px 0px 10px -5px #000000;
             position: absolute;
@@ -93,6 +93,25 @@
             margin: auto;
             align-self: center;
             justify-self: center;
+            background-color: #ff0000;
+        }
+
+        .operators:hover {
+            box-shadow: 0 0 12px 0 #ffaa00;
+        }
+
+        .numbers:hover {
+            box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.44);
+
+        }
+
+        #clear:hover {
+            box-shadow: 0 0 12px 0 #ff0000;
+
+        }
+
+        #addition, #division, #multiplication, #subtraction, #equal {
+            background-color: #ffaa00;
         }
 
         #clear > h1 {
@@ -125,9 +144,11 @@
         main > section:nth-child(2) > div > h1 {
             margin: auto;
         }
-#old-value{
-    font-size: 20px;
-}
+
+        #old-value {
+            font-size: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -146,22 +167,22 @@
         </div>
     </section>
     <section>
-        <div id="seven"><h1>7</h1></div>
-        <div id="eight"><h1>8</h1></div>
-        <div id="nine"><h1>9</h1></div>
-        <div id="addition"><h1>+</h1></div>
-        <div id="four"><h1>4</h1></div>
-        <div id="five"><h1>5</h1></div>
-        <div id="six"><h1>6</h1></div>
-        <div id="subtraction"><h1>-</h1></div>
-        <div id="one"><h1>1</h1></div>
-        <div id="two"><h1>2</h1></div>
-        <div id="three"><h1>3</h1></div>
-        <div id="division"><h1>/</h1></div>
-        <div id="full-stop"><h1>.</h1></div>
-        <div id="zero"><h1>0</h1></div>
-        <div id="equal"><h1>=</h1></div>
-        <div id="multiplication"><h1>*</h1></div>
+        <div class="numbers" id="seven"><h1>7</h1></div>
+        <div class="numbers" id="eight"><h1>8</h1></div>
+        <div class="numbers" id="nine"><h1>9</h1></div>
+        <div class="operators" id="addition"><h1>+</h1></div>
+        <div class="numbers" id="four"><h1>4</h1></div>
+        <div class="numbers" id="five"><h1>5</h1></div>
+        <div class="numbers" id="six"><h1>6</h1></div>
+        <div class="operators" id="subtraction"><h1>-</h1></div>
+        <div class="numbers" id="one"><h1>1</h1></div>
+        <div class="numbers" id="two"><h1>2</h1></div>
+        <div class="numbers" id="three"><h1>3</h1></div>
+        <div class="operators" id="division"><h1>/</h1></div>
+        <div class="numbers" id="full-stop"><h1>.</h1></div>
+        <div class="numbers" id="zero"><h1>0</h1></div>
+        <div class="operators" id="equal"><h1>=</h1></div>
+        <div class="operators" id="multiplication"><h1>*</h1></div>
     </section>
 </main>
 <script src="js/jquery-3.7.0.min.js"></script>
@@ -273,7 +294,7 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#addition>h1").text();
-        if(oldValue!=="0"){
+        if (oldValue !== "0") {
             setValue(oldValue, newValue);
         }
 
@@ -282,7 +303,7 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#subtraction>h1").text();
-        if(oldValue!=="0"){
+        if (oldValue !== "0") {
             setValue(oldValue, newValue);
         }
 
@@ -291,7 +312,7 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#division>h1").text();
-        if(oldValue!=="0"){
+        if (oldValue !== "0") {
             setValue(oldValue, newValue);
         }
 
@@ -300,7 +321,7 @@
         count++;
         oldValue = $("#new-value").text();
         newValue = $("#equal>h1").text();
-        if(oldValue!=="0") {
+        if (oldValue !== "0") {
             setValue(oldValue, newValue);
             if (count === 1) {
                 $("#new-value").text(" ");
@@ -322,7 +343,7 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#multiplication>h1").text();
-        if(oldValue!=="0"){
+        if (oldValue !== "0") {
             setValue(oldValue, newValue);
         }
     });
@@ -331,7 +352,7 @@
         oldValue = $("#new-value").text();
         newValue = $("#full-stop>h1").text();
         console.log(oldValue)
-            setValue(oldValue, newValue);
+        setValue(oldValue, newValue);
     });
     $("#clear").click(function () {
         count = 0;
