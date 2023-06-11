@@ -161,7 +161,7 @@
 </main>
 <script src="js/jquery-3.7.0.min.js"></script>
 <script>
-    let newValue, oldValue, temp, indexOne = -2, count = 0, finalValue = "5+9";
+    let newValue, oldValue, temp, indexOne = -2, count = 0, finalValue;
     let array = ["=", "-", "*", "/", "+", "."];
 
     function setValue(oldValue, newValue) {
@@ -269,56 +269,65 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#addition>h1").text();
-        setValue(oldValue, newValue);
+        if(oldValue!=="0"){
+            setValue(oldValue, newValue);
+        }
 
     });
     $("#subtraction").click(function () {
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#subtraction>h1").text();
-        setValue(oldValue, newValue);
+        if(oldValue!=="0"){
+            setValue(oldValue, newValue);
+        }
 
     });
     $("#division").click(function () {
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#division>h1").text();
-        setValue(oldValue, newValue);
+        if(oldValue!=="0"){
+            setValue(oldValue, newValue);
+        }
 
     });
     $("#equal").click(function () {
         count++;
         oldValue = $("#new-value").text();
         newValue = $("#equal>h1").text();
-        setValue(oldValue, newValue);
-        if (count === 1) {
-            $("#new-value").text(" ");
-            $("#old-value").text(oldValue);
-            finalValue=finalValue.split("");
-            finalValue.pop();
-            let temporaryValue=finalValue[0];
-            for (let i = 1; i < finalValue.length; i++) {
-                temporaryValue+= finalValue[i];
+        if(oldValue!=="0") {
+            setValue(oldValue, newValue);
+            if (count === 1) {
+                $("#new-value").text(" ");
+                $("#old-value").text(oldValue);
+                finalValue = finalValue.split("");
+                finalValue.pop();
+                let temporaryValue = finalValue[0];
+                for (let i = 1; i < finalValue.length; i++) {
+                    temporaryValue += finalValue[i];
+                }
+                newValue = eval(temporaryValue);
+                $("#new-value").text(newValue);
+            } else {
+                $("#new-value").text(oldValue);
             }
-            newValue = eval(temporaryValue);
-            $("#new-value").text(newValue);
-        } else {
-            $("#new-value").text(oldValue);
         }
     });
     $("#multiplication").click(function () {
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#multiplication>h1").text();
-        setValue(oldValue, newValue);
-
+        if(oldValue!=="0"){
+            setValue(oldValue, newValue);
+        }
     });
     $("#full-stop").click(function () {
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#full-stop>h1").text();
-        setValue(oldValue, newValue);
-
+        console.log(oldValue)
+            setValue(oldValue, newValue);
     });
 </script>
 </body>
