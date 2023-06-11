@@ -54,6 +54,9 @@
             height: 60px;
         }
 
+        main > section:nth-child(1) > div > div:nth-child(1) > div:first-child {
+            align-items: end;
+        }
         main > section:nth-child(1) > div > div:nth-child(1) > div {
             width: 100%;
             display: flex;
@@ -78,7 +81,7 @@
             justify-content: center;
         }
 
-        #back {
+        #clear {
             height: 80px;
             width: 50px;
             background-color: white;
@@ -92,7 +95,7 @@
             justify-self: center;
         }
 
-        #back > h1 {
+        #clear > h1 {
             text-align: center;
         }
 
@@ -122,7 +125,9 @@
         main > section:nth-child(2) > div > h1 {
             margin: auto;
         }
-
+#old-value{
+    font-size: 20px;
+}
     </style>
 </head>
 <body>
@@ -134,9 +139,9 @@
                 <div><h1 id="new-value">0</h1></div>
             </div>
             <div>
-                <div id="back">
+                <div id="clear">
                     <h1>C</h1>
-                </div><!--back-->
+                </div><!--clear-->
             </div>
         </div>
     </section>
@@ -180,7 +185,6 @@
                             splitArray.splice(i - 1, 1);
                             i = i - 1;
                             indexOne = i;
-                            // console.log(splitArray.toString());
                         } else {
                             indexOne = i;
                         }
@@ -328,6 +332,11 @@
         newValue = $("#full-stop>h1").text();
         console.log(oldValue)
             setValue(oldValue, newValue);
+    });
+    $("#clear").click(function () {
+        count = 0;
+        oldValue = $("#new-value").text("0");
+        newValue = $("#old-value").text("0");
     });
 </script>
 </body>
