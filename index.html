@@ -26,28 +26,28 @@
     </aside><!--icon-->
     <nav>
         <menu>
-            <li>
+            <li value="home">
                 <a href="#home_section">Home</a>
             </li><!--home-->
-            <li>
+            <li value="about">
                 <a href="#about_section">About</a>
             </li><!--about-->
-            <li>
+            <li value="education">
                 <a href="#education_section">Education</a>
             </li><!--education-->
-            <li>
+            <li value="project">
                 <a href="#project_section">Projects</a>
             </li><!--projects-->
-            <li>
+            <li value="assignment">
                 <a href="#assignment_section">Assignments</a>
             </li><!--assignments-->
-            <li>
+            <li value="service">
                 <a href="#service_section">Service</a>
             </li><!--service-->
-            <li>
+            <li value="gallery">
                 <a href="#gallery_section">Gallery</a>
             </li><!--gallery-->
-            <li>
+            <li value="certificate">
                 <a href="#certificate_section">Certificate</a>
             </li><!--certificate-->
         </menu>
@@ -887,6 +887,10 @@
     </section><!--copyright-->
 </footer><!--footer-->
 
-
+<script>
+    document.querySelector("header>nav>menu>li").addEventListener("click",function () {
+        let listValues=document.querySelector("header>nav>menu>li").style.color="blue";
+    })
+</script>
 </body>
 </html>

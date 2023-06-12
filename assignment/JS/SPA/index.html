@@ -729,29 +729,7 @@
         document.getElementById("nav_bar").style.display = 'none';
         document.getElementById("login_section").style.display = 'block';
     })
-    document.getElementById("save-customer").addEventListener("click", function () {
-        let nic = document.getElementById("inputNIC").value;
-        let name = document.getElementById("inputName").value;
-        let tel = document.getElementById("inputTel").value;
-        let address = document.getElementById("inputAddress").value;
 
-        let tableBody = document.getElementById("customer-table-body");
-
-        let tr = document.createAttribute("tr");
-        let clo_1 = document.createAttribute("td").textContent = nic;
-        let clo_2 = document.createAttribute("td").textContent = name;
-        let clo_3 = document.createAttribute("td").textContent = tel;
-        let clo_4 = document.createAttribute("td").textContent = address;
-
-        tr.appendChild(clo_1);
-        tr.appendChild(clo_2);
-        tr.appendChild(clo_3);
-        tr.appendChild(clo_4);
-
-        tableBody.appendChild(tr);
-
-
-    });
 </script>
 <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 </body>
