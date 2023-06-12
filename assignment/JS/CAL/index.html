@@ -94,6 +94,7 @@
             align-self: center;
             justify-self: center;
             background-color: #ff0000;
+            color: white;
         }
 
         .operators:hover {
@@ -192,10 +193,11 @@
 
     function setValue(oldValue, newValue) {
         let splitArray;
-        if (0 == Number(oldValue)) {
+        if ("0" === oldValue) {
             $("#new-value").text(newValue);
         } else {
             temp = oldValue + newValue;
+            console.log(temp)
             splitArray = temp.split("");
             for (let i = 0; i < splitArray.length; i++) {
                 for (let j = 0; j < array.length; j++) {
@@ -288,7 +290,6 @@
         oldValue = $("#new-value").text();
         newValue = $("#zero>h1").text();
         setValue(oldValue, newValue);
-
     });
     $("#addition").click(function () {
         count = 0;
@@ -351,7 +352,10 @@
         count = 0;
         oldValue = $("#new-value").text();
         newValue = $("#full-stop>h1").text();
-        console.log(oldValue)
+        if (oldValue === "0") {
+            oldValue = "0.";
+            $("#new-value").text("0.");
+        }
         setValue(oldValue, newValue);
     });
     $("#clear").click(function () {
