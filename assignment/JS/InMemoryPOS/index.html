@@ -291,12 +291,9 @@
                 </div>
                 <div class="row mt-1">
                     <div class="col-6">
-                        <label for="customerNIC" class="form-label">NIC</label>
-                        <select class="form-select" id="customerNIC" aria-label="Default select example">
+                        <label for="invoice-customerNIC" class="form-label">NIC</label>
+                        <select class="form-select" id="invoice-customerNIC" aria-label="Default select example">
                             <option selected>Select NIC</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
                         </select>
                     </div>
                     <div class="col-6">
@@ -320,8 +317,10 @@
                     style="color:white; background-color: #9c9b9b; border-radius: 20px">Item</h1>
                 <div class="row mt-1">
                     <div class="col-6">
-                        <label for="itemCode" class="form-label">Item Code</label>
-                        <input class="form-control" id="itemCode" type="text">
+                        <label for="item-itemCode" class="form-label">Item Code</label>
+                        <select class="form-select" id="item-itemCode" aria-label="Default select example">
+                            <option selected>Select Code</option>
+                        </select>
                     </div>
                     <div class="col-6">
                         <label for="itemName" class="form-label">Item Name</label>
@@ -409,67 +408,8 @@
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>
-                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                <i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                                <i class="fa-solid fa-pencil"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                <i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                                <i class="fa-solid fa-pencil"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                <i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                                <i class="fa-solid fa-pencil"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                <i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                                <i class="fa-solid fa-pencil"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>
-                            <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                <i class="fa-solid fa-trash-can"></i></button>
-                            <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;">
-                                <i class="fa-solid fa-pencil"></i></button>
-                        </td>
-                    </tr>
+                    <tbody id="order-table">
+
                     </tbody>
                 </table>
             </div>
@@ -653,6 +593,7 @@
         $("#store_section").css("display", 'none');
     });
     $("#order").click(function () {
+        loadComboBox();
         $("#home_section").css("display", 'none');
         $("#customer_section").css("display", 'none');
         $("#order_section").css("display", 'block');
@@ -711,7 +652,6 @@
             itemPrice: $("#inputItemPrice").val(),
             itemQTY: $("#inputItemQuantity").val()
         });
-        console.log("qq")
         $("#item-table-body").empty();
         for (let i = 0; i <item.length; i++) {
             let itemTr = `<tr>
@@ -727,7 +667,22 @@
             $("#item-table-body").append(itemTr);
         }
     });
+    /*order form*/
 
+    /*invoice*/
+    /*load customers NIC combobox*/
+    function loadComboBox(){
+        for (let i = 0; i < customer.length; i++) {
+            $("#invoice-customerNIC").append(
+                `<option>${customer[i].nic}</option>`
+            );
+        }
+        for (let i = 0; i < item.length; i++) {
+            $("#item-itemCode").append(
+                `<option>${item[i].itemCode}</option>`
+            );
+        }
+    }
 </script>
 
 </body>
