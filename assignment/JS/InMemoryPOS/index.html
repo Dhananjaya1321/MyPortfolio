@@ -264,71 +264,7 @@
                         </tr>
                         </thead>
                         <tbody id="customer-table-body">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>
-                                <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                    <i class="fa-solid fa-trash-can"></i></button>
-                                <button type="button" class="btn border-0 btn-danger"
-                                        style="background-color: #1aff00;">
-                                    <i class="fa-solid fa-pencil"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                    <i class="fa-solid fa-trash-can"></i></button>
-                                <button type="button" class="btn border-0 btn-danger"
-                                        style="background-color: #1aff00;">
-                                    <i class="fa-solid fa-pencil"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                    <i class="fa-solid fa-trash-can"></i></button>
-                                <button type="button" class="btn border-0 btn-danger"
-                                        style="background-color: #1aff00;">
-                                    <i class="fa-solid fa-pencil"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                    <i class="fa-solid fa-trash-can"></i></button>
-                                <button type="button" class="btn border-0 btn-danger"
-                                        style="background-color: #1aff00;">
-                                    <i class="fa-solid fa-pencil"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>
-                                <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014">
-                                    <i class="fa-solid fa-trash-can"></i></button>
-                                <button type="button" class="btn border-0 btn-danger"
-                                        style="background-color: #1aff00;">
-                                    <i class="fa-solid fa-pencil"></i></button>
-                            </td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </div><!--table-->
@@ -601,7 +537,7 @@
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close
                                         </button>
                                         <button type="button" class="btn btn-warning">Clear</button>
-                                        <button type="button" class="btn btn-primary">Save</button>
+                                        <button id="save-item" type="button" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -676,7 +612,7 @@
                             <th>Action</th>
                         </tr>
                         </thead>
-                        <tbody class="table-body">
+                        <tbody id="item-table-body">
 
                         </tbody>
                     </table>
@@ -737,6 +673,8 @@
         $("#login_section").css("display", 'block');
     });
     let customer = [];
+    let item = [];
+    /*add new customer*/
     $("#save-customer").click(function () {
         let nic = $("#inputNIC").val();
         let name = $("#inputName").val();
@@ -763,6 +701,30 @@
                          </td>
                        </tr>`;
             tableBody.append(tr);
+        }
+    });
+    /*add new item*/
+    $("#save-item").click(function () {
+        item.push({
+            itemCode: $("#inputItemCode").val(),
+            itemName: $("#inputItemName").val(),
+            itemPrice: $("#inputItemPrice").val(),
+            itemQTY: $("#inputItemQuantity").val()
+        });
+        console.log("qq")
+        $("#item-table-body").empty();
+        for (let i = 0; i <item.length; i++) {
+            let itemTr = `<tr>
+                    <td>${item[i].itemCode}</td>
+                    <td>${item[i].itemName}</td>
+                    <td>${item[i].itemPrice}</td>
+                    <td>${item[i].itemQTY}</td>
+                    <td>
+                      <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
+                      <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
+                    </td>
+                    </tr>`;
+            $("#item-table-body").append(itemTr);
         }
     });
 
