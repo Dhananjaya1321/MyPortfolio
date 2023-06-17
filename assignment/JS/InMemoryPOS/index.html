@@ -133,11 +133,11 @@
                     <div class="col-12 col-sm-12 col-lg-8">
                         <nav class="navbar justify-content-center">
                             <form class="d-flex flex-column flex-sm-row ubFt" role="search">
-                                <input class="form-control me-1" style="width: 250px" type="search"
+                                <input id="searchBar" class="form-control me-1" style="width: 250px" type="search"
                                        placeholder="Input Name/NIC Or Phone"
                                        aria-label="Search">
-                                <button class="btn btn-outline-info m-1" type="button">Search</button>
-                                <button class="btn btn-outline-secondary m-1" type="button">Clear</button>
+                                <button id="customerSearchButton" class="btn btn-outline-info m-1" type="button">Search</button>
+                                <button id="customerSearchClear" class="btn btn-outline-secondary m-1" type="button">Clear</button>
 
                             </form>
                         </nav>
@@ -183,7 +183,7 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-warning">Clear</button>
+                                        <button id="addNewCustomerClearButton" type="button" class="btn btn-warning">Clear</button>
                                         <button type="button" class="btn btn-primary" id="save-customer">Save</button>
                                     </div>
                                 </div>
@@ -191,11 +191,11 @@
                         </div><!--modal-->
                     </div><!--button new-->
                     <div class="col-4 col-sm-3 col-lg">
-                        <nav class="navbar justify-content-center">
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                                    data-bs-target="#updateCustomer">Update
-                            </button>
-                        </nav>
+<!--                        <nav class="navbar justify-content-center">-->
+<!--                            <button id="updateCustomerbtn" type="button" class="btn btn-success" data-bs-toggle="modal"-->
+<!--                                    data-bs-target="#updateCustomer">Update-->
+<!--                            </button>-->
+<!--                        </nav>-->
                         <div class="modal fade" id="updateCustomer" data-bs-backdrop="static" data-bs-keyboard="false"
                              tabindex="-1" aria-labelledby="updateCustomerLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -208,22 +208,22 @@
                                     <div class="modal-body">
                                         <form class="row g-3 text-start">
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">NIC</label>
+                                                <label for="inputUpdateNIC" class="form-label">NIC</label>
                                                 <input type="text" class="form-control" id="inputUpdateNIC"
                                                        placeholder="NIC">
                                             </div>
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Name</label>
+                                                <label for="inputUpdateName" class="form-label">Name</label>
                                                 <input type="text" class="form-control" id="inputUpdateName"
                                                        placeholder="Name">
                                             </div>
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Tel</label>
+                                                <label for="inputUpdateTel" class="form-label">Tel</label>
                                                 <input type="text" class="form-control" id="inputUpdateTel"
                                                        placeholder="Tel">
                                             </div>
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Address</label>
+                                                <label for="inputUpdateAddress" class="form-label">Address</label>
                                                 <input type="text" class="form-control" id="inputUpdateAddress"
                                                        placeholder="Address">
                                             </div>
@@ -233,7 +233,7 @@
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close
                                         </button>
                                         <button type="button" class="btn btn-warning">Clear</button>
-                                        <button type="button" class="btn btn-primary">Update</button>
+                                        <button id="customerUpdateButton" type="button" class="btn btn-primary">Update</button>
                                     </div>
                                 </div>
                             </div>
@@ -244,11 +244,13 @@
                     <!--                            <button id="get-all" type="button" class="btn btn-primary">Get all</button>-->
                     <!--                        </nav>-->
                     <!--                    </div>&lt;!&ndash;button get all&ndash;&gt;-->
+<!--
                     <div class="col-4 col-sm-3 col-lg">
                         <nav class="navbar justify-content-center">
-                            <button type="button" class="btn btn-danger">Delete</button>
+&lt;!&ndash;                            <button id="deleteCustomer" type="button" class="btn btn-danger">Delete</button>&ndash;&gt;
                         </nav>
-                    </div><!--button delete-->
+                    </div>&lt;!&ndash;button delete&ndash;&gt;
+-->
                 </div>
                 <div class="col-12" style="height: 25px"></div>
                 <div class="row text-center justify-content-center align-content-center shadow-lg"
@@ -535,7 +537,7 @@
                     </div><!--button update-->
                     <div class="col-4 col-sm-3 col-lg">
                         <nav class="navbar justify-content-center">
-                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-danger" id="deleteItem">Delete</button>
                         </nav>
                     </div><!--button delete-->
                 </div>
@@ -564,126 +566,38 @@
 </section><!--store-->
 <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 <script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/indexController.js"></script>
 <script>
-    $("#login_section").css("display", 'block');
-    $("#home_section").css("display", 'none');
-    $("#nav_bar").css("display", 'none');
-    $("#customer_section").css("display", 'none');
-    $("#order_section").css("display", 'none');
-    $("#store_section").css("display", 'none');
 
-    $("#log_in").click(function () {
-        $("#home_section").css("display", 'block');
-        $("#nav_bar").css("display", 'block');
-        $("#customer_section").css("display", 'none');
-        $("#order_section").css("display", 'none');
-        $("#store_section").css("display", 'none');
-        $("#login_section").css("display", 'none');
-    });
-    $("#home").click(function () {
-        $("#home_section").css("display", 'block');
-        $("#customer_section").css("display", 'none');
-        $("#order_section").css("display", 'none');
-        $("#store_section").css("display", 'none');
-    });
-    $("#customer").click(function () {
-        $("#home_section").css("display", 'none');
-        $("#customer_section").css("display", 'block');
-        $("#order_section").css("display", 'none');
-        $("#store_section").css("display", 'none');
-    });
-    $("#order").click(function () {
-        loadComboBox();
-        $("#home_section").css("display", 'none');
-        $("#customer_section").css("display", 'none');
-        $("#order_section").css("display", 'block');
-        $("#store_section").css("display", 'none');
-    });
-    $("#store").click(function () {
-        $("#home_section").css("display", 'none');
-        $("#customer_section").css("display", 'none');
-        $("#order_section").css("display", 'none');
-        $("#store_section").css("display", 'block');
-    });
-    $("#log_out").click(function () {
-        $("#home_section").css("display", 'none');
-        $("#customer_section").css("display", 'none');
-        $("#order_section").css("display", 'none');
-        $("#store_section").css("display", 'none');
-        $("#nav_bar").css("display", 'none');
-        $("#login_section").css("display", 'block');
-    });
     let customer = [];
     let item = [];
-    /*add new customer*/
-    $("#save-customer").click(function () {
-        let nic = $("#inputNIC").val();
-        let name = $("#inputName").val();
-        let tel = $("#inputTel").val();
-        let address = $("#inputAddress").val();
-        customer.push({
-            nic: nic,
-            name: name,
-            tel: tel,
-            address: address
-        });
 
-        $("#customer-table-body").empty();
-        let tableBody = $("#customer-table-body");
-        for (let i = 0; i < customer.length; i++) {
-            let tr = `<tr>
-                        <td>${customer[i].nic}</td>
-                        <td>${customer[i].name}</td>
-                        <td>${customer[i].tel}</td>
-                        <td>${customer[i].address}</td>
-                         <td>
-                          <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
-                          <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
-                         </td>
-                       </tr>`;
-            tableBody.append(tr);
-        }
-    });
-    /*add new item*/
-    $("#save-item").click(function () {
-        item.push({
-            itemCode: $("#inputItemCode").val(),
-            itemName: $("#inputItemName").val(),
-            itemPrice: $("#inputItemPrice").val(),
-            itemQTY: $("#inputItemQuantity").val()
-        });
-        $("#item-table-body").empty();
-        for (let i = 0; i <item.length; i++) {
-            let itemTr = `<tr>
-                    <td>${item[i].itemCode}</td>
-                    <td>${item[i].itemName}</td>
-                    <td>${item[i].itemPrice}</td>
-                    <td>${item[i].itemQTY}</td>
-                    <td>
-                      <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
-                      <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
-                    </td>
-                    </tr>`;
-            $("#item-table-body").append(itemTr);
-        }
-    });
-    /*order form*/
 
-    /*invoice*/
-    /*load customers NIC combobox*/
-    function loadComboBox(){
-        for (let i = 0; i < customer.length; i++) {
-            $("#invoice-customerNIC").append(
-                `<option>${customer[i].nic}</option>`
-            );
-        }
-        for (let i = 0; i < item.length; i++) {
-            $("#item-itemCode").append(
-                `<option>${item[i].itemCode}</option>`
-            );
-        }
-    }
+
+
+
+       /*order form*/
+
+       /*invoice*/
+       /*load customers NIC combobox*/
+       function loadComboBox() {
+           for (let i = 0; i < customer.length; i++) {
+               $("#invoice-customerNIC").append(
+                   `<option>${customer[i].nic}</option>`
+               );
+           }
+           for (let i = 0; i < item.length; i++) {
+               $("#item-itemCode").append(
+                   `<option>${item[i].itemCode}</option>`
+               );
+           }
+       }
+
+       $("#invoice-customerNIC").click(function () {
+           let nic = $("#invoice-customerNIC").val();
+       });
 </script>
-
+<script src="js/customer.js"></script>
+<script src="js/item.js"></script>
 </body>
 </html>

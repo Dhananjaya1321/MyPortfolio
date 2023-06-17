@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/css/AssignmentForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/AssignmentForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/assingments.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/assingments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery-3.7.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +20,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +50,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -55,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\js" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\CAL\js" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\js" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\KNIGHT\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework" />
@@ -174,7 +180,11 @@
       <workItem from="1686537639061" duration="6488000" />
       <workItem from="1686584540557" duration="814000" />
       <workItem from="1686587260216" duration="2844000" />
-      <workItem from="1686631299309" duration="8853000" />
+      <workItem from="1686631299309" duration="12542000" />
+      <workItem from="1686734464916" duration="7847000" />
+      <workItem from="1686799265693" duration="30729000" />
+      <workItem from="1686888501802" duration="23637000" />
+      <workItem from="1687022735998" duration="1614000" />
     </task>
     <servers />
   </component>
@@ -192,5 +202,26 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
+          <line>138</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
+          <line>149</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

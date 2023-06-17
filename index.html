@@ -26,28 +26,28 @@
     </aside><!--icon-->
     <nav>
         <menu>
-            <li value="home">
+            <li value="1">
                 <a href="#home_section">Home</a>
             </li><!--home-->
-            <li value="about">
+            <li value="2">
                 <a href="#about_section">About</a>
             </li><!--about-->
-            <li value="education">
+            <li value="3">
                 <a href="#education_section">Education</a>
             </li><!--education-->
-            <li value="project">
+            <li value="4">
                 <a href="#project_section">Projects</a>
             </li><!--projects-->
-            <li value="assignment">
+            <li value="5">
                 <a href="#assignment_section">Assignments</a>
             </li><!--assignments-->
-            <li value="service">
+            <li value="6">
                 <a href="#service_section">Service</a>
             </li><!--service-->
-            <li value="gallery">
+            <li value="7">
                 <a href="#gallery_section">Gallery</a>
             </li><!--gallery-->
-            <li value="certificate">
+            <li value="8">
                 <a href="#certificate_section">Certificate</a>
             </li><!--certificate-->
         </menu>
@@ -887,10 +887,100 @@
     </section><!--copyright-->
 </footer><!--footer-->
 
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
-    document.querySelector("header>nav>menu>li").addEventListener("click",function () {
-        let listValues=document.querySelector("header>nav>menu>li").style.color="blue";
-    })
+    let liValue;
+    $('header>nav>menu>li:nth-child(1)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(1)").val());
+    });
+    $('header>nav>menu>li:nth-child(2)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(2)").val());
+    });
+    $('header>nav>menu>li:nth-child(3)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(3)").val());
+    });
+    $('header>nav>menu>li:nth-child(4)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(4)").val());
+    });
+    $('header>nav>menu>li:nth-child(5)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(5)").val());
+    });
+    $('header>nav>menu>li:nth-child(6)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(6)").val());
+    });
+    $('header>nav>menu>li:nth-child(7)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(7)").val());
+    });
+    $('header>nav>menu>li:nth-child(8)').click(function () {
+        setColor($("header>nav>menu>li:nth-child(8)").val());
+    });
+
+    function setColor(i) {
+        setDefaultColor(i);
+        switch (i) {
+            case 1:
+                $("header>nav>menu>li:nth-child(1)>a").css("color", "#0089ff");
+                $("header>nav>menu>li:nth-child(1)>a").css("transition", "0.3s all");
+
+                break;
+            case 2:
+                $("header>nav>menu>li:nth-child(2)>a").css("color", "#0089ff");
+                break;
+            case 3:
+                $("header>nav>menu>li:nth-child(3)>a").css("color", "#0089ff");
+                break;
+            case 4:
+                $("header>nav>menu>li:nth-child(4)>a").css("color", "#0089ff");
+                break;
+            case 5:
+                $("header>nav>menu>li:nth-child(5)>a").css("color", "#0089ff");
+                break;
+            case 6:
+                $("header>nav>menu>li:nth-child(6)>a").css("color", "#0089ff");
+                break;
+            case 7:
+                $("header>nav>menu>li:nth-child(7)>a").css("color", "#0089ff");
+                break;
+            case 8:
+                $("header>nav>menu>li:nth-child(8)>a").css("color", "#0089ff");
+                break;
+        }
+    }
+
+    function setDefaultColor(i) {
+
+        for (let j = 1; j <9; j++) {
+            if (i===j) {continue}
+            console.log(i);
+            switch (j) {
+                case 1:
+                    $("header>nav>menu>li:nth-child(1)>a").css("color", "black");
+                    break;
+                case 2:
+                    $("header>nav>menu>li:nth-child(2)>a").css("color", "black");
+                    break;
+                case 3:
+                    $("header>nav>menu>li:nth-child(3)>a").css("color", "black");
+                    break;
+                case 4:
+                    $("header>nav>menu>li:nth-child(4)>a").css("color", "black");
+                    break;
+                case 5:
+                    $("header>nav>menu>li:nth-child(5)>a").css("color", "black");
+                    break;
+                case 6:
+                    $("header>nav>menu>li:nth-child(6)>a").css("color", "black");
+                    break;
+                case 7:
+                    $("header>nav>menu>li:nth-child(7)>a").css("color", "black");
+                    break;
+                case 8:
+                    $("header>nav>menu>li:nth-child(8)>a").css("color", "black");
+                    break;
+            }
+        }
+    }
+
 </script>
 </body>
 </html>
