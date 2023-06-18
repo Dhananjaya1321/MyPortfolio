@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery-3.7.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +180,8 @@
       <workItem from="1686734464916" duration="7847000" />
       <workItem from="1686799265693" duration="30729000" />
       <workItem from="1686888501802" duration="23637000" />
-      <workItem from="1687022735998" duration="1614000" />
+      <workItem from="1687022735998" duration="2674000" />
+      <workItem from="1687057427546" duration="6047000" />
     </task>
     <servers />
   </component>
@@ -202,26 +199,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
-          <line>138</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
-          <line>149</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
