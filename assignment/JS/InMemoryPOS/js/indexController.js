@@ -27,6 +27,8 @@ $("#customer").click(function () {
 });
 $("#order").click(function () {
     loadComboBox();
+    setOrderId();
+    console.log(new Date())
     $("#home_section").css("display", 'none');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'block');

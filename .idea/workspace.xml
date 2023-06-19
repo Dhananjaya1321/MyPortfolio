@@ -4,7 +4,10 @@
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +184,9 @@
       <workItem from="1686799265693" duration="30729000" />
       <workItem from="1686888501802" duration="23637000" />
       <workItem from="1687022735998" duration="2674000" />
-      <workItem from="1687057427546" duration="6047000" />
+      <workItem from="1687057427546" duration="12313000" />
+      <workItem from="1687109110214" duration="1370000" />
+      <workItem from="1687143600965" duration="18775000" />
     </task>
     <servers />
   </component>

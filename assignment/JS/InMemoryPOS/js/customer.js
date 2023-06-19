@@ -3,20 +3,37 @@ $("#save-customer").click(function () {
     let name = $("#inputName").val();
     let tel = $("#inputTel").val();
     let address = $("#inputAddress").val();
-    $("#customer-table-body").empty();
-    if (checkNIC(nic)) {
-        customer.push({
-            nic: nic,
-            name: name,
-            tel: tel,
-            address: address
-        });
-        loadCustomers();
+    if (nic !== "" && validateNIC()) {
+        if (name !== "" && validateCusName()) {
+            if (tel !== "" && validateTel()) {
+                if (address !== "" && validateAddress()) {
+                    $("#customer-table-body").empty();
+                    if (checkNIC(nic)) {
+                        customer.push({
+                            nic: nic,
+                            name: name,
+                            tel: tel,
+                            address: address
+                        });
+                        loadCustomers();
+                    } else {
+                        $("#inputNIC").focus();
+                        alert("This customer already exists");
+                        loadCustomers();
+                    }
+                    clearNewCustomerForm();
+                } else {
+                    $("#inputAddress").focus();
+                }
+            } else {
+                $("#inputTel").focus();
+            }
+        } else {
+            $("#inputName").focus();
+        }
     } else {
-        alert("This customer already exists");
-        loadCustomers();
+        $("#inputNIC").focus();
     }
-    clearNewCustomerForm();
 });
 
 function loadCustomers() {
@@ -159,12 +176,28 @@ function searchCustomer(nic) {
 
 $("#customerUpdateButton").click(function () {
     customer1 = searchCustomer($("#inputUpdateNIC").val());
-    customer1.name = $("#inputUpdateName").val();
-    customer1.tel = $("#inputUpdateTel").val();
-    customer1.address = $("#inputUpdateAddress").val();
-    $("#customer-table-body").empty();
-    clearUpdateCustomerForm();
-    loadCustomers();
+    name = $("#inputUpdateName").val();
+    tel = $("#inputUpdateTel").val();
+    address = $("#inputUpdateAddress").val();
+    if (name !== "" && validateUpdateCusName()) {
+        if (tel !== "" && validateUpdateTel()) {
+            if (address !== "" && validateUpdateAddress()) {
+                customer1.name = name;
+                customer1.tel = tel;
+                customer1.address = address;
+                $("#customer-table-body").empty();
+                clearUpdateCustomerForm();
+                loadCustomers();
+            } else {
+                $("#inputUpdateAddress").focus();
+            }
+        } else {
+            $("#inputUpdateTel").focus();
+        }
+    } else {
+        $("#inputUpdateName").focus();
+    }
+
 });
 
 function clearUpdateCustomerForm() {
@@ -175,58 +208,131 @@ function clearUpdateCustomerForm() {
 }
 
 
-    $("#inputNIC,#inputName,#inputTel,#inputAddress").keydown(function (e) {
-        if (e.key === "Tab") {
-            e.preventDefault();
-        }
-    });
-    $("#inputNIC").keydown(function (e) {
-        if (e.key === "Enter") {
-            $("#inputName").focus();
-        }
-    });
-    $("#inputName").keydown(function (e) {
-        if (e.key === "Enter") {
-            $("#inputTel").focus();
-        }
-    });
-    $("#inputTel").keydown(function (e) {
-        if (e.key === "Enter") {
-            $("#inputAddress").focus();
-        }
-    });
+$("#inputNIC,#inputName,#inputTel,#inputAddress").keydown(function (e) {
+    if (e.key === "Tab") {
+        e.preventDefault();
+    }
+});
+$("#inputNIC").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputName").focus();
+    }
+});
+$("#inputName").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputTel").focus();
+    }
+});
+$("#inputTel").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputAddress").focus();
+    }
+});
 
-let oldNIC=/^\d{9}(V|v)$/,newNIC=/^\d{11}$/,name=/^[a-zA-Z\s.'-]{2,}$/,address=/^[a-zA-Z0-9\s.,'-]{5,}$/,tel=/^(?:7|0|(?:\+94))[0-9]{8,9}$/;
-$("#inputNIC").keydown(function () {
+let oldNIC = /^\d{10}(V|v)$/, newNIC = /^\d{12}$/, name = /^[a-zA-Z\s.'-]{2,}$/, address = /^[a-zA-Z0-9\s.,'-]{2,}$/,
+    tel = /^(?:7|0|(?:\+94))[0-9]{9,10}$/;
+$("#inputNIC").keyup(function () {
+    validateNIC();
+});
+$("#inputName").keyup(function () {
+    validateCusName();
+});
+$("#inputAddress").keyup(function () {
+    validateAddress();
+});
+$("#inputTel").keyup(function () {
+    validateTel();
+});
+$("#inputUpdateName").keyup(function () {
+    validateUpdateCusName();
+});
+$("#inputUpdateAddress").keyup(function () {
+    validateUpdateAddress();
+});
+$("#inputUpdateTel").keyup(function () {
+    validateUpdateTel();
+});
+
+function validateNIC() {
     let checkOldNIC = oldNIC.test($("#inputNIC").val());
     let checkNewNIC = newNIC.test($("#inputNIC").val());
     if (!checkOldNIC && !checkNewNIC) {
         $("#inputNIC").css("border", 'solid red 2px');
+        return false;
     } else {
         $("#inputNIC").css("border", 'solid green 2px');
+        return true;
     }
-});
-$("#inputName").keydown(function () {
-    let check =name.test($("#inputName").val());
+}
+
+function validateCusName() {
+    let check = name.test($("#inputName").val());
     if (!check) {
         $("#inputName").css("border", 'solid red 2px');
+        return false;
     } else {
         $("#inputName").css("border", 'solid green 2px');
+        return true;
     }
-});
-$("#inputAddress").keydown(function () {
-    let check = address.test($("#inputAddress").val());
-    if (!check) {
-        $("#inputAddress").css("border", 'solid red 2px');
-    } else {
-        $("#inputAddress").css("border", 'solid green 2px');
-    }
-});
-$("#inputTel").keydown(function () {
+}
+
+function validateTel() {
     let check = tel.test($("#inputTel").val());
     if (!check) {
         $("#inputTel").css("border", 'solid red 2px');
+        return false;
     } else {
         $("#inputTel").css("border", 'solid green 2px');
+        return true;
     }
-});
+}
+
+function validateAddress() {
+    let check = address.test($("#inputAddress").val());
+    if (!check) {
+        $("#inputAddress").css("border", 'solid red 2px');
+        return false;
+    } else {
+        $("#inputAddress").css("border", 'solid green 2px');
+        return true;
+    }
+}
+
+function validateUpdateCusName() {
+    let nameRegex = /^[A-Za-z\s]+$/;
+    let inputName = $("#inputUpdateName").val();
+    let check = nameRegex.test(inputName);
+    if (!check) {
+        $("#inputUpdateName").css("border", 'solid red 2px');
+        return false;
+    } else {
+        $("#inputUpdateName").css("border", 'solid green 2px');
+        return true;
+    }
+}
+
+function validateUpdateAddress() {
+    let addressRegex = /^[a-zA-Z0-9\s.,'-]{2,}$/;
+    let inputAddress = $("#inputUpdateAddress").val();
+    let check = addressRegex.test(inputAddress);
+    if (!check) {
+        $("#inputUpdateAddress").css("border", 'solid red 2px');
+        return false;
+    } else {
+        $("#inputUpdateAddress").css("border", 'solid green 2px');
+        return true;
+    }
+}
+
+function validateUpdateTel() {
+    let telRegex = /^(?:7|0|(?:\+94))[0-9]{9,10}$/;
+    let inputTel = $("#inputUpdateTel").val();
+    let check = telRegex.test(inputTel);
+    if (!check) {
+        $("#inputUpdateTel").css("border", 'solid red 2px');
+        return false;
+    } else {
+        $("#inputUpdateTel").css("border", 'solid green 2px');
+        return true;
+    }
+}
