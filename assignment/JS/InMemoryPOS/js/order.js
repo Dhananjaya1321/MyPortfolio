@@ -135,7 +135,7 @@ $("#addToCart").click(function () {
             $("#itemName").css("border", 'solid red 2px');
             $("#itemPrice").css("border", 'solid red 2px');
             $("#itemQTY").css("border", 'solid red 2px');
-        }else {
+        } else {
             $("#invoice-customerNIC").css("border", 'solid red 2px');
             $("#customerName").css("border", 'solid red 2px');
             $("#customerTel").css("border", 'solid red 2px');
@@ -197,3 +197,30 @@ function calculateTotal() {
     $("#total").text(tot);
 }
 
+$("#discount,#cash").keydown(function (event) {
+    if (event.key === "Enter") {
+        let cash = $("#cash").val();
+        let discount = $("#discount").val();
+        if (discount>=0 && discount<100){
+            $("#discount").css("border","green solid 2px");
+            setBalance(cash, discount);
+        }else {
+            $("#discount").css("border","red solid 2px");
+            $("#discount").focus();
+        }
+    }
+});
+
+
+function setBalance(cash, discount) {
+    let tot = ($("#total").text() - ($("#total").text() * (discount / 100)));
+    // $("#total").text(tot);
+    let balance=cash-tot;
+    console.log(tot);
+    if (balance>=0){
+        $("#balance").val(balance);
+        $("#balance").css("border","solid 2px green");
+    }else {
+        $("#balance").css("border","solid 2px red");
+    }
+}
