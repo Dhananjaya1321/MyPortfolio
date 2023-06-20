@@ -166,6 +166,7 @@ function addToCart() {
             tableBody.append(tr);
         }
     }
+    getDeleteCartItem();
     calculateTotal();
 }
 
@@ -201,11 +202,11 @@ $("#discount,#cash").keydown(function (event) {
     if (event.key === "Enter") {
         let cash = $("#cash").val();
         let discount = $("#discount").val();
-        if (discount>=0 && discount<100){
-            $("#discount").css("border","green solid 2px");
+        if (discount >= 0 && discount < 100) {
+            $("#discount").css("border", "green solid 2px");
             setBalance(cash, discount);
-        }else {
-            $("#discount").css("border","red solid 2px");
+        } else {
+            $("#discount").css("border", "red solid 2px");
             $("#discount").focus();
         }
     }
@@ -215,12 +216,43 @@ $("#discount,#cash").keydown(function (event) {
 function setBalance(cash, discount) {
     let tot = ($("#total").text() - ($("#total").text() * (discount / 100)));
     // $("#total").text(tot);
-    let balance=cash-tot;
+    let balance = cash - tot;
     console.log(tot);
-    if (balance>=0){
+    if (balance >= 0) {
         $("#balance").val(balance);
-        $("#balance").css("border","solid 2px green");
-    }else {
-        $("#balance").css("border","solid 2px red");
+        $("#balance").css("border", "solid 2px green");
+    } else {
+        $("#balance").css("border", "solid 2px red");
     }
+}
+
+function getDeleteCartItem() {
+    $("#order-table>tr>td>button:nth-child(1)").click(function () {
+        let code = $(this).parents("#order-table>tr").children().eq(0).text();
+        let qty = $(this).parents("#order-table>tr").children().eq(3).text();
+        let oid = $("#orderId").val();
+        let consent = confirm("Do you want to delete.?");
+        if (consent) {
+            let response = deleteCartItem(oid, code, qty);
+            if (response) {
+                alert("Item Deleted");
+                $("#order-table").empty();
+                addToCart();
+            } else {
+                alert("Item Not Removed..!");
+            }
+        }
+    });
+}
+
+function deleteCartItem(oid, code, newQTY) {
+    for (let i = 0; i < order.length; i++) {
+        if (order[i].orderId === oid && order[i].itemCode === code) {
+            let item=searchItem(code);
+            item.qty=Number(item.qty)+Number(newQTY);
+            order.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
 }
