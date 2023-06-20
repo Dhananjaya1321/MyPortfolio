@@ -115,14 +115,37 @@ $("#addToCart").click(function () {
         addToCart();
         updateItemQTY(itemCode, itemQty);
     } else {
-        $("#invoice-customerNIC").css("border", 'solid red 2px');
-        $("#item-itemCode").css("border", 'solid red 2px');
-        $("#customerName").css("border", 'solid red 2px');
-        $("#customerTel").css("border", 'solid red 2px');
-        $("#customerAddress").css("border", 'solid red 2px');
-        $("#itemName").css("border", 'solid red 2px');
-        $("#itemPrice").css("border", 'solid red 2px');
-        $("#itemQTY").css("border", 'solid red 2px');
+        if (nic === "Select NIC" && code === "Select Code") {
+            $("#invoice-customerNIC").css("border", 'solid red 2px');
+            $("#customerName").css("border", 'solid red 2px');
+            $("#customerTel").css("border", 'solid red 2px');
+            $("#customerAddress").css("border", 'solid red 2px');
+
+            $("#item-itemCode").css("border", 'solid red 2px');
+            $("#itemName").css("border", 'solid red 2px');
+            $("#itemPrice").css("border", 'solid red 2px');
+            $("#itemQTY").css("border", 'solid red 2px');
+        } else if (code === "Select Code") {
+            $("#invoice-customerNIC").css("border", 'solid green 2px');
+            $("#customerName").css("border", 'solid green 2px');
+            $("#customerTel").css("border", 'solid green 2px');
+            $("#customerAddress").css("border", 'solid green 2px');
+
+            $("#item-itemCode").css("border", 'solid red 2px');
+            $("#itemName").css("border", 'solid red 2px');
+            $("#itemPrice").css("border", 'solid red 2px');
+            $("#itemQTY").css("border", 'solid red 2px');
+        }else {
+            $("#invoice-customerNIC").css("border", 'solid red 2px');
+            $("#customerName").css("border", 'solid red 2px');
+            $("#customerTel").css("border", 'solid red 2px');
+            $("#customerAddress").css("border", 'solid red 2px');
+
+            $("#item-itemCode").css("border", 'solid green 2px');
+            $("#itemName").css("border", 'solid green 2px');
+            $("#itemPrice").css("border", 'solid green 2px');
+            $("#itemQTY").css("border", 'solid green 2px');
+        }
     }
 });
 
@@ -143,12 +166,13 @@ function addToCart() {
             tableBody.append(tr);
         }
     }
+    calculateTotal();
 }
 
 function updateItemQTY(itemCode, itemQty) {
     for (let i = 0; i < item.length; i++) {
         if (item[i].code === itemCode) {
-            item[i].qty =Number(item[i].qty)- Number(itemQty);
+            item[i].qty = Number(item[i].qty) - Number(itemQty);
         }
     }
     clearItemSection();
@@ -162,4 +186,14 @@ function clearItemSection() {
     $("#Quantity").val("");
 }
 
+function calculateTotal() {
+    let price = 0, qty = 0, tot = 0;
+    const table = $("#order-table")[0];
+    for (let i = 0; i < $("#order-table > tr").length; i++) {
+        price = Number(table.rows[i].cells[2].textContent);
+        qty = Number(table.rows[i].cells[3].textContent);
+        tot = tot + (price * qty);
+    }
+    $("#total").text(tot);
+}
 
