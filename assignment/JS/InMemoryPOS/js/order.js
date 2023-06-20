@@ -10,7 +10,7 @@ function loadComboBox() {
     );
     for (let i = 0; i < customer.length; i++) {
         $("#invoice-customerNIC").append(
-            `<option>"${customer[i].nic}"</option>`
+            `<option>${customer[i].nic}</option>`
         );
     }
     for (let i = 0; i < item.length; i++) {
@@ -87,7 +87,7 @@ function checkOrderAndItem(itemQty) {
     for (let j = 0; j < order.length; j++) {
         if (order[j].orderId === $("#orderId").val() && order[j].itemCode === $("#item-itemCode").val()) {
             order[j].itemQty = Number(order[j].itemQty) + Number(itemQty);
-            console.log( order[j].itemQty)
+            console.log(order[j].itemQty)
             return true;
         }
     }
@@ -112,8 +112,8 @@ $("#addToCart").click(function () {
                 itemQty: itemQty
             });
         }
-
         addToCart();
+        updateItemQTY(itemCode, itemQty);
     } else {
         $("#invoice-customerNIC").css("border", 'solid red 2px');
         $("#item-itemCode").css("border", 'solid red 2px');
@@ -143,10 +143,23 @@ function addToCart() {
             tableBody.append(tr);
         }
     }
-
-
 }
 
+function updateItemQTY(itemCode, itemQty) {
+    for (let i = 0; i < item.length; i++) {
+        if (item[i].code === itemCode) {
+            item[i].qty =Number(item[i].qty)- Number(itemQty);
+        }
+    }
+    clearItemSection();
+}
 
+function clearItemSection() {
+    $("#item-itemCode").val("Select Code");
+    $("#itemName").val("");
+    $("#itemPrice").val("");
+    $("#itemQTY").val("");
+    $("#Quantity").val("");
+}
 
 
