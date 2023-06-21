@@ -258,9 +258,11 @@ function validateNIC() {
     let checkNewNIC = newNIC.test($("#inputNIC").val());
     if (!checkOldNIC && !checkNewNIC) {
         $("#inputNIC").css("border", 'solid red 2px');
+        $("#inputNICAlert").text("Invalid NIC number. Use 000000000000 or 0000000000v");
         return false;
     } else {
         $("#inputNIC").css("border", 'solid green 2px');
+        $("#inputNICAlert").text("");
         return true;
     }
 }
@@ -269,9 +271,11 @@ function validateCusName() {
     let check = name.test($("#inputName").val());
     if (!check) {
         $("#inputName").css("border", 'solid red 2px');
+        $("#inputNameAlert").text("Invalid name. You can only use characters for your name");
         return false;
     } else {
         $("#inputName").css("border", 'solid green 2px');
+        $("#inputNameAlert").text("");
         return true;
     }
 }
@@ -280,9 +284,11 @@ function validateTel() {
     let check = tel.test($("#inputTel").val());
     if (!check) {
         $("#inputTel").css("border", 'solid red 2px');
+        $("#inputTelAlert").text("Invalid Phone number. Use Ex :- 0760000000 or +9400000000");
         return false;
     } else {
         $("#inputTel").css("border", 'solid green 2px');
+        $("#inputTelAlert").text("");
         return true;
     }
 }
@@ -291,9 +297,11 @@ function validateAddress() {
     let check = address.test($("#inputAddress").val());
     if (!check) {
         $("#inputAddress").css("border", 'solid red 2px');
+        $("#inputAddressAlert").text("Invalid Address");
         return false;
     } else {
         $("#inputAddress").css("border", 'solid green 2px');
+        $("#inputAddressAlert").text("");
         return true;
     }
 }
@@ -304,9 +312,11 @@ function validateUpdateCusName() {
     let check = nameRegex.test(inputName);
     if (!check) {
         $("#inputUpdateName").css("border", 'solid red 2px');
+        $("#inputUpdateNameAlert").text("Invalid name. You can only use characters for your name");
         return false;
     } else {
         $("#inputUpdateName").css("border", 'solid green 2px');
+        $("#inputUpdateNameAlert").text("");
         return true;
     }
 }
@@ -317,9 +327,11 @@ function validateUpdateAddress() {
     let check = addressRegex.test(inputAddress);
     if (!check) {
         $("#inputUpdateAddress").css("border", 'solid red 2px');
+        $("#inputUpdateAddressAlert").text("Invalid Address.");
         return false;
     } else {
         $("#inputUpdateAddress").css("border", 'solid green 2px');
+        $("#inputUpdateAddressAlert").text("");
         return true;
     }
 }
@@ -330,9 +342,11 @@ function validateUpdateTel() {
     let check = telRegex.test(inputTel);
     if (!check) {
         $("#inputUpdateTel").css("border", 'solid red 2px');
+        $("#inputUpdateTelAlert").text("Invalid Phone number. Use Ex :- 0760000000 or +9400000000");
         return false;
     } else {
         $("#inputUpdateTel").css("border", 'solid green 2px');
+        $("#inputUpdateTelAlert").text("");
         return true;
     }
 }
