@@ -3,10 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +75,25 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\controller" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\db" />
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\assets" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\pages" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\bootstrap" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image\myPhoto" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,7 +209,7 @@
       <workItem from="1687109110214" duration="1370000" />
       <workItem from="1687143600965" duration="19166000" />
       <workItem from="1687244602039" duration="16457000" />
-      <workItem from="1687331403210" duration="4197000" />
+      <workItem from="1687331403210" duration="5545000" />
     </task>
     <servers />
   </component>
