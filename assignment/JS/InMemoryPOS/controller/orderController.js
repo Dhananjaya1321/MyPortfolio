@@ -174,7 +174,7 @@ function updateItemQTY(itemCode, itemQty) {
     for (let i = 0; i < item.length; i++) {
         if (item[i].code === itemCode) {
             item[i].qty = Number(item[i].qty) - Number(itemQty);
-            searchItem(itemCode).qty=item[i].qty ;
+            searchItem(itemCode).qty = item[i].qty;
         }
     }
     searchItem()
@@ -297,3 +297,37 @@ function clearInvoiceSection() {
     $("#customerTel").val("");
     $("#customerAddress").val("");
 }
+
+
+$("#orderId").keydown(function (event) {
+    if (event.key === "Enter") {
+        let orderID = $("#orderId").val();
+        let order = searchOrder(orderID);
+
+        if (order!==undefined) {
+            addToCart();
+            let customer = searchCustomer(order.nic);
+            $("#invoice-customerNIC").val(order.nic);
+            $("#customerName").val(customer.name);
+            $("#customerTel").val(customer.tel);
+            $("#customerAddress").val(customer.address);
+
+            $("#orderDate").text(order.date);
+            $("#total").text(order.total);
+            $("#cash").val(order.cash);
+            $("#discount").val(order.discount);
+            $("#balance").val(order.balance);
+
+        }else {
+            $("#orderId").focus();
+        }
+
+    }
+});
+
+function searchOrder(orderID) {
+    return orderDetails.find(function (orderDetails) {
+        return orderDetails.orderID === orderID;
+    });
+}
+
