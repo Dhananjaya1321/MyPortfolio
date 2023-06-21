@@ -43,8 +43,8 @@ $("#invoice-customerNIC").click(function () {
 
 function setOrderId() {
     $("#orderDate").val(new Date().toISOString().slice(0, 10));
-    if (order.length > 0) {
-        $("#orderId").val("O00-00" + (order.length + 1));
+    if (orderDetails.length > 0) {
+        $("#orderId").val("O00-00" + (orderDetails.length + 1));
     } else {
         $("#orderId").val("O00-001");
     }
@@ -174,8 +174,10 @@ function updateItemQTY(itemCode, itemQty) {
     for (let i = 0; i < item.length; i++) {
         if (item[i].code === itemCode) {
             item[i].qty = Number(item[i].qty) - Number(itemQty);
+            searchItem(itemCode).qty=item[i].qty ;
         }
     }
+    searchItem()
     clearItemSection();
 }
 
@@ -248,11 +250,50 @@ function getDeleteCartItem() {
 function deleteCartItem(oid, code, newQTY) {
     for (let i = 0; i < order.length; i++) {
         if (order[i].orderId === oid && order[i].itemCode === code) {
-            let item=searchItem(code);
-            item.qty=Number(item.qty)+Number(newQTY);
+            let item = searchItem(code);
+            item.qty = Number(item.qty) + Number(newQTY);
             order.splice(i, 1);
             return true;
         }
     }
     return false;
+}
+
+$("#place-order").click(function () {
+    console.log($("#order-table>tr").length > 0 && $("#invoice-customerNIC").val() !== "Select NIC");
+    if ($("#order-table>tr").length > 0 && $("#invoice-customerNIC").val() !== "Select NIC") {
+        let orderID = $("#orderId").val();
+        let date = $("#orderDate").val();
+        let nic = $("#invoice-customerNIC").val();
+        let total = $("#total").val();
+        let cash = $("#cash").val();
+        let discount = $("#discount").val();
+        let balance = $("#balance").val();
+        orderDetails.push({
+            orderID: orderID,
+            date: date,
+            nic: nic,
+            total: total,
+            cash: cash,
+            discount: discount,
+            balance: balance
+        });
+        clearItemSection();
+        clearInvoiceSection();
+        $("#order-table").empty();
+        setOrderId();
+        $("#total").text("0.0");
+        $("#cash").val("");
+        $("#discount").val(0);
+        $("#balance").val("");
+    } else {
+        $("#invoice-customerNIC").focus();
+    }
+});
+
+function clearInvoiceSection() {
+    $("#invoice-customerNIC").val("Select NIC");
+    $("#customerName").val("");
+    $("#customerTel").val("");
+    $("#customerAddress").val("");
 }
