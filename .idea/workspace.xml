@@ -16,6 +16,22 @@
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/bootstrap.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/customerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/db/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/indexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/itemController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/jquery-3.6.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/jquery-3.7.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/assets/js/jquery-3.7.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/orderController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +225,7 @@
       <workItem from="1687109110214" duration="1370000" />
       <workItem from="1687143600965" duration="19166000" />
       <workItem from="1687244602039" duration="16457000" />
-      <workItem from="1687331403210" duration="5545000" />
+      <workItem from="1687331403210" duration="6378000" />
     </task>
     <servers />
   </component>
@@ -232,7 +248,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/js/customer.js</url>
+          <url>file://$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/customerController.js</url>
           <line>170</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />

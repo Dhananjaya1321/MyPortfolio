@@ -14,6 +14,8 @@ $("#log_in").click(function () {
     $("#login_section").css("display", 'none');
 });
 $("#home").click(function () {
+    setItemCount();
+    setCustomerCount();
     $("#home_section").css("display", 'block');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'none');
