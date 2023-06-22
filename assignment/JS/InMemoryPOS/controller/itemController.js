@@ -3,20 +3,37 @@ $("#save-item").click(function () {
     let name = $("#inputItemName").val();
     let price = $("#inputItemPrice").val();
     let qty = $("#inputItemQuantity").val();
-    $("#item-table-body").empty();
-    if (checkCode(code)) {
-        item.push({
-            code: code,
-            name: name,
-            price: price,
-            qty: qty
-        });
-        loadItems();
+    if (code !== "" && validateCode()) {
+        if (name !== "" && validateItemName()) {
+            if (tel !== "" && validatePrice()) {
+                if (address !== "" && validateQTY()) {
+                    $("#item-table-body").empty();
+                    if (checkCode(code)) {
+                        item.push({
+                            code: code,
+                            name: name,
+                            price: price,
+                            qty: qty
+                        });
+                        loadItems();
+                    } else {
+                        alert("This item already exists");
+                        loadItems();
+                    }
+                    clearNewItemForm();
+                } else {
+                    $("#inputItemQuantity").focus();
+                }
+            } else {
+                $("#inputItemPrice").focus();
+            }
+        } else {
+            $("#inputItemName").focus();
+        }
     } else {
-        alert("This item already exists");
-        loadItems();
+        $("#inputItemCode").focus();
     }
-    clearNewItemForm();
+
 });
 
 function loadItems() {
@@ -42,19 +59,6 @@ $("#addNewItemClearButton").click(function () {
     clearNewItemForm();
 });
 
-/*function getCustomer() {
-    $("#customer-table-body>tr").click(function () {
-        let nic = $(this).children().eq(0).text();
-        let name = $(this).children().eq(1).text();
-        let tel = $(this).children().eq(2).text();
-        let address = $(this).children().eq(3).text();
-        $('#inputNIC').val(nic);
-        $('#inputName').val(name);
-        $('#inputTel').val(tel);
-        $('#inputAddress').val(address);
-        popUpAddCustomerForm();
-    });
-}*/
 function getDeleteItem() {
     $("#item-table-body>tr>td>button:nth-child(1)").click(function () {
         let code = $(this).parents("#item-table-body>tr").children().eq(0).text();
@@ -160,12 +164,27 @@ function searchItem(code) {
 
 $("#itemUpdateButton").click(function () {
     item1 = searchItem($("#inputUpdateItemCode").val());
-    item1.name = $("#inputUpdateItemName").val();
-    item1.price = $("#inputUpdateItemPrice").val();
-    item1.qty = $("#inputUpdateItemQuantity").val();
-    $("#item-table-body").empty();
-    clearUpdateItemForm();
-    loadItems();
+    let itemName = $("#inputUpdateItemName").val();
+    let itemPrice = $("#inputUpdateItemPrice").val();
+    let itemQty = $("#inputUpdateItemQuantity").val();
+    if (name !== "" && validateItemName()) {
+        if (tel !== "" && validatePrice()) {
+            if (address !== "" && validateQTY()) {
+                item1.name = itemName;
+                item1.price = itemPrice;
+                item1.qty = itemQty;
+                $("#item-table-body").empty();
+                clearUpdateItemForm();
+                loadItems();
+            } else {
+                $("#inputUpdateItemQuantity").focus();
+            }
+        } else {
+            $("#inputUpdateItemPrice").focus();
+        }
+    } else {
+        $("#inputUpdateItemName").focus();
+    }
 });
 
 function clearUpdateItemForm() {
@@ -174,6 +193,7 @@ function clearUpdateItemForm() {
     $("#inputUpdateItemPrice").val("");
     $("#inputUpdateItemQuantity").val("");
 }
+
 $("#inputItemCode,#inputItemName,#inputItemPrice,#inputItemQuantity").keydown(function (e) {
     if (e.key === "Tab") {
         e.preventDefault();
@@ -195,39 +215,120 @@ $("#inputItemPrice").keydown(function (e) {
     }
 });
 
-/*
-let code=/^I00-00[1-9]\d{2}$/,name=/^[a-zA-Z\s.'-]{2,}$/,price=/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{2})?$/,qty=/^\d+(\.\d+)?$/;
-$("#inputNIC").keydown(function () {
-    let checkCode = code.test($("#inputItemCode").val());
-    if (!checkCode) {
-        $("#inputItemCode").css("border", 'solid red 2px');
-    } else {
-        $("#inputItemCode").css("border", 'solid green 2px');
-    }
+
+let checkItemCode = /^I00-00[1-9]\d{0,}$/, checkItemName = /^[a-zA-Z]{2,}$/,
+    checkItemPrice = /^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{2})?$/, checkItemQty = /^\d+(\.\d+)?$/;
+
+$("#inputItemCode").keyup(function () {
+    validateCode();
+    console.log("hhhh")
 });
-$("#inputItemName").keydown(function () {
-    let check =name.test($("#inputItemName").val());
-    if (!check) {
-        $("#inputItemName").css("border", 'solid red 2px');
-    } else {
-        $("#inputItemName").css("border", 'solid green 2px');
-    }
+$("#inputItemName").keyup(function () {
+    validateItemName();
 });
-$("#inputItemPrice").keydown(function () {
-    let check = price.test($("#inputItemPrice").val());
-    if (!check) {
-        $("#inputItemPrice").css("border", 'solid red 2px');
-    } else {
-        $("#inputItemPrice").css("border", 'solid green 2px');
-    }
+$("#inputItemPrice").keyup(function () {
+    validatePrice();
 });
-$("#inputItemQuantity").keydown(function () {
-    let check = qty.test($("#inputItemQuantity").val());
-    if (!check) {
-        $("#inputItemQuantity").css("border", 'solid red 2px');
-    } else {
-        $("#inputItemQuantity").css("border", 'solid green 2px');
-    }
+$("#inputItemQuantity").keyup(function () {
+    validateQTY();
+});
+$("#inputUpdateItemName").keyup(function () {
+    validateUpdateItemName();
+});
+$("#inputUpdateItemPrice").keyup(function () {
+    validateUpdateItemPrice();
+});
+$("#inputUpdateItemQuantity").keyup(function () {
+    validateUpdateItemQTY();
 });
 
-*/
+function validateCode() {
+    let checkCode = checkItemCode.test($("#inputItemCode").val());
+    if (!checkCode) {
+        $("#inputItemCode").css("border", 'solid red 2px');
+        $("#inputItemCodeAlert").text("Invalid code. Use I00-001");
+        return false;
+    } else {
+        $("#inputItemCode").css("border", 'solid green 2px');
+        $("#inputItemCodeAlert").text("");
+        return true;
+    }
+}
+
+function validateItemName() {
+    let check = checkItemName.test($("#inputItemName").val());
+    if (!check) {
+        $("#inputItemName").css("border", 'solid red 2px');
+        $("#inputItemNameAlert").text("Invalid name. You can only use characters for name");
+        return false;
+    } else {
+        $("#inputItemName").css("border", 'solid green 2px');
+        $("#inputItemNameAlert").text("");
+        return true;
+    }
+}
+
+function validatePrice() {
+    let check = checkItemPrice.test($("#inputItemPrice").val());
+    if (!check) {
+        $("#inputItemPrice").css("border", 'solid red 2px');
+        $("#inputItemPriceAlert").text("Invalid price. You can only use integer or decimal numbers for price");
+        return false;
+    } else {
+        $("#inputItemPrice").css("border", 'solid green 2px');
+        $("#inputItemPriceAlert").text("");
+        return true;
+    }
+}
+
+function validateQTY() {
+    let check = checkItemQty.test($("#inputItemQuantity").val());
+    if (!check) {
+        $("#inputItemQuantity").css("border", 'solid red 2px');
+        $("#inputItemQTYAlert").text("Invalid Quantity. You can only use numbers for quantity");
+        return false;
+    } else {
+        $("#inputItemQuantity").css("border", 'solid green 2px');
+        $("#inputItemQTYAlert").text("");
+        return true;
+    }
+}
+
+function validateUpdateItemName() {
+    let check = /^[a-zA-Z]{2,}$/.test($("#inputUpdateItemName").val());
+    if (!check) {
+        $("#inputUpdateItemName").css("border", 'solid red 2px');
+        $("#inputUpdateItemNameAlert").text("Invalid name. You can only use characters for name");
+        return false;
+    } else {
+        $("#inputUpdateItemName").css("border", 'solid green 2px');
+        $("#inputUpdateItemNameAlert").text("");
+        return true;
+    }
+}
+
+function validateUpdateItemPrice() {
+    let check = /^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d{2})?$/.test($("#inputUpdateItemPrice").val());
+    if (!check) {
+        $("#inputUpdateItemPrice").css("border", 'solid red 2px');
+        $("#inputUpdateItemPriceAlert").text("Invalid price. You can only use integer or decimal numbers for price");
+        return false;
+    } else {
+        $("#inputUpdateItemPrice").css("border", 'solid green 2px');
+        $("#inputUpdateItemPriceAlert").text("");
+        return true;
+    }
+}
+
+function validateUpdateItemQTY() {
+    let check = /^\d+(\.\d+)?$/.test($("#inputUpdateItemQuantity").val());
+    if (!check) {
+        $("#inputUpdateItemQuantity").css("border", 'solid red 2px');
+        $("#inputUpdateItemQTYAlert").text("Invalid Quantity. You can only use numbers for quantity");
+        return false;
+    } else {
+        $("#inputUpdateItemQuantity").css("border", 'solid green 2px');
+        $("#inputUpdateItemQTYAlert").text("");
+        return true;
+    }
+}

@@ -59,19 +59,6 @@ $("#addNewCustomerClearButton").click(function () {
     clearNewCustomerForm();
 });
 
-/*function getCustomer() {
-    $("#customer-table-body>tr").click(function () {
-        let nic = $(this).children().eq(0).text();
-        let name = $(this).children().eq(1).text();
-        let tel = $(this).children().eq(2).text();
-        let address = $(this).children().eq(3).text();
-        $('#inputNIC').val(nic);
-        $('#inputName').val(name);
-        $('#inputTel').val(tel);
-        $('#inputAddress').val(address);
-        popUpAddCustomerForm();
-    });
-}*/
 function getDeleteCustomer() {
     $("#customer-table-body>tr>td>button:nth-child(1)").click(function () {
         let nic = $(this).parents("#customer-table-body>tr").children().eq(0).text();
