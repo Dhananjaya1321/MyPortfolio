@@ -40,7 +40,6 @@ $("#invoice-customerNIC").click(function () {
     }
 });
 
-
 function setOrderId() {
     $("#orderDate").val(new Date().toISOString().slice(0, 10));
     if (orderDetails.length > 0) {
@@ -49,7 +48,6 @@ function setOrderId() {
         $("#orderId").val("O00-001");
     }
 }
-
 
 /*item*/
 $("#item-itemCode").click(function () {
@@ -70,6 +68,7 @@ $("#item-itemCode").click(function () {
         $("#itemQTY").val("");
     }
 });
+
 $("#Quantity").keyup(function () {
     let qty = $("#Quantity").val();
     if (Number($("#Quantity").val()) !== 0 && $("#Quantity").val() !== "") {
@@ -87,7 +86,6 @@ function checkOrderAndItem(itemQty) {
     for (let j = 0; j < order.length; j++) {
         if (order[j].orderId === $("#orderId").val() && order[j].itemCode === $("#item-itemCode").val()) {
             order[j].itemQty = Number(order[j].itemQty) + Number(itemQty);
-            console.log(order[j].itemQty)
             return true;
         }
     }
@@ -95,6 +93,7 @@ function checkOrderAndItem(itemQty) {
 }
 
 $("#addToCart").click(function () {
+    $("#QuantityAlert").text("")
     let nic = $("#invoice-customerNIC").val();
     let code = $("#item-itemCode").val();
     if (nic !== "Select NIC" && code !== "Select Code") {
@@ -103,17 +102,26 @@ $("#addToCart").click(function () {
         let itemName = $("#itemName").val();
         let itemPrice = $("#itemPrice").val();
         let itemQty = $("#Quantity").val();
-        if (!checkOrderAndItem(itemQty)) {
-            order.push({
-                orderId: orderId,
-                itemCode: itemCode,
-                itemName: itemName,
-                itemPrice: itemPrice,
-                itemQty: itemQty
-            });
+        if (itemQty<=$("#itemQTY").val() && itemQty!==""){
+            if (!checkOrderAndItem(itemQty)) {
+                order.push({
+                    orderId: orderId,
+                    itemCode: itemCode,
+                    itemName: itemName,
+                    itemPrice: itemPrice,
+                    itemQty: itemQty
+                });
+            }
+            addToCart();
+            updateItemQTY(itemCode, itemQty);
+        }else {
+            if (itemQty===""){
+                $("#QuantityAlert").text(`Input item quantity`);
+                $("#Quantity").css("border","red solid 2px");
+            }else {
+                $("#QuantityAlert").text(`${itemQty} of these are not available. The amount in hand is less than ${itemQty} `);
+            }
         }
-        addToCart();
-        updateItemQTY(itemCode, itemQty);
     } else {
         if (nic === "Select NIC" && code === "Select Code") {
             $("#invoice-customerNIC").css("border", 'solid red 2px');
@@ -202,6 +210,9 @@ function calculateTotal() {
 
 $("#discount,#cash").keydown(function (event) {
     if (event.key === "Enter") {
+        $("#cashAlert").text("");
+        $("#discountAlert").text("");
+
         let cash = $("#cash").val();
         let discount = $("#discount").val();
         if (discount >= 0 && discount < 100) {
@@ -210,10 +221,13 @@ $("#discount,#cash").keydown(function (event) {
         } else {
             $("#discount").css("border", "red solid 2px");
             $("#discount").focus();
+            $("#discountAlert").text("Negative discounts cannot be added");
+        }
+        if (cash<$("#total").val() && cash==="") {
+            $("#cashAlert").text("This amount is not enough");
         }
     }
 });
-
 
 function setBalance(cash, discount) {
     let tot = ($("#total").text() - ($("#total").text() * (discount / 100)));
@@ -260,34 +274,46 @@ function deleteCartItem(oid, code, newQTY) {
 }
 
 $("#place-order").click(function () {
-    console.log($("#order-table>tr").length > 0 && $("#invoice-customerNIC").val() !== "Select NIC");
-    if ($("#order-table>tr").length > 0 && $("#invoice-customerNIC").val() !== "Select NIC") {
-        let orderID = $("#orderId").val();
-        let date = $("#orderDate").val();
-        let nic = $("#invoice-customerNIC").val();
-        let total = $("#total").val();
-        let cash = $("#cash").val();
-        let discount = $("#discount").val();
-        let balance = $("#balance").val();
-        orderDetails.push({
-            orderID: orderID,
-            date: date,
-            nic: nic,
-            total: total,
-            cash: cash,
-            discount: discount,
-            balance: balance
-        });
-        clearItemSection();
-        clearInvoiceSection();
-        $("#order-table").empty();
-        setOrderId();
-        $("#total").text("0.0");
-        $("#cash").val("");
-        $("#discount").val(0);
-        $("#balance").val("");
-    } else {
-        $("#invoice-customerNIC").focus();
+    $("#orderIdAlert").text("");
+    $("#cashAlert").text("");
+    let total = $("#total").text();
+    let cash = $("#cash").val();
+    let orderID = $("#orderId").val();
+    if (undefined===searchOrder(orderID)){
+        if ($("#order-table>tr").length > 0 && $("#invoice-customerNIC").val() !== "Select NIC") {
+            console.log(cash>=total && cash!=="")
+            console.log(cash>=total)
+            console.log(cash!=="")
+            if (Number(cash)>=Number(total) && cash!==""){
+                let date = $("#orderDate").val();
+                let nic = $("#invoice-customerNIC").val();
+                let discount = $("#discount").val();
+                let balance = $("#balance").val();
+                orderDetails.push({
+                    orderID: orderID,
+                    date: date,
+                    nic: nic,
+                    total: total,
+                    cash: cash,
+                    discount: discount,
+                    balance: balance
+                });
+                clearItemSection();
+                clearInvoiceSection();
+                $("#order-table").empty();
+                setOrderId();
+                $("#total").text("0.0");
+                $("#cash").val("");
+                $("#discount").val(0);
+                $("#balance").val("");
+            }else {
+                $("#cashAlert").text("This amount is not enough");
+            }
+        } else {
+            $("#invoice-customerNIC").focus();
+        }
+    }else {
+        $("#orderIdAlert").text(`${orderID} already exits`);
     }
 });
 
@@ -298,8 +324,8 @@ function clearInvoiceSection() {
     $("#customerAddress").val("");
 }
 
-
 $("#orderId").keydown(function (event) {
+    $("#orderIdAlert").text("");
     if (event.key === "Enter") {
         let orderID = $("#orderId").val();
         let order = searchOrder(orderID);
@@ -320,6 +346,7 @@ $("#orderId").keydown(function (event) {
 
         }else {
             $("#orderId").focus();
+            $("#orderIdAlert").text(`${orderID} has no order`);
         }
 
     }
