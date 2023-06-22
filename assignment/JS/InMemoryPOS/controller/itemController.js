@@ -199,6 +199,11 @@ $("#inputItemCode,#inputItemName,#inputItemPrice,#inputItemQuantity").keydown(fu
         e.preventDefault();
     }
 });
+$("#inputUpdateItemCode,#inputUpdateItemName,#inputUpdateItemPrice,#inputUpdateItemQuantity").keydown(function (e) {
+    if (e.key === "Tab") {
+        e.preventDefault();
+    }
+});
 $("#inputItemCode").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputItemName").focus();
@@ -212,6 +217,21 @@ $("#inputItemName").keydown(function (e) {
 $("#inputItemPrice").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputItemQuantity").focus();
+    }
+});
+$("#inputUpdateItemCode").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateItemName").focus();
+    }
+});
+$("#inputUpdateItemName").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateItemPrice").focus();
+    }
+});
+$("#inputUpdateItemPrice").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateItemQuantity").focus();
     }
 });
 

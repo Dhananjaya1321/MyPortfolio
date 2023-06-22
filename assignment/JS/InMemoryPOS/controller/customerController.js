@@ -200,6 +200,11 @@ $("#inputNIC,#inputName,#inputTel,#inputAddress").keydown(function (e) {
         e.preventDefault();
     }
 });
+$("#inputUpdateNIC,#inputUpdateName,#inputUpdateTel,#inputUpdateAddress").keydown(function (e) {
+    if (e.key === "Tab") {
+        e.preventDefault();
+    }
+});
 $("#inputNIC").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputName").focus();
@@ -213,6 +218,21 @@ $("#inputName").keydown(function (e) {
 $("#inputTel").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputAddress").focus();
+    }
+});
+$("#inputUpdateNIC").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateName").focus();
+    }
+});
+$("#inputUpdateName").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateTel").focus();
+    }
+});
+$("#inputUpdateTel").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateAddress").focus();
     }
 });
 
