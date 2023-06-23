@@ -951,6 +951,32 @@
         });
         $("#move-3>a").attr("href", `${projectHref[2]}`);
 
+    });
+    $("#btn-right-projects").click(function () {
+        let last = projectImages[2];
+        let lastHref = projectHref[2];
+        projectImages.pop();
+        projectImages.unshift(last);
+        projectHref.pop();
+        projectHref.unshift(lastHref);
+
+        $("#move-1>a>div").css({
+            "background": `url(${projectImages[0]})`,
+            "background-size": "cover",
+        });
+        $("#move-1>a").attr("href", `${projectHref[0]}`);
+
+        $("#move-2>a>div").css({
+            "background": `url(${projectImages[1]})`,
+            "background-size": "cover",
+        });
+        $("#move-2>a").attr("href", `${projectHref[1]}`);
+
+        $("#move-3>a>div").css({
+            "background": `url(${projectImages[2]})`,
+            "background-size": "cover",
+        });
+        $("#move-3>a").attr("href", `${projectHref[2]}`);
 
     });
 
