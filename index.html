@@ -572,24 +572,24 @@
         </nav><!--project navigations-->
         <section>
             <div class="button_left">
-                <button>
+                <button id="btn-left-assignment">
                     <i class="fa-solid fa-chevron-left fa-2xl"></i>
                 </button>
             </div><!--left button-->
 
             <!--slider show-->
             <section>
-                <div>
+                <div id="move-assignments-1">
                     <a href="assignment/CSS/CaseOne/index.html" target="_blank">
                         <div></div>
                     </a>
                 </div>
-                <div>
+                <div id="move-assignments-2">
                     <a href="assignment/CSS/CaseTwo/index.html" target="_blank">
                         <div></div>
                     </a>
                 </div>
-                <div>
+                <div id="move-assignments-3">
                     <a href="assignment/CSS/CaseThree/index.html" target="_blank">
                         <div></div>
                     </a>
@@ -636,7 +636,7 @@
             </section>&lt;!&ndash;desktop&ndash;&gt;--><!--I will creat-->
 
             <div class="button_right">
-                <button>
+                <button id="btn-right-assignment">
                     <i class="fa-solid fa-chevron-right fa-2xl"></i>
                 </button>
             </div><!--right button-->
@@ -784,7 +784,6 @@
             <a href="pages/certificates.html" target="_blank"><input type="button" value="See all"></a>
         </div><!--see all-->
     </section><!--certificate-->
-
 </main><!--main-->
 <footer id="contact_section">
     <div class="topic_main_div">
@@ -953,8 +952,8 @@
 
     });
     $("#btn-right-projects").click(function () {
-        let last = projectImages[2];
-        let lastHref = projectHref[2];
+        let last = projectImages[projectImages.length-1];
+        let lastHref = projectHref[projectHref.length-1];
         projectImages.pop();
         projectImages.unshift(last);
         projectHref.pop();
@@ -977,6 +976,105 @@
             "background-size": "cover",
         });
         $("#move-3>a").attr("href", `${projectHref[2]}`);
+
+    });
+
+    let assignmentImages = [
+        "assets/image/Assignment1.png",
+        "assets/image/Assignment2.png",
+        "assets/image/Assignment3.png",
+        "assets/image/Assignment4.png",
+        "assets/image/Assignment5.png",
+        "assets/image/Assignment6.png",
+        "assets/image/Assignment7.png",
+        "assets/image/Assignment9.png",
+        "assets/image/Assignment8.png",
+        "assets/image/Assignment10.png",
+        "assets/image/Assignment11.png",
+        "assets/image/Assignment12.png",
+        "assets/image/Assignment13.png",
+        "assets/image/Assignment14.png",
+        "assets/image/Assignment15.png",
+        "assets/image/Assignment16.png",
+        "assets/image/Assignment13.png",
+        "assets/image/Assignment17.png"
+    ];
+    let assignmentHref = [
+        "assignment/CSS/CaseOne/index.html",
+        "assignment/CSS/CaseTwo/index.html",
+        "assignment/CSS/CaseThree/index.html",
+        "assignment/CSS/CaseFour/index.html",
+        "assignment/CSS/CaseFiveAndSix/index.html",
+        "assignment/CSS/CaseFiveAndSix/index.html",
+        "assignment/Transitions/CaseOne/index.html",
+        "assignment/Transitions/CaseTwo/index.html",
+        "assignment/Animations/CaseThree/index.html",
+        "assignment/Animations/CaseFour/index.html",
+        "assignment/Animations/CaseFive/index.html",
+        "assignment/Animations/CaseSix/index.html",
+        "assignment/CSS-Framework/index.html",
+        "assignment/JS/SPA/index.html",
+        "assignment/JS/QUE/index.html",
+        "assignment/JS/KNIGHT/index.html",
+        "assignment/JS/InMemoryPOS/index.html",
+        "assignment/JS/CAL/index.html"
+    ];
+
+    $("#btn-left-assignment").click(function () {
+        let first = assignmentImages[0];
+        let firstHref = assignmentHref[0];
+        assignmentImages.shift();
+        assignmentImages.push(first);
+        assignmentHref.shift();
+        assignmentHref.push(firstHref);
+
+        $("#move-assignments-1>a>div").css({
+            "background": `url(${assignmentImages[0]})`,
+            "background-size": "cover",
+        });
+        $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
+
+        $("#move-assignments-2>a>div").css({
+            "background": `url(${assignmentImages[1]})`,
+            "background-size": "cover",
+        });
+        $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
+
+        $("#move-assignments-3>a>div").css({
+            "background": `url(${assignmentImages[2]})`,
+            "background-size": "cover",
+        });
+        $("#move-assignments-3>a").attr("href", `${assignmentHref[2]}`);
+
+    });
+    $("#btn-right-assignment").click(function () {
+        let last = assignmentImages[assignmentImages.length-1];
+        let lastHref = assignmentHref[assignmentHref.length-1];
+        assignmentImages.pop();
+        assignmentImages.unshift(last);
+        assignmentHref.pop();
+        assignmentHref.unshift(lastHref);
+
+        $("#move-assignments-1>a>div").css({
+            "background": `url(${assignmentImages[0]})`,
+            "background-size": "cover",
+            "background-position": "center",
+        });
+        $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
+
+        $("#move-assignments-2>a>div").css({
+            "background": `url(${assignmentImages[1]})`,
+            "background-size": "cover",
+            "background-position": "center",
+        });
+        $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
+
+        $("#move-assignments-3>a>div").css({
+            "background": `url(${assignmentImages[2]})`,
+            "background-size": "cover",
+            "background-position": "center",
+        });
+        $("#move-assignments-3>a").attr("href", `${assignmentHref[2]}`);
 
     });
 
