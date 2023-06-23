@@ -480,25 +480,25 @@
         </nav><!--project navigations-->
         <section>
             <div class="button_left">
-                <button>
+                <button id="btn-left-projects">
                     <i class="fa-solid fa-chevron-left fa-2xl"></i>
                 </button>
             </div><!--left button-->
 
             <!--slider show-->
             <section>
-                <div>
+                <div id="move-1">
                     <a href="https://github.com/Dhananjaya1321/Salon-Management-System" target="_blank">
                         <div></div>
                     </a>
                 </div>
-                <div>
-                    <a href="https://github.com/Dhananjaya1321/Salon-Management-System" target="_blank">
+                <div id="move-2">
+                    <a href="https://github.com/Dhananjaya1321/HostelManagementSystem" target="_blank">
                         <div></div>
                     </a>
                 </div>
-                <div>
-                    <a href="https://github.com/Dhananjaya1321/Salon-Management-System" target="_blank">
+                <div id="move-3">
+                    <a href="https://github.com/Dhananjaya1321/BlueOceanHotel" target="_blank">
                         <div></div>
                     </a>
                 </div>
@@ -545,7 +545,7 @@
             </section>&lt;!&ndash;desktop&ndash;&gt;--><!--I will creat-->
 
             <div class="button_right">
-                <button>
+                <button id="btn-right-projects">
                     <i class="fa-solid fa-chevron-right fa-2xl"></i>
                 </button>
             </div><!--right button-->
@@ -913,7 +913,49 @@
         document.head.appendChild(style);
     });
 </script>
+<script>
+    let projectImages = [
+        "assets/image/salon.png",
+        "assets/image/projectORM.png",
+        "assets/image/hotel.png"
+    ];
+    let projectHref = [
+        "https://github.com/Dhananjaya1321/Salon-Management-System",
+        "https://github.com/Dhananjaya1321/HostelManagementSystem",
+        "https://github.com/Dhananjaya1321/BlueOceanHotel"
+    ];
 
+    $("#btn-left-projects").click(function () {
+        let first = projectImages[0];
+        let firstHref = projectHref[0];
+        projectImages.shift();
+        projectImages.push(first);
+        projectHref.shift();
+        projectHref.push(firstHref);
+
+        $("#move-1>a>div").css({
+            "background": `url(${projectImages[0]})`,
+            "background-size": "cover",
+        });
+        $("#move-1>a").attr("href", `${projectHref[0]}`);
+
+        $("#move-2>a>div").css({
+            "background": `url(${projectImages[1]})`,
+            "background-size": "cover",
+        });
+        $("#move-2>a").attr("href", `${projectHref[1]}`);
+
+        $("#move-3>a>div").css({
+            "background": `url(${projectImages[2]})`,
+            "background-size": "cover",
+        });
+        $("#move-3>a").attr("href", `${projectHref[2]}`);
+
+
+    });
+
+
+</script>
 <script>
     let liValue;
     $('header>nav>menu>li:nth-child(1)').click(function () {
@@ -975,8 +1017,10 @@
 
     function setDefaultColor(i) {
 
-        for (let j = 1; j <9; j++) {
-            if (i===j) {continue}
+        for (let j = 1; j < 9; j++) {
+            if (i === j) {
+                continue
+            }
             console.log(i);
             switch (j) {
                 case 1:
