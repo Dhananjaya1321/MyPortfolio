@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="assets/css/Normalize.css">
     <link rel="stylesheet" href="assets/css/portfolio.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-
-
 </head>
 <body>
 <header>
@@ -885,6 +883,9 @@
         </small>
     </section><!--copyright-->
 </footer><!--footer-->
+<div id="loader">
+    <div></div>
+</div>
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
@@ -913,6 +914,11 @@
     });
 </script>
 <script>
+    let loader = document.getElementById("loader");
+    window.addEventListener("load", function () {
+        console.log("This message will print just after fully loading the website")
+        loader.style.display = 'none';
+    });
     let projectImages = [
         "assets/image/salon.png",
         "assets/image/projectORM.png",
