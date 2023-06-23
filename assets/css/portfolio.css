@@ -1890,10 +1890,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         margin-left: auto;
         margin-right: auto;
         height: 50px;
-        left: 0;
+        /*left: 0;*/
         width: 140px;
-        right: -145px;
+        /*right: -145px;*/
         top: 100px;
+        left: 0;
+        right: 0;
     }
 
     #download_cv > a > input {
@@ -1917,11 +1919,12 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     header > nav > div > a > input {
-        width: 140px;
+       /* width: 140px;
         height: 50px;
         border-radius: 15px;
         background-color: #e4e4e4;
-        color: #009EF8;
+        color: #009EF8;*/
+        display: none;
     }
 
     /*----------------------------------------------------------*/
@@ -2597,9 +2600,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         right: 180px;
     }
 
-    #download_cv {
+   /* #download_cv {
         right: -165px;
-    }
+    }*/
 }
 
 @media all and (max-width: 375px) and  (min-width: 344px) {
@@ -2636,7 +2639,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     #download_cv {
-        right: -165px;
+        /*right: -165px;*/
         top: 90px;
     }
 
@@ -2814,10 +2817,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     #download_cv {
-        right: -220px;
+        /*right: -220px;*/
         top: 86px;
     }
-
     #download_cv > a > input {
         width: 150px;
     }
@@ -2937,7 +2939,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     #download_cv {
-        right: -220px;
+        /*right: -220px;*/
         top: 87px;
     }
 

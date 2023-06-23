@@ -72,7 +72,7 @@
         <section>
             <h3>Hello , I’m</h3>
             <h1><span>I</span>suru <span>D</span>hananjaya</h1>
-            <h2>A <span id="type-script">Full Stack Developer</span> from Sri Lanka</h2>
+            <h2>A <span id="type-script"></span> from Sri Lanka</h2>
             <nav id="social_links_nav">
                 <div class="social_media">
                     <a href="https://www.facebook.com/profile.php?id=100086049325888&mibextid=ZbWKwL" target="_blank">
@@ -888,6 +888,32 @@
 </footer><!--footer-->
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+<script>
+    let typed = new Typed("#type-script", {
+        strings: ["", "Software Engineer", "Web Developer", "UI/UX Designer"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true
+    });
+
+    // execute after all the content fully loaded
+    window.addEventListener('load', function () {
+        let professionElement = document.getElementById("profession");
+        professionElement.style.display = "none";
+        let style = document.createElement("style");
+        style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
+        document.head.appendChild(style);
+    });
+
+    // run after just creating the DOM
+    document.addEventListener('DOMContentLoaded', function () {
+        let style = document.createElement("style");
+        style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+        document.head.appendChild(style);
+    });
+</script>
+
 <script>
     let liValue;
     $('header>nav>menu>li:nth-child(1)').click(function () {
