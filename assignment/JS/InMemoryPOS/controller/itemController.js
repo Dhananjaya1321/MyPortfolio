@@ -1,4 +1,8 @@
 $("#save-item").click(function () {
+    saveItem();
+});
+
+function saveItem() {
     let code = $("#inputItemCode").val();
     let name = $("#inputItemName").val();
     let price = $("#inputItemPrice").val();
@@ -33,7 +37,7 @@ $("#save-item").click(function () {
     } else {
         $("#inputItemCode").focus();
     }
-});
+}
 
 function loadItems() {
     let tableBody = $("#item-table-body");
@@ -159,13 +163,17 @@ function searchItem(code) {
 }
 
 $("#itemUpdateButton").click(function () {
+    updateItem();
+});
+
+function updateItem() {
     item1 = searchItem($("#inputUpdateItemCode").val());
     let itemName = $("#inputUpdateItemName").val();
     let itemPrice = $("#inputUpdateItemPrice").val();
     let itemQty = $("#inputUpdateItemQuantity").val();
-    if (name !== "" && validateItemName()) {
-        if (tel !== "" && validatePrice()) {
-            if (address !== "" && validateQTY()) {
+    if (name !== "" && validateUpdateItemName()) {
+        if (tel !== "" && validateUpdateItemPrice()) {
+            if (address !== "" && validateUpdateItemQTY()) {
                 item1.name = itemName;
                 item1.price = itemPrice;
                 item1.qty = itemQty;
@@ -181,7 +189,7 @@ $("#itemUpdateButton").click(function () {
     } else {
         $("#inputUpdateItemName").focus();
     }
-});
+}
 
 function clearUpdateItemForm() {
     $("#inputUpdateItemCode").val("");
@@ -215,6 +223,11 @@ $("#inputItemPrice").keydown(function (e) {
         $("#inputItemQuantity").focus();
     }
 });
+$("#inputItemQuantity").keydown(function (e) {
+    if (e.key === "Enter") {
+        saveItem();
+    }
+});
 $("#inputUpdateItemCode").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputUpdateItemName").focus();
@@ -228,6 +241,11 @@ $("#inputUpdateItemName").keydown(function (e) {
 $("#inputUpdateItemPrice").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputUpdateItemQuantity").focus();
+    }
+});
+$("#inputUpdateItemQuantity").keydown(function (e) {
+    if (e.key === "Enter") {
+        updateItem();
     }
 });
 

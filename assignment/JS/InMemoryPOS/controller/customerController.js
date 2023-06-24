@@ -1,4 +1,8 @@
 $("#save-customer").click(function () {
+    saveCustomer();
+});
+
+function saveCustomer() {
     let nic = $("#inputNIC").val();
     let name = $("#inputName").val();
     let tel = $("#inputTel").val();
@@ -34,7 +38,7 @@ $("#save-customer").click(function () {
     } else {
         $("#inputNIC").focus();
     }
-});
+}
 
 function loadCustomers() {
     let tableBody = $("#customer-table-body");
@@ -162,6 +166,10 @@ function searchCustomer(nic) {
 }
 
 $("#customerUpdateButton").click(function () {
+    updateCustomer();
+});
+
+function updateCustomer() {
     customer1 = searchCustomer($("#inputUpdateNIC").val());
     name = $("#inputUpdateName").val();
     tel = $("#inputUpdateTel").val();
@@ -185,7 +193,7 @@ $("#customerUpdateButton").click(function () {
         $("#inputUpdateName").focus();
     }
 
-});
+}
 
 function clearUpdateCustomerForm() {
     $("#inputUpdateNIC").val("");
@@ -220,6 +228,11 @@ $("#inputTel").keydown(function (e) {
         $("#inputAddress").focus();
     }
 });
+$("#inputAddress").keydown(function (e) {
+    if (e.key === "Enter") {
+        saveCustomer();
+    }
+});
 $("#inputUpdateNIC").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputUpdateName").focus();
@@ -233,6 +246,11 @@ $("#inputUpdateName").keydown(function (e) {
 $("#inputUpdateTel").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputUpdateAddress").focus();
+    }
+});
+$("#inputUpdateAddress").keydown(function (e) {
+    if (e.key === "Enter") {
+        updateCustomer();
     }
 });
 

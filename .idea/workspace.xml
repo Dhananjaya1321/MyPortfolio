@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/models/Customer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/models/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/customerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/customerController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/homeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/homeController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/itemController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/itemController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/orderController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/db/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +204,7 @@
       <workItem from="1687439431934" duration="10000" />
       <workItem from="1687439487032" duration="19049000" />
       <workItem from="1687491859721" duration="22616000" />
-      <workItem from="1687618294485" duration="1961000" />
+      <workItem from="1687618294485" duration="4972000" />
     </task>
     <servers />
   </component>
