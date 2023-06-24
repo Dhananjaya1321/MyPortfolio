@@ -79,6 +79,12 @@ header > div > h1 {
     background-position: center;
 }
 
+#project_section > div:nth-child(5) > a > div {
+    background: url("../image/chatApp.png");
+    background-size: cover;
+    background-position: center;
+}
+
 @media all and (max-width: 1440px) {
     #project_section {
         grid-template-rows: repeat(13, 1fr);
