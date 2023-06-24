@@ -9,12 +9,12 @@ $("#save-customer").click(function () {
                 if (address !== "" && validateAddress()) {
                     $("#customer-table-body").empty();
                     if (checkNIC(nic)) {
-                        customer.push({
-                            nic: nic,
-                            name: name,
-                            tel: tel,
-                            address: address
-                        });
+                        let newCustomer = Object.assign({}, customer);
+                        newCustomer.nic = nic;
+                        newCustomer.name = name;
+                        newCustomer.tel = tel;
+                        newCustomer.address = address;
+                        customerDB.push(newCustomer);
                         loadCustomers();
                     } else {
                         $("#inputNIC").focus();
@@ -38,12 +38,12 @@ $("#save-customer").click(function () {
 
 function loadCustomers() {
     let tableBody = $("#customer-table-body");
-    for (let i = 0; i < customer.length; i++) {
+    for (let i = 0; i < customerDB.length; i++) {
         let tr = `<tr>
-                    <td>${customer[i].nic}</td>
-                    <td>${customer[i].name}</td>
-                    <td>${customer[i].tel}</td>
-                    <td>${customer[i].address}</td>
+                    <td>${customerDB[i].nic}</td>
+                    <td>${customerDB[i].name}</td>
+                    <td>${customerDB[i].tel}</td>
+                    <td>${customerDB[i].address}</td>
                     <td>
                       <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
@@ -77,10 +77,10 @@ function getDeleteCustomer() {
 }
 
 function deleteCustomer(nic) {
-    for (let i = 0; i < customer.length; i++) {
+    for (let i = 0; i < customerDB.length; i++) {
         console.log(nic)
-        if (customer[i].nic === nic) {
-            customer.splice(i, 1);
+        if (customerDB[i].nic === nic) {
+            customerDB.splice(i, 1);
             return true;
         }
     }
@@ -114,8 +114,8 @@ function clearNewCustomerForm() {
 }
 
 function checkNIC(nic) {
-    for (let i = 0; i < customer.length; i++) {
-        if (nic === customer[i].nic) {
+    for (let i = 0; i < customerDB.length; i++) {
+        if (nic === customerDB[i].nic) {
             return false;
         }
     }
@@ -124,7 +124,7 @@ function checkNIC(nic) {
 
 $("#customerSearchButton").click(function () {
     let x = $("#searchBar").val();
-    customer.filter(function (e) {
+    customerDB.filter(function (e) {
         if (e.nic === x) {
             $("#customer-table-body").empty();
             console.log(e.nic, e.name, e.address, e.tel)
@@ -156,7 +156,7 @@ $("#customerSearchClear").click(function () {
 let customer1 = undefined;
 
 function searchCustomer(nic) {
-    return customer.find(function (customer) {
+    return customerDB.find(function (customer) {
         return customer.nic === nic;
     });
 }

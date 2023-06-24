@@ -9,12 +9,12 @@ $("#save-item").click(function () {
                 if (address !== "" && validateQTY()) {
                     $("#item-table-body").empty();
                     if (checkCode(code)) {
-                        item.push({
-                            code: code,
-                            name: name,
-                            price: price,
-                            qty: qty
-                        });
+                        let newItem = Object.assign({}, item);
+                        newItem.code = code;
+                        newItem.name = name;
+                        newItem.price = price;
+                        newItem.qty = qty;
+                        itemDB.push(newItem);
                         loadItems();
                     } else {
                         alert("This item already exists");
@@ -33,17 +33,16 @@ $("#save-item").click(function () {
     } else {
         $("#inputItemCode").focus();
     }
-
 });
 
 function loadItems() {
     let tableBody = $("#item-table-body");
-    for (let i = 0; i < item.length; i++) {
+    for (let i = 0; i < itemDB.length; i++) {
         let tr = `<tr>
-                    <td>${item[i].code}</td>
-                    <td>${item[i].name}</td>
-                    <td>${item[i].price}</td>
-                    <td>${item[i].qty}</td>
+                    <td>${itemDB[i].code}</td>
+                    <td>${itemDB[i].name}</td>
+                    <td>${itemDB[i].price}</td>
+                    <td>${itemDB[i].qty}</td>
                     <td>
                       <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
@@ -77,10 +76,10 @@ function getDeleteItem() {
 }
 
 function deleteItem(code) {
-    for (let i = 0; i < item.length; i++) {
+    for (let i = 0; i < itemDB.length; i++) {
         // item.log(code)
-        if (item[i].code === code) {
-            item.splice(i, 1);
+        if (itemDB[i].code === code) {
+            itemDB.splice(i, 1);
             return true;
         }
     }
@@ -93,7 +92,6 @@ function getUpdateItem() {
         let name = $(this).parents("#item-table-body>tr").children().eq(1).text();
         let price = $(this).parents("#item-table-body>tr").children().eq(2).text();
         let qty = $(this).parents("#item-table-body>tr").children().eq(3).text();
-        console.log(code)
         $('#inputUpdateItemCode').val(code);
         $('#inputUpdateItemName').val(name);
         $('#inputUpdateItemPrice').val(price);
@@ -114,18 +112,17 @@ function clearNewItemForm() {
 }
 
 function checkCode(code) {
-    for (let i = 0; i < item.length; i++) {
-        if (code === item[i].code) {
+    for (let i = 0; i < itemDB.length; i++) {
+        if (code === itemDB[i].code) {
             return false;
         }
     }
     return true;
 }
 
-
 $("#itemSearchButton").click(function () {
     let x = $("#itemSearchBar").val();
-    item.filter(function (e) {
+    itemDB.filter(function (e) {
         if (e.code === x) {
             $("#item-table-body").empty();
             let tableBody = $("#item-table-body");
@@ -148,7 +145,6 @@ $("#itemSearchButton").click(function () {
     });
 });
 
-
 $("#itemSearchClear").click(function () {
     $("#itemSearchBar").val("");
     $("#item-table-body").empty();
@@ -157,7 +153,7 @@ $("#itemSearchClear").click(function () {
 let item1 = undefined;
 
 function searchItem(code) {
-    return item.find(function (item) {
+    return itemDB.find(function (item) {
         return item.code === code;
     });
 }

@@ -1,6 +1,6 @@
 function setItemCount() {
-    $("#item-count").val(item.length);
+    $("#item-count").val(itemDB.length);
 }
 function setCustomerCount() {
-    $("#customer-count").val(customer.length);
+    $("#customer-count").val(customerDB.length);
 }

@@ -8,14 +8,14 @@ function loadComboBox() {
     $("#item-itemCode").append(
         `<option>Select Code</option>`
     );
-    for (let i = 0; i < customer.length; i++) {
+    for (let i = 0; i < customerDB.length; i++) {
         $("#invoice-customerNIC").append(
-            `<option>${customer[i].nic}</option>`
+            `<option>${customerDB[i].nic}</option>`
         );
     }
-    for (let i = 0; i < item.length; i++) {
+    for (let i = 0; i < itemDB.length; i++) {
         $("#item-itemCode").append(
-            `<option>${item[i].code}</option>`
+            `<option>${itemDB[i].code}</option>`
         );
     }
 }
@@ -179,10 +179,10 @@ function addToCart() {
 }
 
 function updateItemQTY(itemCode, itemQty) {
-    for (let i = 0; i < item.length; i++) {
-        if (item[i].code === itemCode) {
-            item[i].qty = Number(item[i].qty) - Number(itemQty);
-            searchItem(itemCode).qty = item[i].qty;
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].code === itemCode) {
+            itemDB[i].qty = Number(itemDB[i].qty) - Number(itemQty);
+            searchItem(itemCode).qty = itemDB[i].qty;
         }
     }
     searchItem()
