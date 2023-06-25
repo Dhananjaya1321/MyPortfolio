@@ -211,41 +211,103 @@ let assignmentHref = [
     "assignment/JS/InMemoryPOS/index.html",
     "assignment/JS/CAL/index.html"
 ];
+let assignmentMsg = [
+    "CSS Case One",
+    "CSS Case Two",
+    "CSS Case Three",
+    "CSS Case Four",
+    "CSS Case Five",
+    "CSS Case Six",
+    "Transitions Case One",
+    "Transitions Case Two",
+    "Animations Case Three",
+    "Animations Case Four",
+    "Animations Case Five",
+    "Animations Case Six",
+    "CSS-Framework",
+    "JS SPA(Small POS System)",
+    "JS QUE",
+    "JS KNIGHT",
+    "JS InMemoryPOS",
+    "JS Calculator"
+];
+
+$("#move-assignments-1> a > div:nth-child(2)").mouseover(function () {
+    $("#move-assignments-1> a > div:nth-child(2)>h1").text("CSS Case One");
+});
+$("#move-assignments-1> a > div:nth-child(2)").mouseout(function () {
+    $("#move-assignments-1> a > div:nth-child(2)>h1").text("");
+});
+$("#move-assignments-2> a > div:nth-child(2)").mouseover(function () {
+    $("#move-assignments-2> a > div:nth-child(2)>h1").text("CSS Case Two");
+});
+$("#move-assignments-2> a > div:nth-child(2)").mouseout(function () {
+    $("#move-assignments-2> a > div:nth-child(2)>h1").text("");
+});
+$("#move-assignments-3> a > div:nth-child(2)").mouseover(function () {
+    $("#move-assignments-3> a > div:nth-child(2)>h1").text("CSS Case Three");
+});
+$("#move-assignments-3> a > div:nth-child(2)").mouseout(function () {
+    $("#move-assignments-3> a > div:nth-child(2)>h1").text("");
+});
 
 $("#btn-left-assignment").click(function () {
     let first = assignmentImages[0];
     let firstHref = assignmentHref[0];
+    let firstMsg = assignmentMsg[0];
     assignmentImages.shift();
     assignmentImages.push(first);
     assignmentHref.shift();
     assignmentHref.push(firstHref);
+    assignmentMsg.shift();
+    assignmentMsg.push(firstMsg);
 
     $("#move-assignments-1>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[0]})`,
         "background-size": "cover",
     });
     $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
+    $("#move-assignments-1> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-1> a > div:nth-child(2)>h1").text(assignmentMsg[0]);
+    });
+    $("#move-assignments-1> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-1> a > div:nth-child(2)>h1").text("");
+    });
 
     $("#move-assignments-2>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[1]})`,
         "background-size": "cover",
     });
     $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
+    $("#move-assignments-2> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-2> a > div:nth-child(2)>h1").text(assignmentMsg[1]);
+    });
+    $("#move-assignments-2> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-2> a > div:nth-child(2)>h1").text("");
+    });
 
     $("#move-assignments-3>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[2]})`,
         "background-size": "cover",
     });
     $("#move-assignments-3>a").attr("href", `${assignmentHref[2]}`);
-
+    $("#move-assignments-3> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-3> a > div:nth-child(2)>h1").text(assignmentMsg[2]);
+    });
+    $("#move-assignments-3> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-3> a > div:nth-child(2)>h1").text("");
+    });
 });
 $("#btn-right-assignment").click(function () {
     let last = assignmentImages[assignmentImages.length - 1];
     let lastHref = assignmentHref[assignmentHref.length - 1];
+    let lastMsg = assignmentMsg[assignmentMsg.length - 1];
     assignmentImages.pop();
     assignmentImages.unshift(last);
     assignmentHref.pop();
     assignmentHref.unshift(lastHref);
+    assignmentMsg.pop();
+    assignmentMsg.unshift(lastMsg);
 
     $("#move-assignments-1>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[0]})`,
@@ -253,6 +315,12 @@ $("#btn-right-assignment").click(function () {
         "background-position": "center",
     });
     $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
+    $("#move-assignments-1> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-1> a > div:nth-child(2)>h1").text(assignmentMsg[0]);
+    });
+    $("#move-assignments-1> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-1> a > div:nth-child(2)>h1").text("");
+    });
 
     $("#move-assignments-2>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[1]})`,
@@ -260,6 +328,12 @@ $("#btn-right-assignment").click(function () {
         "background-position": "center",
     });
     $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
+    $("#move-assignments-2> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-2> a > div:nth-child(2)>h1").text(assignmentMsg[1]);
+    });
+    $("#move-assignments-2> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-2> a > div:nth-child(2)>h1").text("");
+    });
 
     $("#move-assignments-3>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[2]})`,
@@ -267,7 +341,12 @@ $("#btn-right-assignment").click(function () {
         "background-position": "center",
     });
     $("#move-assignments-3>a").attr("href", `${assignmentHref[2]}`);
-
+    $("#move-assignments-3> a > div:nth-child(2)").mouseover(function () {
+        $("#move-assignments-3> a > div:nth-child(2)>h1").text(assignmentMsg[2]);
+    });
+    $("#move-assignments-3> a > div:nth-child(2)").mouseout(function () {
+        $("#move-assignments-3> a > div:nth-child(2)>h1").text("");
+    });
 });
 
 /*---------------------------------------------nav-bar colors----------------------------------------*/

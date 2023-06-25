@@ -1261,6 +1261,16 @@ main > section:nth-child(5) > section > section > div > a {
     width: 100%;
 }
 
+main > section:nth-child(5) > section > section > div > a > div:nth-child(2):hover {
+    background: #0000003b;
+}
+main > section:nth-child(5) > section > section > div > a > div:nth-child(2) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 main > section:nth-child(5) > section > section > div > a > div {
     height: 95%;
     width: 95%;
@@ -1273,7 +1283,7 @@ main > section:nth-child(5) > section > section > div > a > div {
     bottom: 0;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(1) > a > div {
+main > section:nth-child(5) > section > section > div:nth-child(1) > a > div:nth-child(1) {
     background: url("../image/Assignment1.png");
     background-position: center;
     background-size: cover;
@@ -1300,7 +1310,7 @@ main > section:nth-child(5) > section > section > div:nth-child(2) {
     transition: transform 2s;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(2) > a > div {
+main > section:nth-child(5) > section > section > div:nth-child(2) > a > div:nth-child(1) {
     background: url("../image/Assignment2.png");
     background-position: center;
     background-size: cover;
@@ -1322,7 +1332,7 @@ main > section:nth-child(5) > section > section > div:nth-child(3) {
     transition: transform 2s;
 }
 
-main > section:nth-child(5) > section > section > div:nth-child(3) > a > div {
+main > section:nth-child(5) > section > section > div:nth-child(3) > a > div:nth-child(1) {
     background: url("../image/Assignment3.png");
     background-position: center;
     background-size: cover;
