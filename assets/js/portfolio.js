@@ -48,60 +48,127 @@ let projectHref = [
     "https://github.com/Dhananjaya1321/WholesaleShop",
     "https://github.com/Dhananjaya1321/GroupChatApp"
 ];
+let projectMsg = [
+    "Salon Management System",
+    "Hostel Management System",
+    "Blue-Ocean Hotel",
+    "Wholesale Shop",
+    "Group Chat App"
+];
+$("#move-1> a > div:nth-child(2)").mouseover(function () {
+    $("#move-1> a > div:nth-child(2)>h1").text("Salon Management System");
+});
+$("#move-1> a > div:nth-child(2)").mouseout(function () {
+    $("#move-1> a > div:nth-child(2)>h1").text("");
+});
+$("#move-2> a > div:nth-child(2)").mouseover(function () {
+    $("#move-2> a > div:nth-child(2)>h1").text("Hostel Management System");
+});
+$("#move-2> a > div:nth-child(2)").mouseout(function () {
+    $("#move-2> a > div:nth-child(2)>h1").text("");
+});
+$("#move-3> a > div:nth-child(2)").mouseover(function () {
+    $("#move-3> a > div:nth-child(2)>h1").text("Blue-Ocean Hotel");
+});
+$("#move-3> a > div:nth-child(2)").mouseout(function () {
+    $("#move-3> a > div:nth-child(2)>h1").text("");
+});
 
 $("#btn-left-projects").click(function () {
     let first = projectImages[0];
     let firstHref = projectHref[0];
+    let firstMsg = projectMsg[0];
     projectImages.shift();
     projectImages.push(first);
     projectHref.shift();
     projectHref.push(firstHref);
+    projectMsg.shift();
+    projectMsg.push(firstMsg);
 
-    $("#move-1>a>div").css({
+    $("#move-1>a>div:nth-child(1)").css({
         "background": `url(${projectImages[0]})`,
         "background-size": "cover",
     });
     $("#move-1>a").attr("href", `${projectHref[0]}`);
+    $("#move-1> a > div:nth-child(2)").mouseover(function () {
+        $("#move-1> a > div:nth-child(2)>h1").text(projectMsg[0]);
+    });
+    $("#move-1> a > div:nth-child(2)").mouseout(function () {
+        console.log(firstMsg[0]);
+        $("#move-1> a > div:nth-child(2)>h1").text("");
+    });
 
-    $("#move-2>a>div").css({
+
+    $("#move-2>a>div:nth-child(1)").css({
         "background": `url(${projectImages[1]})`,
         "background-size": "cover",
     });
     $("#move-2>a").attr("href", `${projectHref[1]}`);
+    $("#move-2> a > div:nth-child(2)").mouseover(function () {
+        $("#move-2> a > div:nth-child(2)>h1").text(projectMsg[1]);
+    });
+    $("#move-2> a > div:nth-child(2)").mouseout(function () {
+        $("#move-2> a > div:nth-child(2)>h1").text("");
+    });
 
-    $("#move-3>a>div").css({
+    $("#move-3>a>div:nth-child(1)").css({
         "background": `url(${projectImages[2]})`,
         "background-size": "cover",
     });
     $("#move-3>a").attr("href", `${projectHref[2]}`);
-
+    $("#move-3> a > div:nth-child(2)").mouseover(function () {
+        $("#move-3> a > div:nth-child(2)>h1").text(projectMsg[2]);
+    });
+    $("#move-3> a > div:nth-child(2)").mouseout(function () {
+        $("#move-3> a > div:nth-child(2)>h1").text("");
+    });
 });
 $("#btn-right-projects").click(function () {
     let last = projectImages[projectImages.length - 1];
     let lastHref = projectHref[projectHref.length - 1];
+    let lastMsg = projectMsg[projectMsg.length - 1];
     projectImages.pop();
     projectImages.unshift(last);
     projectHref.pop();
     projectHref.unshift(lastHref);
+    projectMsg.pop();
+    projectMsg.unshift(lastMsg);
 
-    $("#move-1>a>div").css({
+    $("#move-1>a>div:nth-child(1)").css({
         "background": `url(${projectImages[0]})`,
         "background-size": "cover",
     });
     $("#move-1>a").attr("href", `${projectHref[0]}`);
+    $("#move-1> a > div:nth-child(2)").mouseover(function () {
+        $("#move-1> a > div:nth-child(2)>h1").text(projectMsg[0]);
+    });
+    $("#move-1> a > div:nth-child(2)").mouseout(function () {
+        $("#move-1> a > div:nth-child(2)>h1").text("");
+    });
 
-    $("#move-2>a>div").css({
+    $("#move-2>a>div:nth-child(1)").css({
         "background": `url(${projectImages[1]})`,
         "background-size": "cover",
     });
     $("#move-2>a").attr("href", `${projectHref[1]}`);
+    $("#move-2> a > div:nth-child(2)").mouseover(function () {
+        $("#move-2> a > div:nth-child(2)>h1").text(projectMsg[1]);
+    });
+    $("#move-2> a > div:nth-child(2)").mouseout(function () {
+        $("#move-2> a > div:nth-child(2)>h1").text("");
+    });
 
-    $("#move-3>a>div").css({
+    $("#move-3>a>div:nth-child(1)").css({
         "background": `url(${projectImages[2]})`,
         "background-size": "cover",
     });
     $("#move-3>a").attr("href", `${projectHref[2]}`);
-
+    $("#move-3> a > div:nth-child(2)").mouseover(function () {
+        $("#move-3> a > div:nth-child(2)>h1").text(projectMsg[2]);
+    });
+    $("#move-3> a > div:nth-child(2)").mouseout(function () {
+        $("#move-3> a > div:nth-child(2)>h1").text("");
+    });
 });
 /*---------------------------------------------assignment slider----------------------------------------*/
 let assignmentImages = [
@@ -153,19 +220,19 @@ $("#btn-left-assignment").click(function () {
     assignmentHref.shift();
     assignmentHref.push(firstHref);
 
-    $("#move-assignments-1>a>div").css({
+    $("#move-assignments-1>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[0]})`,
         "background-size": "cover",
     });
     $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
 
-    $("#move-assignments-2>a>div").css({
+    $("#move-assignments-2>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[1]})`,
         "background-size": "cover",
     });
     $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
 
-    $("#move-assignments-3>a>div").css({
+    $("#move-assignments-3>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[2]})`,
         "background-size": "cover",
     });
@@ -180,21 +247,21 @@ $("#btn-right-assignment").click(function () {
     assignmentHref.pop();
     assignmentHref.unshift(lastHref);
 
-    $("#move-assignments-1>a>div").css({
+    $("#move-assignments-1>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[0]})`,
         "background-size": "cover",
         "background-position": "center",
     });
     $("#move-assignments-1>a").attr("href", `${assignmentHref[0]}`);
 
-    $("#move-assignments-2>a>div").css({
+    $("#move-assignments-2>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[1]})`,
         "background-size": "cover",
         "background-position": "center",
     });
     $("#move-assignments-2>a").attr("href", `${assignmentHref[1]}`);
 
-    $("#move-assignments-3>a>div").css({
+    $("#move-assignments-3>a>div:nth-child(1)").css({
         "background": `url(${assignmentImages[2]})`,
         "background-size": "cover",
         "background-position": "center",

@@ -1,6 +1,7 @@
-*{
+* {
     scroll-behavior: smooth;
 }
+
 #loader {
     transition: opacity 1s;
     position: fixed;
@@ -24,6 +25,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .topic_main_div {
     top: 50px;
     height: 70px;
@@ -1074,6 +1076,18 @@ main > section:nth-child(4) > section > section > div > a {
     width: 100%;
 }
 
+main > section:nth-child(4) > section > section > div > a > div:nth-child(2):hover {
+    background: #0000003b;
+}
+
+main > section:nth-child(4) > section > section > div > a > div:nth-child(2) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 main > section:nth-child(4) > section > section > div > a > div {
     height: 95%;
     width: 95%;
@@ -1086,7 +1100,7 @@ main > section:nth-child(4) > section > section > div > a > div {
     bottom: 0;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(1) > a > div {
+main > section:nth-child(4) > section > section > div:nth-child(1) > a > div:nth-child(1) {
     background: url("../image/salon.png");
     background-position: center;
     background-size: cover;
@@ -1113,7 +1127,7 @@ main > section:nth-child(4) > section > section > div:nth-child(2) {
     transition: transform 2s;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(2) > a > div {
+main > section:nth-child(4) > section > section > div:nth-child(2) > a > div:nth-child(1) {
     background: url("../image/projectORM.png");
     background-position: center;
     background-size: cover;
@@ -1135,7 +1149,7 @@ main > section:nth-child(4) > section > section > div:nth-child(3) {
     transition: transform 2s;
 }
 
-main > section:nth-child(4) > section > section > div:nth-child(3) > a > div {
+main > section:nth-child(4) > section > section > div:nth-child(3) > a > div:nth-child(1) {
     background: url("../image/hotel.png");
     background-position: center;
     background-size: cover;
@@ -1411,6 +1425,7 @@ main > section:nth-child(7) > section {
 main > section:nth-child(7) > section > div:hover {
     transform: scale(1.015);
 }
+
 main > section:nth-child(7) > section > div {
     border-radius: 10px;
     box-shadow: -2px 2px 4px -2px black;
@@ -1941,11 +1956,11 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     }
 
     header > nav > div > a > input {
-       /* width: 140px;
-        height: 50px;
-        border-radius: 15px;
-        background-color: #e4e4e4;
-        color: #009EF8;*/
+        /* width: 140px;
+         height: 50px;
+         border-radius: 15px;
+         background-color: #e4e4e4;
+         color: #009EF8;*/
         display: none;
     }
 
@@ -2622,9 +2637,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         right: 180px;
     }
 
-   /* #download_cv {
-        right: -165px;
-    }*/
+    /* #download_cv {
+         right: -165px;
+     }*/
 }
 
 @media all and (max-width: 375px) and  (min-width: 344px) {
@@ -2842,6 +2857,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         /*right: -220px;*/
         top: 86px;
     }
+
     #download_cv > a > input {
         width: 150px;
     }
