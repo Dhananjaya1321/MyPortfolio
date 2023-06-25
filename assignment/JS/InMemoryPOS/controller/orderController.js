@@ -206,6 +206,7 @@ function calculateTotal() {
         tot = tot + (price * qty);
     }
     $("#total").text(tot);
+    $("#subTotal").text(tot);
 }
 
 $("#discount,#cash").keydown(function (event) {
@@ -231,9 +232,8 @@ $("#discount,#cash").keydown(function (event) {
 
 function setBalance(cash, discount) {
     let tot = ($("#total").text() - ($("#total").text() * (discount / 100)));
-    // $("#total").text(tot);
+    $("#subTotal").text(tot);
     let balance = cash - tot;
-    console.log(tot);
     if (balance >= 0) {
         $("#balance").val(balance);
         $("#balance").css("border", "solid 2px green");
@@ -277,6 +277,7 @@ $("#place-order").click(function () {
     $("#orderIdAlert").text("");
     $("#cashAlert").text("");
     let total = $("#total").text();
+    let subTotal = $("#subTotal").text();
     let cash = $("#cash").val();
     let orderID = $("#orderId").val();
     if (undefined===searchOrder(orderID)){
@@ -294,6 +295,7 @@ $("#place-order").click(function () {
                     date: date,
                     nic: nic,
                     total: total,
+                    subTotal: subTotal,
                     cash: cash,
                     discount: discount,
                     balance: balance
@@ -303,6 +305,7 @@ $("#place-order").click(function () {
                 $("#order-table").empty();
                 setOrderId();
                 $("#total").text("0.0");
+                $("#subTotal").text("0.0");
                 $("#cash").val("");
                 $("#discount").val(0);
                 $("#balance").val("");
@@ -340,6 +343,7 @@ $("#orderId").keydown(function (event) {
 
             $("#orderDate").text(order.date);
             $("#total").text(order.total);
+            $("#subTotal").text(order.subTotal);
             $("#cash").val(order.cash);
             $("#discount").val(order.discount);
             $("#balance").val(order.balance);
