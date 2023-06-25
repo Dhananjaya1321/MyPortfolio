@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/image/chatApp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/portfolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ProjectForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ProjectForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +70,19 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\pages" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -192,7 +203,8 @@
       <workItem from="1687439487032" duration="19049000" />
       <workItem from="1687491859721" duration="22616000" />
       <workItem from="1687618294485" duration="5734000" />
-      <workItem from="1687626182451" duration="1392000" />
+      <workItem from="1687626182451" duration="1607000" />
+      <workItem from="1687693922697" duration="2476000" />
     </task>
     <servers />
   </component>
