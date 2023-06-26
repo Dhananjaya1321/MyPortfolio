@@ -30,6 +30,16 @@ $("#customer").click(function () {
 $("#order").click(function () {
     loadComboBox();
     setOrderId();
+    clearItemSection();
+    clearInvoiceSection();
+    $("#order-table").empty();
+    setOrderId();
+    $("#total").text("0.0");
+    $("#subTotal").text("0.0");
+    $("#cash").val("");
+    $("#discount").val(0);
+    $("#balance").val("");
+    
     $("#home_section").css("display", 'none');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'block');
