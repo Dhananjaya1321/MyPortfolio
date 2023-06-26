@@ -8,6 +8,23 @@ window.addEventListener("load", function () {
 });
 
 
+/*---------------------------------------------home menu button----------------------------------------*/
+let count = 0;
+$("header > nav > div:nth-child(2) > button").click(function () {
+    if (count === 0) {
+        $("#home-menu-section").css("display", "block");
+        count++;
+    } else {
+        $("#home-menu-section").css("display", "none");
+        count = 0;
+    }
+});
+$("#home-menu-section>menu>li").click(function () {
+    $("#home-menu-section").css("display", "none");
+    count = 0;
+});
+
+
 /*---------------------------------------------typescript----------------------------------------*/
 let typed = new Typed("#type-script", {
     strings: ["", "Software Engineer", "Web Developer", "UI/UX Designer"],
