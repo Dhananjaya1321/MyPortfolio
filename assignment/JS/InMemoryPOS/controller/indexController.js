@@ -111,7 +111,7 @@ $("#log_in").click(function () {
 $("#home").click(function () {
     setItemCount();
     setCustomerCount();
-    setView($("#login_section"));
+    setView($("#home_section"));
     $("#nav_bar").css("display", 'block');
     /*$("#home_section").css("display", 'block');
     $("#customer_section").css("display", 'none');

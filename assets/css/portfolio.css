@@ -1521,20 +1521,73 @@ main > section:nth-child(7) > section > div:nth-child(11) {
 
 /*certification section*/
 main > section:nth-child(8) {
+    height: 500px;
+}
+
+main > section:nth-child(8) > section {
+    /*height: 60%;*/
+    width: 65%;
+    overflow: hidden;
+    /*top: 0;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#certificate-left-btn,#certificate-right-btn{
+    display: none;
+}
+main > section:nth-child(8) > section > section {
+    width: calc(100% * 3);
+    flex-wrap: nowrap;
+    animation-name: animation_certificate;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation_certificate {
+    0% {
+        transform: translateX(calc((-100% / 3) * 0));
+    }
+    50% {
+        transform: translateX(calc((-100% / 3) * 1));
+
+    }
+    100% {
+        transform: translateX(calc((-100% / 3) * 2));
+
+    }
+}
+main > section:nth-child(8) > section > section > div {
+    width: 80%;
+    flex-grow: 1;
+}
+
+main > section:nth-child(8) > section > section > div:nth-child(2) {
+    flex-grow: 1;
+    width: 80%;
+}
+
+main > section:nth-child(8) > section > section > div > a > img {
+    box-shadow: 0px 1px 7px -3px black;
+    height: 370px;
+    width: 400px;
+}
+main > section:nth-child(8) {
     position: relative;
     height: 100vh;
 }
 
 main > section:nth-child(8) > section {
     position: relative;
-    top: 50px;
-    height: 60%;
+    top: 75px;    height: 60%;
 }
 
 main > section:nth-child(8) > section > section {
     position: absolute;
     display: flex;
-    width: 90%;
+    /*width: 90%;*/
     height: 100%;
     top: 0;
     bottom: 0;
@@ -1549,12 +1602,15 @@ main > section:nth-child(8) > section > section {
 
 
 main > section:nth-child(8) > section > section > div:nth-child(2) {
-    flex-grow: 2;
-    width: 40%;
+    flex-grow: 1;
+    width: 30%;
 }
 
 main > section:nth-child(8) > section > section > div {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main > section:nth-child(8) > section > section > div > a > img {
@@ -3914,6 +3970,16 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         display: none;
     }
 }
+@media all and (max-width: 1024px) and  (min-width: 769px) {
+   /* main > section:nth-child(8) > section > section {
+        !*top: -70px;*!
+    }*/
+    main > section:nth-child(8) > section > section > div > a > img {
+        height: 276px;
+    }
+    main > section:nth-child(8) > section {
+        top: 40px;    }
+}
 
 @media all and (max-width: 1440px) and  (min-width: 1025px) {
     /*home*/
@@ -4073,9 +4139,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         font-size: 18px !important;
     }
 
-    main > section:nth-child(8) > section > section {
+  /*  main > section:nth-child(8) > section > section {
         width: 88%;
-    }
+    }*/
 }
 
 @media all and (max-width: 1440px) and  (min-width: 1155px) {
