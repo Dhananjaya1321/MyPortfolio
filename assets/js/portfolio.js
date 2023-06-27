@@ -1,9 +1,9 @@
 /*---------------------------------------------loader----------------------------------------*/
-$("#header").css("display", 'none');
+$("#header,#about_section,.other_sections,#contact_section").css("display", 'none');
 let loader = document.getElementById("loader");
 window.addEventListener("load", function () {
     loader.style.display = 'none';
-    $("#header").css("display", 'block');
+    $("#header,#about_section,.other_sections,#contact_section").css("display", 'block');
 
 });
 
