@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-bootstrap-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-flutter-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-git-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-intellij-idea-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-mysql-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-node-js-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-react-native-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icon/icons8-spring-boot-96.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/portfolio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/indexController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +54,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/icon" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -58,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\icon" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\image" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\gift" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assets\js" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\CAL\js" />
-      <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\JS\InMemoryPOS\controller" />
@@ -211,7 +218,7 @@
       <workItem from="1687765149706" duration="606000" />
       <workItem from="1687768493938" duration="890000" />
       <workItem from="1687783515409" duration="15585000" />
-      <workItem from="1687874176975" duration="9648000" />
+      <workItem from="1687874176975" duration="13045000" />
     </task>
     <servers />
   </component>

@@ -275,7 +275,7 @@ header > nav > div > a > input:hover {
 
 }
 
-header >section:nth-child(3) {
+header > section:nth-child(3) {
     width: 100%;
     background: #c3c3c3;
     position: absolute;
@@ -611,13 +611,14 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
 
 /*left button*/
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:first-child {
-    position: absolute;
+   /* position: absolute;
     width: 30px;
     height: 170px;
     top: 0;
     left: 0;
     bottom: 10px;
-    margin: auto;
+    margin: auto;*/
+    display: none;
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:first-child > button {
@@ -635,13 +636,14 @@ body > main > section:nth-child(2) > section:nth-child(3) > section:last-child >
 
 /*right button*/
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child {
-    position: absolute;
+    /*position: absolute;
     width: 30px;
     height: 170px;
     top: 0;
     right: 0;
     bottom: 10px;
-    margin: auto;
+    margin: auto;*/
+    display: none;
 }
 
 body > main > section:nth-child(2) > section:nth-child(3) > section:last-child > div:last-child > button {
@@ -1273,6 +1275,7 @@ main > section:nth-child(5) > section > section > div > a {
 main > section:nth-child(5) > section > section > div > a > div:nth-child(2):hover {
     background: #0000003b;
 }
+
 main > section:nth-child(5) > section > section > div > a > div:nth-child(2) {
     text-align: center;
     display: flex;
@@ -1280,6 +1283,7 @@ main > section:nth-child(5) > section > section > div > a > div:nth-child(2) {
     align-items: center;
     color: white;
 }
+
 main > section:nth-child(5) > section > section > div > a > div {
     height: 95%;
     width: 95%;
@@ -1534,9 +1538,11 @@ main > section:nth-child(8) > section {
     right: 0;
     margin: auto;
 }
-#certificate-left-btn,#certificate-right-btn{
+
+#certificate-left-btn, #certificate-right-btn {
     display: none;
 }
+
 main > section:nth-child(8) > section > section {
     width: calc(100% * 3);
     flex-wrap: nowrap;
@@ -1559,6 +1565,7 @@ main > section:nth-child(8) > section > section {
 
     }
 }
+
 main > section:nth-child(8) > section > section > div {
     width: 80%;
     flex-grow: 1;
@@ -1574,6 +1581,7 @@ main > section:nth-child(8) > section > section > div > a > img {
     height: 370px;
     width: 400px;
 }
+
 main > section:nth-child(8) {
     position: relative;
     height: 100vh;
@@ -1581,7 +1589,8 @@ main > section:nth-child(8) {
 
 main > section:nth-child(8) > section {
     position: relative;
-    top: 75px;    height: 60%;
+    top: 75px;
+    height: 60%;
 }
 
 main > section:nth-child(8) > section > section {
@@ -1873,23 +1882,22 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 }
 
 @media all and (max-width: 600px) {
-    #home-menu-section{
+    #home-menu-section {
         display: none;
     }
-    #home-menu-section>menu>li{
+
+    #home-menu-section > menu > li {
         display: block;
     }
-   /* header >section:nth-child(3) {
-        width: 100%;
-        background: #c3c3c3;
-        position: absolute;
-        height: max-content;
-        top: 0;
-        display: none;
-    }*/
 
-
-
+    /* header >section:nth-child(3) {
+         width: 100%;
+         background: #c3c3c3;
+         position: absolute;
+         height: max-content;
+         top: 0;
+         display: none;
+     }*/
     .topic {
         border: none;
         box-shadow: none;
@@ -2723,6 +2731,10 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         top: 10px;
         width: 36px;
     }
+
+    main > section:nth-child(8) > section > section > div > a > img {
+        height: 210px;
+    }
 }
 
 @media all and (max-width: 375px) and  (min-width: 335px) {
@@ -2872,6 +2884,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     footer > section:nth-child(2) > section:nth-child(3) > section {
         width: 75%;
     }
+
+    main > section:nth-child(8) > section > section > div > a > img {
+        height: 250px;    }
 }
 
 @media all and (max-width: 425px) and  (min-width: 389px) {
@@ -3042,7 +3057,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     footer > section:nth-child(2) > section:nth-child(3) > section {
         width: 75%;
     }
-
+    main > section:nth-child(8) > section > section > div > a > img {
+        height: 270px;
+    }
 }
 
 @media all and (max-width: 600px) and  (min-width: 501px) {
@@ -3177,7 +3194,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
 
     footer > section:nth-child(2) > section:nth-child(3) > section {
         width: 57%;
-    }
+    }main > section:nth-child(8) > section > section > div > a > img {
+         height: 315px;
+     }
 }
 
 @media all and (max-width: 1024px) and  (min-width: 601px) {
@@ -3841,7 +3860,7 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
     main > section:nth-child(8) > section > section > div > a > img {
         box-shadow: 0px 1px 7px -3px black;
         height: 300px;
-        width: 400px;
+        width: 365px;
     }
 
     /*-------------------------footer-----------------------------*/
@@ -3970,15 +3989,18 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         display: none;
     }
 }
+
 @media all and (max-width: 1024px) and  (min-width: 769px) {
-   /* main > section:nth-child(8) > section > section {
-        !*top: -70px;*!
-    }*/
+    /* main > section:nth-child(8) > section > section {
+         !*top: -70px;*!
+     }*/
     main > section:nth-child(8) > section > section > div > a > img {
         height: 276px;
     }
+
     main > section:nth-child(8) > section {
-        top: 40px;    }
+        top: 40px;
+    }
 }
 
 @media all and (max-width: 1440px) and  (min-width: 1025px) {
@@ -4139,9 +4161,9 @@ footer > section:nth-child(2) > section:nth-child(1) > form > fieldset > div > i
         font-size: 18px !important;
     }
 
-  /*  main > section:nth-child(8) > section > section {
-        width: 88%;
-    }*/
+    /*  main > section:nth-child(8) > section > section {
+          width: 88%;
+      }*/
 }
 
 @media all and (max-width: 1440px) and  (min-width: 1155px) {
