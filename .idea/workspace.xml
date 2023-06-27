@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ceeaed0-2a47-4559-86d8-8e6606e92670" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/logInController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/indexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/controller/indexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assignment/JS/InMemoryPOS/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +71,21 @@
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework" />
       <recent name="C:\Users\ACER\Documents\WorkZone\MyPortfolio\assignment\CSS-Framework\POS\pages" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -194,7 +211,7 @@
       <workItem from="1687765149706" duration="606000" />
       <workItem from="1687768493938" duration="890000" />
       <workItem from="1687783515409" duration="15585000" />
-      <workItem from="1687874176975" duration="3980000" />
+      <workItem from="1687874176975" duration="5284000" />
     </task>
     <servers />
   </component>

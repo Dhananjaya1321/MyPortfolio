@@ -55,14 +55,16 @@
                     <h1>Log In</h1>
                     <form class="d-flex row justify-content-center align-content-center">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email"
                                    aria-describedby="emailHelp">
+                            <h6 id="emailAlert"></h6>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                            <h6 id="passwordAlert"></h6>
                         </div>
                         <!--<button type="submit" class="btn btn-primary w-50">Log In</button>-->
                         <ul class="nav nav-pills w-50 d-flex justify-content-center">
@@ -636,5 +638,6 @@
 <script src="db/db.js"></script>
 <script src="models/Customer.js"></script>
 <script src="models/Item.js"></script>
+<script src="controller/logInController.js"></script>
 </body>
 </html>

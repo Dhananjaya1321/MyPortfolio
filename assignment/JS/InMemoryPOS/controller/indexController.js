@@ -85,14 +85,28 @@ function setView(viewOb) {
 
 
 $("#log_in").click(function () {
-    setView($("#home_section"));
-    $("#nav_bar").css("display", 'block');
-    /* $("#home_section").css("display", 'block');
-     $("#nav_bar").css("display", 'block');
-     $("#customer_section").css("display", 'none');
-     $("#order_section").css("display", 'none');
-     $("#store_section").css("display", 'none');
-     $("#login_section").css("display", 'none');*/
+    let password=$("#password").val(),email=$("#email").val();
+    if (checkEmail(email) && checkPassword(password)) {
+        setView($("#home_section"));
+        $("#nav_bar").css("display", 'block');
+        /* $("#home_section").css("display", 'block');
+         $("#nav_bar").css("display", 'block');
+         $("#customer_section").css("display", 'none');
+         $("#order_section").css("display", 'none');
+         $("#store_section").css("display", 'none');
+         $("#login_section").css("display", 'none');*/
+    }else {
+        let ok=alert("Email or Password invalid");
+        if (ok){
+            $("#password").val("");
+            $("#email").val("");
+        }
+    }
+
+
+
+
+
 });
 $("#home").click(function () {
     setItemCount();
