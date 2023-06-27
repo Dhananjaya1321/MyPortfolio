@@ -24,11 +24,4 @@ tablet view
 
 mobile view
 ![Group 110](https://github.com/Dhananjaya1321/MyPortfolio/assets/114791318/5c2bcdaa-4657-41cc-a1c7-19740d8c5b06)
-t
 
-
-<h3> Web POS Using CSS FrameWorks</h3>
- Site-Map : https://app.diagrams.net/#G1MquYlnEyVTuj22xvhOneGePC-YQwEEHD <br>
- WireFrame : https://wireframe.cc/rscMG4 <br>
- Mockup : https://www.figma.com/file/cIj3btZnkIvPes2Dw89Kph/Untitled?node-id=0%3A1 <br>
-<h3>Developed By Derick Andrew Ferdinands</h3>
